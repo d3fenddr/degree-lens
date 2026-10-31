@@ -9,6 +9,7 @@ const results = {
   universities: false,
   programs: false,
   analysisWorkflow: false,
+  intelligentMatching: false,
   pdfExport: false,
   responsive375: false,
   responsive768: false,
@@ -123,6 +124,8 @@ async function run() {
   if (programCards >= 5 && verifiedCount === 5) {
     results.programs = true;
   }
+  await page.screenshot({ path: join(process.cwd(), '../portfolio-programs.png'), fullPage: false });
+  console.log('Saved portfolio-programs.png');
 
   // 5. Analysis Workflow & Course Edit
   console.log('Testing Analysis Workflow...');
@@ -133,6 +136,8 @@ async function run() {
   // Wait for /results page content
   await expect(page.getByText('Fictional demo profile:')).toBeVisible();
   console.log('Demo banner visible on results page.');
+  await page.screenshot({ path: join(process.cwd(), '../portfolio-results.png'), fullPage: false });
+  console.log('Saved portfolio-results.png');
 
   // Add second program for comparison
   await page.getByRole('link', { name: '+ Compare programs' }).click();
@@ -185,7 +190,28 @@ async function run() {
     results.pdfExport = true;
   }
 
-  // 7. Responsive Viewports & Screenshots
+  // 7. Intelligent Recommendations on Live /analyze/
+  console.log('Testing Intelligent Recommendations on Live /analyze/...');
+  await page.goto(`${BASE_URL}/analyze/`, { waitUntil: 'networkidle' });
+  await page.waitForTimeout(500);
+  await page.getByRole('button', { name: 'Computer Science heavy' }).click();
+  await page.waitForTimeout(400);
+  const findBtn = page.getByRole('button', { name: /Find matching programs/i });
+  await expect(findBtn).toBeVisible();
+  await findBtn.click();
+  await page.waitForTimeout(600);
+  const matchCards = page.locator('.match-card');
+  const matchCount = await matchCards.count();
+  console.log(`Live matching returned ${matchCount} candidate programs.`);
+  const firstMatchPill = await matchCards.first().locator('.verified-pill').innerText();
+  console.log(`First live match pill: ${firstMatchPill}`);
+  if (matchCount > 0 && firstMatchPill.includes('Verified Coursework Match')) {
+    results.intelligentMatching = true;
+  }
+  await page.screenshot({ path: join(process.cwd(), '../portfolio-analyze.png'), fullPage: false });
+  console.log('Saved portfolio-analyze.png (1440px)');
+
+  // 8. Responsive Viewports & Screenshots
   console.log('Testing Responsive Viewports & Capturing Screenshots...');
   const viewports = [
     { width: 375, height: 812, name: '375', key: 'responsive375' },

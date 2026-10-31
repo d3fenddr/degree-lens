@@ -48,4 +48,5 @@ graphify-out/
 # wrangler & local config
 .wrangler/
 .openai/
+*.pdf
 
