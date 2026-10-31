@@ -102,3 +102,100 @@ test('3-stage transcript review flags potential grade warning', async ({ page })
   await expect(page.locator('.course-card')).toHaveCount(1);
   await expect(page.getByText(/Review value: 2.3 resembles a grade/)).toBeVisible();
 });
+
+
+test('add course inserts at top, focuses title input, and announces via ARIA live', async ({ page }) => {
+  await page.goto('/analyze/', { waitUntil: 'networkidle' });
+  await page.waitForTimeout(500);
+
+  // Click Add course manually
+  await page.getByRole('button', { name: 'Add course manually' }).click();
+
+  // First course card input should have focus
+  const firstTitleInput = page.locator('.course-card').first().locator('input[placeholder*="Linear Algebra"]');
+  await expect(firstTitleInput).toBeVisible();
+  await expect(firstTitleInput).toBeFocused();
+
+  // ARIA live region announces the action
+  const liveRegion = page.locator('[aria-live="polite"]');
+  await expect(liveRegion).toContainText('New course row added at the top');
+
+  // Fill in course details
+  await firstTitleInput.fill('Modern Cryptography');
+  const firstCreditsInput = page.locator('.course-card').first().getByLabel('Credits', { exact: true });
+  await firstCreditsInput.fill('6');
+
+  // Add a second course to verify top insertion
+  await page.getByRole('button', { name: 'Add course', exact: true }).click();
+  await expect(page.locator('.course-card')).toHaveCount(2);
+  const newFirstTitleInput = page.locator('.course-card').first().locator('input[placeholder*="Linear Algebra"]');
+  await expect(newFirstTitleInput).toBeFocused();
+  await newFirstTitleInput.fill('Quantum Computing');
+
+  // Verify Quantum Computing is in the first card input and Modern Cryptography in second
+  await expect(page.locator('.course-card').first().locator('input[placeholder*="Linear Algebra"]')).toHaveValue('Quantum Computing');
+  await expect(page.locator('.course-card').nth(1).locator('input[placeholder*="Linear Algebra"]')).toHaveValue('Modern Cryptography');
+});
+
+test('bulk confirm dynamically reflects count, confirms valid rows, and updates verified ECTS', async ({ page }) => {
+  await page.goto('/analyze/', { waitUntil: 'networkidle' });
+  await page.waitForTimeout(500);
+
+  // Load a demo profile
+  await page.getByRole('button', { name: 'Computer Science heavy' }).click();
+  await expect(page.locator('.course-card')).toHaveCount(12);
+
+  // Uncheck confirmation on the first 2 courses
+  await page.locator('.course-card').nth(0).getByLabel('Confirm credits').uncheck();
+  await page.locator('.course-card').nth(1).getByLabel('Confirm credits').uncheck();
+
+  // Add an empty course row (invalid/incomplete)
+  await page.getByRole('button', { name: 'Add course', exact: true }).click();
+  await page.locator('.course-card').first().getByLabel('Credits', { exact: true }).fill('0');
+
+  // The bulk confirm button should show exactly 2 eligible courses to confirm
+  const confirmBtn = page.getByRole('button', { name: /Confirm 2 reviewed courses/i });
+  await expect(confirmBtn).toBeVisible();
+  await confirmBtn.click();
+
+  // Post-action feedback announcement banner
+  await expect(page.locator('span').filter({ hasText: /Confirmed 2 courses/i })).toBeVisible();
+
+  // Verify the empty course row remains unconfirmed
+  const emptyRowCheckbox = page.locator('.course-card').first().getByLabel('Confirm credits');
+  await expect(emptyRowCheckbox).not.toBeChecked();
+});
+
+test('intelligent program recommendations rank verified matches, show explanations, and handle shortlisting', async ({ page }) => {
+  await page.goto('/analyze/', { waitUntil: 'networkidle' });
+  await page.waitForTimeout(500);
+
+  // Load sample CS profile
+  await page.getByRole('button', { name: 'Computer Science heavy' }).click();
+
+  // Click Find matching programs
+  const findBtn = page.getByRole('button', { name: /Find matching programs/i });
+  await expect(findBtn).toBeVisible();
+  await findBtn.click();
+
+  // Scroll to results section
+  await expect(page.locator('#matching-results-section')).toBeVisible();
+
+  // Verify match cards appear
+  const matchCards = page.locator('.match-card');
+  await expect(matchCards.first()).toBeVisible();
+
+  // Verify Verified Coursework Match appears first for CS profile
+  const firstMatch = matchCards.first();
+  await expect(firstMatch.getByText('VERIFIED COURSEWORK MATCH')).toBeVisible();
+  await expect(firstMatch.locator('.match-score-badge')).toBeVisible();
+  await expect(firstMatch.locator('.match-why-list')).toBeVisible();
+
+  // Save to Shortlist
+  const shortlistBtn = firstMatch.getByRole('button', { name: /Toggle shortlist/i });
+  await shortlistBtn.click();
+  await expect(shortlistBtn).toContainText('Shortlisted');
+
+  // Verify shortlist banner appears
+  await expect(page.getByText(/1 program saved in your browser shortlist/i)).toBeVisible();
+});

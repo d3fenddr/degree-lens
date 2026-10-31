@@ -24,10 +24,10 @@ export default function Home() {
             Explore European universities, discover accredited degree programs, and compare your academic coursework with documented admission requirements. Review course allocations, inspect evidence, and prepare informed applications.
           </p>
           <div className="hero-buttons">
-            <Link href="/analyze" className="button">
+            <Link href="/analyze/" className="button">
               Start analysis →
             </Link>
-            <Link href="/programs" className="button button-outline">
+            <Link href="/programs/" className="button button-outline">
               Explore programs
             </Link>
           </div>
@@ -105,7 +105,7 @@ export default function Home() {
           <Link className="text-link" href="/universities">
             Browse institutions →
           </Link>
-          <Link className="text-link" href="/programs">
+          <Link className="text-link" href="/programs/">
             Browse degree programs →
           </Link>
           <Link className="text-link" href="/methodology">

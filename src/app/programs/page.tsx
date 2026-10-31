@@ -259,7 +259,7 @@ export default function ProgramsPage() {
 
       <div className="catalog-next">
         <p>Coursework comparison is informational. Other conditions remain for review.</p>
-        <Link href="/results" className="button">
+        <Link href="/results/" className="button">
           View comparison <ArrowRight size={18} />
         </Link>
       </div>
