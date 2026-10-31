@@ -1,6 +1,6 @@
 'use client';
 
-import { useMemo, useState } from 'react';
+import { useEffect, useMemo, useState } from 'react';
 import Link from 'next/link';
 import { ArrowRight, ArrowUpRight, Check, RotateCcw, Search } from 'lucide-react';
 import { useWorkspace } from '../../components/workspace';
@@ -16,6 +16,10 @@ export default function ProgramsPage() {
   const [level, setLevel] = useState('All levels');
   const [verifiedOnly, setVerifiedOnly] = useState(false);
   const [page, setPage] = useState(1);
+
+  useEffect(() => {
+    document.title = 'Degree Programs Directory | DegreeLens';
+  }, []);
 
   // Derive filter lists from catalog
   const countries = useMemo(() => {

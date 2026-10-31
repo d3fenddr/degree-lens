@@ -131,6 +131,13 @@ const WIZARD_STEPS: StepMeta[] = [
   }
 ];
 
+const STEP_TITLES: Record<WizardStepId, string> = {
+  1: 'Step 1: Academic Background | DegreeLens',
+  2: 'Step 2: Coursework Review | DegreeLens',
+  3: 'Step 3: Study Preferences | DegreeLens',
+  4: 'Step 4: Matching Programs | DegreeLens',
+};
+
 export default function AnalyzePage() {
   return (
     <Suspense fallback={<div className="shell page-wrap"><p>Loading academic analysis wizard…</p></div>}>
@@ -206,8 +213,13 @@ function AnalyzeWizardContent() {
     return () => window.removeEventListener('popstate', handlePopState);
   }, []);
 
-  // When currentStep changes: focus heading and scroll to top smoothly
+  // When currentStep changes: focus heading, scroll to top smoothly, and update document.title
   useEffect(() => {
+    const title = STEP_TITLES[currentStep] || 'Analysis Wizard | DegreeLens';
+    if (typeof document !== 'undefined') {
+      document.title = title;
+    }
+
     // Scroll to top of wizard
     if (typeof window !== 'undefined') {
       window.scrollTo({ top: 0, behavior: 'smooth' });
@@ -215,6 +227,9 @@ function AnalyzeWizardContent() {
 
     // Set focus on step heading for screen readers & keyboard navigation (unless adding a course)
     const timer = setTimeout(() => {
+      if (typeof document !== 'undefined') {
+        document.title = title;
+      }
       if (!newlyAddedId) {
         stepHeadingRef.current?.focus();
       }
@@ -521,6 +536,7 @@ function AnalyzeWizardContent() {
 
   return (
     <div className="shell page-wrap">
+      <title>{STEP_TITLES[currentStep] || 'Analysis Wizard | DegreeLens'}</title>
       {/* Accessible live region for announcements */}
       <div id={announceId} className="sr-only" aria-live="polite" aria-atomic="true">
         {liveAnnouncement}

@@ -1,5 +1,6 @@
 'use client';
 
+import { useEffect } from 'react';
 import Link from 'next/link';
 import { useRouter } from 'next/navigation';
 import { useWorkspace } from '../components/workspace';
@@ -13,6 +14,10 @@ const preview = analyze(demoCourses('Mixed Data Science'), verifiedPrograms[0]);
 export default function Home() {
   const router = useRouter();
   const { loadDemo } = useWorkspace();
+
+  useEffect(() => {
+    document.title = 'DegreeLens | Explore European Higher Education';
+  }, []);
 
   return (
     <>

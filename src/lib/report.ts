@@ -11,9 +11,9 @@ export async function downloadReport(analyses: Analysis[], courses: Course[]) {
   doc.setTextColor(23,59,102);line('DegreeLens',20,true,9);doc.setTextColor(23,43,77);line('Coursework comparison report',15,true,8);line(`Generated ${new Date().toLocaleDateString('en-GB')} | ${courses.length} entered courses`,10,false,10);
   line('Preliminary evidence comparison. This is not an admissions decision.',10,true,10);
   for(const analysis of analyses){
-    line(`${analysis.program.university} — ${analysis.program.name}`,13,true,8);
+    line(`${analysis.program.university} | ${analysis.program.name}`,13,true,8);
     line(`Source verified ${analysis.program.verified || 'Catalog'}: ${analysis.program.sourceUrl || analysis.program.officialProgramUrl || ''}`,8,false,7);
-    for(const coverage of analysis.coverage){line(`${coverage.rule.label}: ${coverage.ects} / ${coverage.rule.minimum} ECTS — ${coverage.status}`,10,true,6);for(const match of coverage.matches)line(`  ${courses.find(c=>c.id===match.courseId)?.title||'Course'}: ${match.ects} ECTS`,9,false,5)}
+    for(const coverage of analysis.coverage){line(`${coverage.rule.label}: ${coverage.ects} / ${coverage.rule.minimum} ECTS | ${coverage.status}`,10,true,6);for(const match of coverage.matches)line(`  ${courses.find(c=>c.id===match.courseId)?.title||'Course'}: ${match.ects} ECTS`,9,false,5)}
     if (analysis.program.conditions && analysis.program.conditions.length) {
       line('Conditions needing separate review',10,true,7);
       for(const condition of analysis.program.conditions) line(`• ${condition}`,9,false,5);

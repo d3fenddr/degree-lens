@@ -6,6 +6,15 @@ export function generateStaticParams() {
   return catalog.records.map(u => ({ name: u.id }));
 }
 
+export async function generateMetadata({ params }: { params: Promise<{ name: string }> }) {
+  const { name } = await params;
+  const u = catalog.records.find(x => x.id === name);
+  return {
+    title: u ? u.name : 'University Detail',
+    description: u ? `Discover degree programs and academic details for ${u.name} (${u.country}).` : undefined,
+  };
+}
+
 export default async function UniversityPage({ params }: { params: Promise<{ name: string }> }) {
   const { name } = await params;
   const u = catalog.records.find(x => x.id === name);

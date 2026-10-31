@@ -1,6 +1,6 @@
 'use client';
 
-import { useMemo, useState } from 'react';
+import { useEffect, useMemo, useState } from 'react';
 import Link from 'next/link';
 import catalog from '../../data/universities.json';
 
@@ -18,6 +18,10 @@ export default function Universities() {
   const [state, setState] = useState('');
   const [type, setType] = useState('');
   const [page, setPage] = useState(1);
+
+  useEffect(() => {
+    document.title = 'European Universities Directory | DegreeLens';
+  }, []);
 
   const data = catalog.records;
 

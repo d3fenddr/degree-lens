@@ -135,4 +135,46 @@ test.describe('DegreeLens Step-by-Step Analysis Wizard', () => {
       expect(scrollWidth, `Step ${step} at 375px width`).toBeLessThanOrEqual(375);
     }
   });
+
+  test('Browser tab title changes dynamically across pages and wizard steps without em dashes', async ({ page }) => {
+    // 1. Homepage
+    await page.goto('/', { waitUntil: 'networkidle' });
+    await expect(page).toHaveTitle('DegreeLens | Explore European Higher Education');
+    expect(await page.title()).not.toContain('\u2014');
+
+    // 2. Wizard Step 1
+    await page.goto('/analyze/?step=1', { waitUntil: 'networkidle' });
+    await expect(page).toHaveTitle('Step 1: Academic Background | DegreeLens');
+    expect(await page.title()).not.toContain('\u2014');
+
+    // 3. Wizard Step 2
+    await page.goto('/analyze/?step=2', { waitUntil: 'networkidle' });
+    await expect(page).toHaveTitle('Step 2: Coursework Review | DegreeLens');
+    expect(await page.title()).not.toContain('\u2014');
+
+    // 4. Wizard Step 3
+    await page.goto('/analyze/?step=3', { waitUntil: 'networkidle' });
+    await expect(page).toHaveTitle('Step 3: Study Preferences | DegreeLens');
+    expect(await page.title()).not.toContain('\u2014');
+
+    // 5. Wizard Step 4
+    await page.goto('/analyze/?step=4', { waitUntil: 'networkidle' });
+    await expect(page).toHaveTitle('Step 4: Matching Programs | DegreeLens');
+    expect(await page.title()).not.toContain('\u2014');
+
+    // 6. Programs directory
+    await page.goto('/programs/', { waitUntil: 'networkidle' });
+    await expect(page).toHaveTitle('Degree Programs Directory | DegreeLens');
+    expect(await page.title()).not.toContain('\u2014');
+
+    // 7. Universities directory
+    await page.goto('/universities/', { waitUntil: 'networkidle' });
+    await expect(page).toHaveTitle('European Universities Directory | DegreeLens');
+    expect(await page.title()).not.toContain('\u2014');
+
+    // 8. Results page
+    await page.goto('/results/', { waitUntil: 'networkidle' });
+    await expect(page).toHaveTitle(/DegreeLens/);
+    expect(await page.title()).not.toContain('\u2014');
+  });
 });

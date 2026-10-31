@@ -1,1 +1,8 @@
+import type { Metadata } from 'next';
+
+export const metadata: Metadata = {
+  title: 'Privacy Policy',
+  description: 'DegreeLens processes all transcript PDFs and coursework data locally in your browser. Zero server uploads.',
+};
+
 export default function Privacy(){return <div className="shell page-wrap editorial"><span className="kicker">PRIVACY</span><h1>Your transcript stays in your browser.</h1><p className="editorial-lede">DegreeLens processes uploaded PDF files, extracted text, course edits, calculations and PDF reports locally during the active browser session.</p><div className="editorial-grid"><article><span>LOCAL PROCESSING</span><h2>What is handled</h2><p>PDF text is extracted on your device. Course entries and program choices are held in browser memory only. They are not sent to an analysis API or stored in a database by this application.</p></article><article><span>CONTROL</span><h2>How to clear it</h2><p>Use “Clear data” in the header, refresh the page, or close the tab to remove the current in-memory analysis. A downloaded report remains wherever you save it on your device.</p></article><article><span>NETWORK</span><h2>What still connects</h2><p>Your browser requests the public application assets from the hosting provider. Opening an official university link visits that university. Standard hosting infrastructure may process request metadata such as IP address and user agent.</p></article><article><span>LIMITS</span><h2>Before uploading</h2><p>Only text-based PDFs are supported reliably. If a transcript is scanned or formatted unusually, enter courses manually. Avoid adding personal identifiers to course descriptions.</p></article></div></div>}
