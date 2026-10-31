@@ -1,69 +1,18 @@
-import Image from "next/image";
-
+'use client';
+import Link from 'next/link';
+import { useRouter } from 'next/navigation';
+import { ArrowRight, ArrowUpRight, FileSearch, FileText, LockKeyhole, SlidersHorizontal } from 'lucide-react';
+import { useWorkspace } from '../components/workspace';
 export default function Home() {
-  return (
-    <div className="flex flex-col flex-1 items-center justify-center bg-zinc-50 font-sans dark:bg-black">
-      <main className="flex flex-1 w-full max-w-3xl flex-col items-center justify-between py-32 px-16 bg-white dark:bg-black sm:items-start">
-        <Image
-          className="dark:invert h-5 w-[100px]"
-          src="/next.svg"
-          alt="Next.js logo"
-          width={100}
-          height={20}
-          priority
-        />
-        <div className="flex flex-col items-center gap-6 text-center sm:items-start sm:text-left">
-          <h1 className="max-w-xs text-3xl font-semibold leading-10 tracking-tight text-black dark:text-zinc-50">
-            To get started, edit the{" "}
-            <code className="rounded bg-black/[.06] px-1.5 py-0.5 font-mono text-[0.9em] dark:bg-white/[.08]">
-              page.tsx
-            </code>{" "}
-            file.
-          </h1>
-          <p className="max-w-md text-lg leading-8 text-zinc-600 dark:text-zinc-400">
-            Looking for a starting point or more instructions? Head over to{" "}
-            <a
-              href="https://vercel.com/templates?framework=next.js&utm_source=create-next-app&utm_medium=appdir-template-tw&utm_campaign=create-next-app"
-              className="font-medium text-zinc-950 dark:text-zinc-50"
-            >
-              Templates
-            </a>{" "}
-            or the{" "}
-            <a
-              href="https://nextjs.org/learn?utm_source=create-next-app&utm_medium=appdir-template-tw&utm_campaign=create-next-app"
-              className="font-medium text-zinc-950 dark:text-zinc-50"
-            >
-              Learning
-            </a>{" "}
-            center.
-          </p>
-        </div>
-        <div className="flex flex-col gap-4 text-base font-medium sm:flex-row">
-          <a
-            className="flex h-12 w-full items-center justify-center gap-2 rounded-full bg-foreground px-5 text-background transition-colors hover:bg-[#383838] dark:hover:bg-[#ccc] md:w-[158px]"
-            href="https://vercel.com/new?utm_source=create-next-app&utm_medium=appdir-template-tw&utm_campaign=create-next-app"
-            target="_blank"
-            rel="noopener noreferrer"
-          >
-            <Image
-              className="dark:invert h-[14px] w-4"
-              src="/vercel.svg"
-              alt="Vercel logomark"
-              width={16}
-              height={14}
-            />
-            Deploy Now
-          </a>
-          <a
-            className="flex h-12 w-full items-center justify-center rounded-full border border-solid border-black/[.08] px-5 transition-colors hover:border-transparent hover:bg-black/[.04] dark:border-white/[.145] dark:hover:bg-[#1a1a1a] md:w-[158px]"
-            href="https://nextjs.org/docs?utm_source=create-next-app&utm_medium=appdir-template-tw&utm_campaign=create-next-app"
-            target="_blank"
-            rel="noopener noreferrer"
-          >
-            Documentation
-          </a>
-        </div>
-      </main>
-    </div>
-  );
+  const router = useRouter(); const { loadDemo } = useWorkspace();
+  function demo() { loadDemo('Mixed Data Science'); router.push('/results'); }
+  return <>
+    <section className="hero shell"><div className="hero-copy"><div className="eyebrow"><span className="eyebrow-dot"/> A clearer path to your next degree</div><h1>Understand your academic <em>eligibility</em> before you apply.</h1><p className="hero-lede">See how your coursework compares with documented requirements for German master’s programs. Every credit has a source. Every gap has an explanation.</p><div className="hero-buttons"><Link href="/analyze" className="button">Analyze my transcript <ArrowRight size={18}/></Link><button className="button button-outline" onClick={demo}>Explore interactive demo <ArrowUpRight size={18}/></button></div><div className="hero-trust"><span><LockKeyhole size={16}/> Private by design</span><span><FileSearch size={16}/> Official sources</span><span><SlidersHorizontal size={16}/> Explainable results</span></div></div>
+      <div className="hero-preview"><div className="preview-window"><div className="preview-top"><div className="preview-dots"><i/><i/><i/></div><span>DEGREE LENS / ANALYSIS</span><span className="preview-status">● Live preview</span></div><div className="preview-body"><div className="preview-small-label">COURSEWORK ANALYSIS</div><div className="preview-heading">Your academic profile, in focus.</div><div className="preview-sub">Mixed Data Science · University of Regensburg</div><div className="preview-grid"><div><span>VERIFIED COURSES</span><strong>13</strong><small>Fictional sample</small></div><div><span>RELEVANT ECTS</span><strong>54</strong><small>Maximum categories</small></div><div><span>CATEGORIES</span><strong>4<span className="tiny">/4</span></strong><small>For review</small></div></div>{[['Data Science / Statistics','18 / 18 ECTS'],['Mathematics','18 / 18 ECTS'],['Programming','6 / 6 ECTS']].map(([label,number]) => <div className="preview-row" key={label}><div><b>{label}</b><small>{number}</small></div><div className="bar"><i style={{width:'100%'}}/></div></div>)}<div className="preview-note">↗ Each allocation links to a course and official rule.</div></div></div><div className="preview-floating"><span>✓</span><div><strong>Evidence, not guesswork</strong><small>See exactly how credits are counted</small></div></div></div>
+    </section>
+    <section className="proof-strip"><div className="shell proof-inner"><span>BUILT FOR CLARITY</span><strong>5</strong><p>source-backed programs</p><strong>3</strong><p>fictional demo profiles</p><strong>100%</strong><p>local transcript processing</p></div></section>
+    <section className="section shell"><div className="section-heading"><span className="kicker">THE PROCESS</span><h2>A complex decision, made understandable.</h2><p>Move from a transcript to a traceable coursework comparison in three deliberate steps.</p></div><div className="steps"><article><div className="step-icon"><FileText/></div><span className="step-num">01 / BRING YOUR COURSES</span><h3>Upload or start with a sample</h3><p>Extract text from a PDF on your device, enter courses manually, or explore a fictional profile immediately.</p></article><article><div className="step-icon"><SlidersHorizontal/></div><span className="step-num">02 / VERIFY THE EVIDENCE</span><h3>Correct what matters</h3><p>Review titles, ECTS equivalence and subject mappings. Unconfirmed information stays visibly uncertain.</p></article><article><div className="step-icon"><FileSearch/></div><span className="step-num">03 / INSPECT THE COMPARISON</span><h3>See the reasoning</h3><p>Compare program requirements, trace allocated credits and export a source-linked report.</p></article></div></section>
+    <section className="section feature-section"><div className="shell feature-grid"><div><span className="kicker">BUILT AROUND EVIDENCE</span><h2>No black-box admission scores.</h2><p>DegreeLens shows documented subject thresholds and the coursework you chose to map to them. It keeps language, degree recognition, thesis standards and selection decisions separate.</p><Link href="/methodology" className="text-link">Read the methodology <ArrowRight size={17}/></Link></div><div className="feature-card"><div className="feature-card-title"><FileSearch size={21}/> What you can inspect</div>{['Official source for every rule','Course-by-course ECTS allocation','Conditions requiring human review'].map((x,i)=><div className="feature-line" key={x}><span>0{i+1}</span><p>{x}</p><ArrowUpRight size={17}/></div>)}</div></div></section>
+    <section className="section shell bottom-cta"><span className="kicker">START WITH CLARITY</span><h2>Bring your evidence into focus.</h2><p>No account. No API key. No private transcript upload to a server.</p><div className="hero-buttons"><Link href="/analyze" className="button">Analyze coursework <ArrowRight size={18}/></Link><button className="button button-outline" onClick={demo}>Try the sample <ArrowUpRight size={18}/></button></div><small>DegreeLens is an independent preliminary tool, not an admissions decision.</small></section>
+  </>;
 }

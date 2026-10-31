@@ -1,0 +1,2 @@
+import Link from 'next/link';
+export function Footer() { return <footer className="footer"><div className="shell footer-inner"><div><strong>DegreeLens</strong><p>A transparent coursework comparison for German master’s applicants.</p></div><div className="footer-links"><Link href="/methodology">Methodology</Link><Link href="/privacy">Privacy</Link><Link href="/about">Project</Link></div><p>Informational only. Universities make all admission decisions.</p></div></footer>; }

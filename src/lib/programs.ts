@@ -22,7 +22,7 @@ const bonnConditions = [
 export const programs: Program[] = [
   { id: 'reg-ds', university: 'University of Regensburg', name: 'M.Sc. Data Science', city: 'Regensburg', webpage: regDs, sourceUrl: regDs, verified: '2026-10-31', note: 'Full category total is 54 ECTS. Aptitude assessment can allow admission from 30 ECTS with up to 24 ECTS made up during the master’s program; the university decides the outcome.', conditions: regConditions, rules: [
     rule('rds-data', 'Data Science / Statistics / Machine Learning', 18, ['data', 'stochastics'], regDs),
-    rule('rds-math', 'Mathematics', 18, ['math'], regDs),
+    rule('rds-math', 'Mathematics', 18, ['math', 'stochastics'], regDs),
     rule('rds-prog', 'Programming', 6, ['programming'], regDs),
     rule('rds-further', 'Further relevant modules', 12, ['data', 'math', 'stochastics', 'programming', 'theory', 'systems', 'practical', 'cs'], regDs),
   ] },
@@ -35,7 +35,7 @@ export const programs: Program[] = [
   ] },
   ...(['Artificial Intelligence', 'Computer Science'] as const).map((name): Program => ({
     id: name === 'Artificial Intelligence' ? 'bonn-ai' : 'bonn-cs', university: 'University of Bonn', name: `M.Sc. ${name}`, city: 'Bonn', webpage: bonn, sourceUrl: bonn, verified: '2026-10-31', note: 'The bachelor thesis is an additional requirement. Coursework matching cannot verify its scientific standard. Theoretical algorithms exclude programming-only work.', conditions: [...bonnConditions, ...(name === 'Artificial Intelligence' ? ['Summer entry is restricted unless at least 15 transferable master-level ECTS were earned previously.'] : [])], rules: [
-      rule('bonn-math', 'Mathematical foundations', 18, ['math', 'stochastics'], bonn),
+      rule('bonn-math', 'Mathematical foundations', 18, ['math', 'stochastics'], bonn, { excludedTypes: ['internship', 'thesis', 'project'] }),
       rule('bonn-theory', 'Algorithm theory, complexity & formal languages', 14, ['theory'], bonn, { excludedTypes: ['internship', 'thesis', 'project'], note: 'Programming-only courses and practical work do not count.' }),
       rule('bonn-practical', 'Programming, software & information systems', name === 'Artificial Intelligence' ? 20 : 18, ['programming', 'practical', 'data'], bonn, { excludedTypes: ['internship', 'thesis', 'project'], note: 'Hardware and operating systems do not count.' }),
     ]
@@ -47,8 +47,8 @@ export const programs: Program[] = [
     'If the degree is pending, no more than 30 ECTS may remain, coursework minima must already be fulfilled, and thesis registration must be evidenced where applicable.',
     'Meeting minimum requirements does not guarantee selection; grade, degree content and relevant modules are assessed by a committee.',
   ], rules: [
-    rule('hh-math', 'Mathematics', 24, ['math', 'stochastics'], hamburg),
+    rule('hh-math', 'Mathematics', 24, ['math', 'stochastics'], hamburg, { excludedTypes: ['internship', 'thesis'] }),
     rule('hh-stoch', 'Including Stochastics', 6, ['stochastics'], hamburg, { parentId: 'hh-math', note: 'Subset of the 24 ECTS mathematics total.' }),
-    rule('hh-cs', 'Computer Science', 60, ['theory', 'systems', 'practical', 'programming', 'data', 'cs'], hamburg),
+    rule('hh-cs', 'Computer Science', 60, ['theory', 'systems', 'practical', 'programming', 'data', 'cs'], hamburg, { excludedTypes: ['internship', 'thesis'] }),
   ] },
 ];

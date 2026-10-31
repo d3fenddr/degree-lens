@@ -1,36 +1,38 @@
-This is a [Next.js](https://nextjs.org) project bootstrapped with [`create-next-app`](https://nextjs.org/docs/app/api-reference/cli/create-next-app).
+# DegreeLens
 
-## Getting Started
+DegreeLens is a browser-based coursework comparison for five German master's programs. It is an independent preliminary tool, not an admissions service.
 
-First, run the development server:
+## Run
 
 ```bash
+npm ci
 npm run dev
-# or
-yarn dev
-# or
-pnpm dev
-# or
-bun dev
 ```
 
-Open [http://localhost:3000](http://localhost:3000) with your browser to see the result.
+Open `http://localhost:3000`. The app needs no API keys, account, database, or server-side transcript storage.
 
-You can start editing the page by modifying `app/page.tsx`. The page auto-updates as you edit the file.
+## Verify
 
-This project uses [`next/font`](https://nextjs.org/docs/app/building-your-application/optimizing/fonts) to automatically optimize and load [Geist](https://vercel.com/font), a new font family for Vercel.
+```bash
+npm run typecheck
+npm run lint
+npm test
+npm run build
+npm run test:e2e
+npm audit --omit=dev --audit-level=moderate
+```
 
-## Learn More
+Playwright tests use locally installed Chrome. The production build is a static export in `out/`.
 
-To learn more about Next.js, take a look at the following resources:
+## Architecture
 
-- [Next.js Documentation](https://nextjs.org/docs) - learn about Next.js features and API.
-- [Learn Next.js](https://nextjs.org/learn) - an interactive Next.js tutorial.
+- `src/lib/programs.ts`: curated program rules and official sources, verified 2026-10-31.
+- `src/lib/extract.ts`: client-side PDF.js extraction and conservative course-row parsing.
+- `src/lib/engine.ts`: local topic suggestions, verified-credit checks, disjoint allocation, nested requirements.
+- `src/lib/demo.ts`: deterministic fictional profiles.
+- `src/lib/report.ts`: local jsPDF report generation.
+- `src/components/workspace.tsx`: in-memory state for the active browser session.
 
-You can check out [the Next.js GitHub repository](https://github.com/vercel/next.js) - your feedback and contributions are welcome!
+## Limits
 
-## Deploy on Vercel
-
-The easiest way to deploy your Next.js app is to use the [Vercel Platform](https://vercel.com/new?utm_medium=default-template&filter=next.js&utm_source=create-next-app&utm_campaign=create-next-app-readme) from the creators of Next.js.
-
-Check out our [Next.js deployment documentation](https://nextjs.org/docs/app/building-your-application/deploying) for more details.
+Text-based PDFs with simple course/credit rows work best. Scans need manual entry. Credit equivalence and subject mapping require user confirmation. The engine does not evaluate university recognition, thesis quality, grade conversion, language proof, or final selection. Official rules may change; use the source links before applying.
