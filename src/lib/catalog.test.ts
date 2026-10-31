@@ -1,0 +1,3 @@
+import {expect,it} from 'vitest';
+import catalog from '../data/universities.json';
+it('imports distinct, attributed German institution discovery records across all federal states',()=>{expect(catalog.license).toBe('CC0-1.0');expect(catalog.records.length).toBeGreaterThan(100);expect(new Set(catalog.records.map(x=>x.id)).size).toBe(catalog.records.length);expect(new Set(catalog.records.map(x=>x.state).filter(Boolean)).size).toBe(16);for(const record of catalog.records){expect(record.id).toMatch(/^Q\d+$/);expect(record.name).toBeTruthy();expect(record.source).toBe(`https://www.wikidata.org/wiki/${record.id}`);expect(record.website).toMatch(/^https?:\/\//)}});

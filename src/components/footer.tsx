@@ -1,2 +1,1 @@
-import Link from 'next/link';
-export function Footer() { return <footer className="footer"><div className="shell footer-inner"><div><strong>DegreeLens</strong><p>A transparent coursework comparison for German master’s applicants.</p></div><div className="footer-links"><Link href="/methodology">Methodology</Link><Link href="/privacy">Privacy</Link><Link href="/about">Project</Link></div><p>Informational only. Universities make all admission decisions.</p></div></footer>; }
+export function Footer() { return <footer className="footer"><div className="shell footer-inner"><span>© 2026 Karim Baliyev</span><a href="https://github.com/d3fenddr" target="_blank" rel="noopener noreferrer">GitHub: https://github.com/d3fenddr</a></div></footer>; }

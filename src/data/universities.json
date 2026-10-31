@@ -1,0 +1,5147 @@
+{
+  "source": "Wikidata Query Service",
+  "license": "CC0-1.0",
+  "verified": "2026-10-31",
+  "query": "SELECT ?item ?itemLabel ?website ?cityLabel ?typeLabel ?stateLabel WHERE {\n  ?item wdt:P17 wd:Q183; wdt:P31/wdt:P279* wd:Q38723; wdt:P856 ?website.\n  FILTER NOT EXISTS { ?item wdt:P576 ?dissolved. }\n  OPTIONAL { ?item wdt:P131 ?city. }\n  OPTIONAL { ?item wdt:P31 ?type. }\n  OPTIONAL { ?item wdt:P131* ?state. ?state wdt:P31 wd:Q1221156. }\n  SERVICE wikibase:label { bd:serviceParam wikibase:language \"en,de\". }\n} LIMIT 10000",
+  "records": [
+    {
+      "id": "Q1622071",
+      "name": "Aalen University of Applied Sciences",
+      "city": "",
+      "state": "Baden-Württemberg",
+      "type": "public university",
+      "website": "http://www.hs-aalen.de/",
+      "source": "https://www.wikidata.org/wiki/Q1622071"
+    },
+    {
+      "id": "Q1622242",
+      "name": "Academy for public administration Bremen",
+      "city": "Bremen",
+      "state": "Bremen",
+      "type": "public university",
+      "website": "http://www.hfoev.bremen.de/",
+      "source": "https://www.wikidata.org/wiki/Q1622242"
+    },
+    {
+      "id": "Q831570",
+      "name": "Academy of European Law",
+      "city": "Trier",
+      "state": "Rhineland-Palatinate",
+      "type": "higher education institution",
+      "website": "https://www.era.int",
+      "source": "https://www.wikidata.org/wiki/Q831570"
+    },
+    {
+      "id": "Q315175",
+      "name": "Academy of Fine Arts Leipzig",
+      "city": "Leipzig",
+      "state": "Saxony",
+      "type": "public university",
+      "website": "http://www.hgb-leipzig.de/",
+      "source": "https://www.wikidata.org/wiki/Q315175"
+    },
+    {
+      "id": "Q1792343",
+      "name": "Academy of Fine Arts Münster",
+      "city": "Münster",
+      "state": "North Rhine-Westphalia",
+      "type": "art academy",
+      "website": "http://www.kunstakademie-muenster.de/",
+      "source": "https://www.wikidata.org/wiki/Q1792343"
+    },
+    {
+      "id": "Q322938",
+      "name": "Academy of Fine Arts, Karlsruhe",
+      "city": "Karlsruhe",
+      "state": "Baden-Württemberg",
+      "type": "art academy",
+      "website": "http://www.kunstakademie-karlsruhe.de",
+      "source": "https://www.wikidata.org/wiki/Q322938"
+    },
+    {
+      "id": "Q414052",
+      "name": "Academy of Fine Arts, Munich",
+      "city": "Munich",
+      "state": "Bavaria",
+      "type": "academy of fine arts",
+      "website": "https://www.adbk.de/",
+      "source": "https://www.wikidata.org/wiki/Q414052"
+    },
+    {
+      "id": "Q414041",
+      "name": "Academy of Fine Arts, Nuremberg",
+      "city": "Nuremberg",
+      "state": "Bavaria",
+      "type": "art academy",
+      "website": "https://adbk-nuernberg.de",
+      "source": "https://www.wikidata.org/wiki/Q414041"
+    },
+    {
+      "id": "Q827038",
+      "name": "Academy of Media Arts Cologne",
+      "city": "Altstadt-Süd",
+      "state": "North Rhine-Westphalia",
+      "type": "film school",
+      "website": "http://www.khm.de",
+      "source": "https://www.wikidata.org/wiki/Q827038"
+    },
+    {
+      "id": "Q414258",
+      "name": "Academy of Performing Arts Baden-Wuerttemberg",
+      "city": "Ludwigsburg",
+      "state": "Baden-Württemberg",
+      "type": "public university",
+      "website": "https://adk-bw.de/",
+      "source": "https://www.wikidata.org/wiki/Q414258"
+    },
+    {
+      "id": "Q414163",
+      "name": "Academy of Sciences and Literature Mainz",
+      "city": "Mainz",
+      "state": "Rhineland-Palatinate",
+      "type": "public research university",
+      "website": "http://www.adwmainz.de",
+      "source": "https://www.wikidata.org/wiki/Q414163"
+    },
+    {
+      "id": "Q338514",
+      "name": "Accadis Business School Bad Homburg",
+      "city": "Bad Homburg vor der Höhe",
+      "state": "Hesse",
+      "type": "private university",
+      "website": "http://www.accadis.com/",
+      "source": "https://www.wikidata.org/wiki/Q338514"
+    },
+    {
+      "id": "Q294098",
+      "name": "AKAD Bildungsgesellschaft",
+      "city": "Stuttgart",
+      "state": "Baden-Württemberg",
+      "type": "university of applied sciences",
+      "website": "http://www.akad.de/",
+      "source": "https://www.wikidata.org/wiki/Q294098"
+    },
+    {
+      "id": "Q30263681",
+      "name": "AKAD University",
+      "city": "Stuttgart",
+      "state": "Baden-Württemberg",
+      "type": "private university",
+      "website": "https://www.akad.de/",
+      "source": "https://www.wikidata.org/wiki/Q30263681"
+    },
+    {
+      "id": "Q1622155",
+      "name": "Akademie der Polizei Hamburg",
+      "city": "Hamburg",
+      "state": "Hamburg",
+      "type": "police academy",
+      "website": "http://akademie-der-polizei.hamburg.de",
+      "source": "https://www.wikidata.org/wiki/Q1622155"
+    },
+    {
+      "id": "Q1792452",
+      "name": "Akademie für Bildende Künste (Mainz, Germany)",
+      "city": "Rhineland-Palatinate",
+      "state": "Rhineland-Palatinate",
+      "type": "art academy",
+      "website": "http://www.kunsthochschule-mainz.de",
+      "source": "https://www.wikidata.org/wiki/Q1792452"
+    },
+    {
+      "id": "Q17122136",
+      "name": "Akkon University for Human Sciences",
+      "city": "Berlin",
+      "state": "Berlin",
+      "type": "private Hochschule",
+      "website": "http://www.akkon-hochschule.de/",
+      "source": "https://www.wikidata.org/wiki/Q17122136"
+    },
+    {
+      "id": "Q32773",
+      "name": "Alanus University of Arts and Social Sciences",
+      "city": "Alfter",
+      "state": "North Rhine-Westphalia",
+      "type": "art academy",
+      "website": "http://www.alanus.edu/",
+      "source": "https://www.wikidata.org/wiki/Q32773"
+    },
+    {
+      "id": "Q1441039",
+      "name": "Albstadt-Sigmaringen University",
+      "city": "Albstadt",
+      "state": "Baden-Württemberg",
+      "type": "public university",
+      "website": "https://www.hs-albsig.de/",
+      "source": "https://www.wikidata.org/wiki/Q1441039"
+    },
+    {
+      "id": "Q2646956",
+      "name": "Alice Salomon University",
+      "city": "Berlin",
+      "state": "Berlin",
+      "type": "public university",
+      "website": "https://www.ash-berlin.eu/",
+      "source": "https://www.wikidata.org/wiki/Q2646956"
+    },
+    {
+      "id": "Q2586224",
+      "name": "Allensbach Hochschule",
+      "city": "Constance",
+      "state": "Baden-Württemberg",
+      "type": "private university",
+      "website": "http://www.allensbach-hochschule.de",
+      "source": "https://www.wikidata.org/wiki/Q2586224"
+    },
+    {
+      "id": "Q1622076",
+      "name": "Ansbach University of Applied Sciences",
+      "city": "Ansbach",
+      "state": "Bavaria",
+      "type": "public university",
+      "website": "http://www.hs-ansbach.de",
+      "source": "https://www.wikidata.org/wiki/Q1622076"
+    },
+    {
+      "id": "Q636031",
+      "name": "Archivschule Marburg",
+      "city": "Marburg",
+      "state": "Hesse",
+      "type": "public university",
+      "website": "https://www.archivschule.de/",
+      "source": "https://www.wikidata.org/wiki/Q636031"
+    },
+    {
+      "id": "Q2015896",
+      "name": "Army Officer Academy (Germany)",
+      "city": "Dresden",
+      "state": "Saxony",
+      "type": "military academy",
+      "website": "https://www.bundeswehr.de/de/organisation/heer/organisation/ausbildungskommando/offizierschule-des-heeres/",
+      "source": "https://www.wikidata.org/wiki/Q2015896"
+    },
+    {
+      "id": "Q712974",
+      "name": "Artillerieschule",
+      "city": "Rhineland-Palatinate",
+      "state": "Rhineland-Palatinate",
+      "type": "military academy",
+      "website": "https://www.bundeswehr.de/de/organisation/heer/organisation/ausbildungskommando/panzertruppenschule/artillerieschule/",
+      "source": "https://www.wikidata.org/wiki/Q712974"
+    },
+    {
+      "id": "Q1523703",
+      "name": "Aschaffenburg University of Applied Sciences",
+      "city": "Aschaffenburg",
+      "state": "Bavaria",
+      "type": "public university",
+      "website": "http://www.th-ab.de",
+      "source": "https://www.wikidata.org/wiki/Q1523703"
+    },
+    {
+      "id": "Q28738235",
+      "name": "Asklepios Medical School",
+      "city": "Hamburg",
+      "state": "Hamburg",
+      "type": "medical school",
+      "website": "https://www.asklepios.com/ach/",
+      "source": "https://www.wikidata.org/wiki/Q28738235"
+    },
+    {
+      "id": "Q298165",
+      "name": "ASW – Berufsakademie Saarland",
+      "city": "Neunkirchen",
+      "state": "Saarland",
+      "type": "University of Cooperative Education",
+      "website": "https://www.asw-berufsakademie.de/",
+      "source": "https://www.wikidata.org/wiki/Q298165"
+    },
+    {
+      "id": "Q754062",
+      "name": "Atelier Ludwigsburg-Paris",
+      "city": "Paris",
+      "state": "Baden-Württemberg",
+      "type": "film school",
+      "website": "http://www.atelier-ludwigsburg-paris.com/",
+      "source": "https://www.wikidata.org/wiki/Q754062"
+    },
+    {
+      "id": "Q896468",
+      "name": "Augsburg Technical University of Applied Sciences",
+      "city": "Augsburg",
+      "state": "Bavaria",
+      "type": "public university",
+      "website": "http://www.tha.de/",
+      "source": "https://www.wikidata.org/wiki/Q896468"
+    },
+    {
+      "id": "Q765928",
+      "name": "Augustana Divinity School",
+      "city": "Neuendettelsau",
+      "state": "Bavaria",
+      "type": "church college",
+      "website": "http://www.augustana.de",
+      "source": "https://www.wikidata.org/wiki/Q765928"
+    },
+    {
+      "id": "Q1001338",
+      "name": "Baden-Wuerttemberg Cooperative State University Loerrach",
+      "city": "Lörrach",
+      "state": "Baden-Württemberg",
+      "type": "public university",
+      "website": "http://www.dhbw-loerrach.de/",
+      "source": "https://www.wikidata.org/wiki/Q1001338"
+    },
+    {
+      "id": "Q1262605",
+      "name": "Baden-Württemberg Cooperative State University",
+      "city": "Baden-Württemberg",
+      "state": "Baden-Württemberg",
+      "type": "Duale Hochschule",
+      "website": "http://www.dhbw.de/english.html",
+      "source": "https://www.wikidata.org/wiki/Q1262605"
+    },
+    {
+      "id": "Q666828",
+      "name": "Bard College Berlin",
+      "city": "Berlin",
+      "state": "Berlin",
+      "type": "private university",
+      "website": "http://www.berlin.bard.edu",
+      "source": "https://www.wikidata.org/wiki/Q666828"
+    },
+    {
+      "id": "Q18356619",
+      "name": "Barenboim–Said Akademie",
+      "city": "Berlin",
+      "state": "Berlin",
+      "type": "private university",
+      "website": "https://barenboimsaid.de",
+      "source": "https://www.wikidata.org/wiki/Q18356619"
+    },
+    {
+      "id": "Q573975",
+      "name": "Bauhaus-Universität Weimar",
+      "city": "Thuringia",
+      "state": "Thuringia",
+      "type": "public university",
+      "website": "http://www.uni-weimar.de/",
+      "source": "https://www.wikidata.org/wiki/Q573975"
+    },
+    {
+      "id": "Q21036325",
+      "name": "Bavarian University of Applied Sciences and Management",
+      "city": "Munich",
+      "state": "Bavaria",
+      "type": "private university",
+      "website": "http://hdbw-hochschule.de",
+      "source": "https://www.wikidata.org/wiki/Q21036325"
+    },
+    {
+      "id": "Q8231625",
+      "name": "Bayerische Archivschule",
+      "city": "Munich",
+      "state": "Bavaria",
+      "type": "higher education institution",
+      "website": "https://www.gda.bayern.de/ausbildung/bayerische-archivschule/",
+      "source": "https://www.wikidata.org/wiki/Q8231625"
+    },
+    {
+      "id": "Q812296",
+      "name": "Bayerische Theaterakademie August Everding",
+      "city": "",
+      "state": "",
+      "type": "higher education institution",
+      "website": "http://www.theaterakademie.de",
+      "source": "https://www.wikidata.org/wiki/Q812296"
+    },
+    {
+      "id": "Q812777",
+      "name": "BBW University of Applied Sciences",
+      "city": "Berlin",
+      "state": "Berlin",
+      "type": "private university",
+      "website": "https://www.bbw-hochschule.de/",
+      "source": "https://www.wikidata.org/wiki/Q812777"
+    },
+    {
+      "id": "Q4892466",
+      "name": "Berlin School of Creative Leadership",
+      "city": "Berlin",
+      "state": "Berlin",
+      "type": "business school",
+      "website": "https://berlin-school.com/",
+      "source": "https://www.wikidata.org/wiki/Q4892466"
+    },
+    {
+      "id": "Q464443",
+      "name": "Berlin School of Economics and Law",
+      "city": "Berlin",
+      "state": "Berlin",
+      "type": "public university",
+      "website": "https://www.hwr-berlin.de/",
+      "source": "https://www.wikidata.org/wiki/Q464443"
+    },
+    {
+      "id": "Q55038",
+      "name": "Berlin University of the Arts",
+      "city": "Berlin",
+      "state": "Berlin",
+      "type": "public university",
+      "website": "https://www.udk-berlin.de/",
+      "source": "https://www.wikidata.org/wiki/Q55038"
+    },
+    {
+      "id": "Q106525433",
+      "name": "Berufliche Hochschule Hamburg",
+      "city": "Hamburg",
+      "state": "Hamburg",
+      "type": "higher education institution",
+      "website": "https://bhh.hamburg.de/",
+      "source": "https://www.wikidata.org/wiki/Q106525433"
+    },
+    {
+      "id": "Q828773",
+      "name": "Berufsakademie Glauchau",
+      "city": "Glauchau",
+      "state": "Saxony",
+      "type": "public university",
+      "website": "http://www.ba-glauchau.de",
+      "source": "https://www.wikidata.org/wiki/Q828773"
+    },
+    {
+      "id": "Q122871285",
+      "name": "Berufsakademie Hamburg",
+      "city": "Hamburg",
+      "state": "Hamburg",
+      "type": "cooperative education",
+      "website": "https://www.ba-hamburg.de/",
+      "source": "https://www.wikidata.org/wiki/Q122871285"
+    },
+    {
+      "id": "Q64355120",
+      "name": "Berufsakademie Wilhelmshaven",
+      "city": "Wilhelmshaven",
+      "state": "Lower Saxony",
+      "type": "cooperative education",
+      "website": "https://www.berufsakademie-wilhelmshaven.de",
+      "source": "https://www.wikidata.org/wiki/Q64355120"
+    },
+    {
+      "id": "Q795830",
+      "name": "BEST-Sabel-Hochschule Berlin",
+      "city": "Berlin",
+      "state": "Berlin",
+      "type": "university of applied sciences",
+      "website": "http://www.bsb-hochschule.de",
+      "source": "https://www.wikidata.org/wiki/Q795830"
+    },
+    {
+      "id": "Q138566203",
+      "name": "BIC Berlin International College GmbH",
+      "city": "Berlin",
+      "state": "Berlin",
+      "type": "higher education institution",
+      "website": "https://www.berlin-international-college.de",
+      "source": "https://www.wikidata.org/wiki/Q138566203"
+    },
+    {
+      "id": "Q24382",
+      "name": "Bielefeld University",
+      "city": "North Rhine-Westphalia",
+      "state": "North Rhine-Westphalia",
+      "type": "public university",
+      "website": "https://www.uni-bielefeld.de/",
+      "source": "https://www.wikidata.org/wiki/Q24382"
+    },
+    {
+      "id": "Q1698934",
+      "name": "Bildungszentrum der Thüringer Landesverwaltung Gotha",
+      "city": "Gotha",
+      "state": "Thuringia",
+      "type": "university of applied sciences",
+      "website": "https://bildungszentrum.thueringen.de/",
+      "source": "https://www.wikidata.org/wiki/Q1698934"
+    },
+    {
+      "id": "Q1622078",
+      "name": "Bochum University of Applied Sciences",
+      "city": "Bochum",
+      "state": "North Rhine-Westphalia",
+      "type": "public university",
+      "website": "https://www.hochschule-bochum.de/",
+      "source": "https://www.wikidata.org/wiki/Q1622078"
+    },
+    {
+      "id": "Q1622083",
+      "name": "Bonn-Rhein-Sieg University of Applied Sciences",
+      "city": "Sankt Augustin",
+      "state": "North Rhine-Westphalia",
+      "type": "public university",
+      "website": "http://www.h-brs.de",
+      "source": "https://www.wikidata.org/wiki/Q1622083"
+    },
+    {
+      "id": "Q897742",
+      "name": "Brand Academy",
+      "city": "Hamburg",
+      "state": "Hamburg",
+      "type": "private Hochschule",
+      "website": "http://www.brand-acad.de/",
+      "source": "https://www.wikidata.org/wiki/Q897742"
+    },
+    {
+      "id": "Q149433",
+      "name": "Brandenburg University of Technology Cottbus-Senftenberg",
+      "city": "Cottbus",
+      "state": "Brandenburg",
+      "type": "public university",
+      "website": "https://www.b-tu.de/",
+      "source": "https://www.wikidata.org/wiki/Q149433"
+    },
+    {
+      "id": "Q879216",
+      "name": "Braunschweig University of Art",
+      "city": "Brunswick",
+      "state": "Lower Saxony",
+      "type": "art academy",
+      "website": "http://www.hbk-bs.de/",
+      "source": "https://www.wikidata.org/wiki/Q879216"
+    },
+    {
+      "id": "Q1622092",
+      "name": "Bremen University of Applied Sciences",
+      "city": "Bremen",
+      "state": "Bremen",
+      "type": "public university",
+      "website": "http://www.hs-bremen.de/",
+      "source": "https://www.wikidata.org/wiki/Q1622092"
+    },
+    {
+      "id": "Q107440148",
+      "name": "BSBI School of Business and Innovation",
+      "city": "Berlin",
+      "state": "Berlin",
+      "type": "private university",
+      "website": "https://www.berlinsbi.com/",
+      "source": "https://www.wikidata.org/wiki/Q107440148"
+    },
+    {
+      "id": "Q1017599",
+      "name": "BSP Business & Law School",
+      "city": "Berlin",
+      "state": "Berlin",
+      "type": "private university",
+      "website": "https://www.businessschool-berlin.de/",
+      "source": "https://www.wikidata.org/wiki/Q1017599"
+    },
+    {
+      "id": "Q470487",
+      "name": "Bucerius Law School",
+      "city": "Hamburg-Mitte",
+      "state": "Hamburg",
+      "type": "private Hochschule",
+      "website": "http://www.law-school.de/",
+      "source": "https://www.wikidata.org/wiki/Q470487"
+    },
+    {
+      "id": "Q1011953",
+      "name": "Burg Giebichenstein University of Art and Design Halle",
+      "city": "Halle (Saale)",
+      "state": "Saxony-Anhalt",
+      "type": "art academy",
+      "website": "https://www.burg-halle.de/",
+      "source": "https://www.wikidata.org/wiki/Q1011953"
+    },
+    {
+      "id": "Q1431158",
+      "name": "Campus Künzelsau - Reinhold-Würth-Hochschule",
+      "city": "Künzelsau",
+      "state": "Baden-Württemberg",
+      "type": "university of applied sciences",
+      "website": "http://www.hs-heilbronn.de/twk",
+      "source": "https://www.wikidata.org/wiki/Q1431158"
+    },
+    {
+      "id": "Q140956341",
+      "name": "Carl Gustav Carus Faculty of Medicine",
+      "city": "",
+      "state": "",
+      "type": "medical school",
+      "website": "https://tu-dresden.de/med/mf",
+      "source": "https://www.wikidata.org/wiki/Q140956341"
+    },
+    {
+      "id": "Q1047778",
+      "name": "Caspar David Friedrich Institute",
+      "city": "Greifswald",
+      "state": "Mecklenburg-Vorpommern",
+      "type": "art academy",
+      "website": "https://cdfi.uni-greifswald.de/",
+      "source": "https://www.wikidata.org/wiki/Q1047778"
+    },
+    {
+      "id": "Q1736342",
+      "name": "Catholic University of Applied Sciences Freiburg",
+      "city": "Freiburg im Breisgau",
+      "state": "Baden-Württemberg",
+      "type": "university of applied sciences",
+      "website": "http://www.kh-freiburg.de/",
+      "source": "https://www.wikidata.org/wiki/Q1736342"
+    },
+    {
+      "id": "Q872180",
+      "name": "Catholic University of Applied Sciences Mainz",
+      "city": "Mainz",
+      "state": "Rhineland-Palatinate",
+      "type": "university of applied sciences",
+      "website": "https://www.kh-mz.de/katholische-hochschule/",
+      "source": "https://www.wikidata.org/wiki/Q872180"
+    },
+    {
+      "id": "Q1736348",
+      "name": "Catholic University of Applied Social Sciences",
+      "city": "Berlin",
+      "state": "Berlin",
+      "type": "university of applied sciences",
+      "website": "https://www.khsb-berlin.de/",
+      "source": "https://www.wikidata.org/wiki/Q1736348"
+    },
+    {
+      "id": "Q315161",
+      "name": "Catholic University of Eichstätt-Ingolstadt",
+      "city": "Bavaria",
+      "state": "Bavaria",
+      "type": "church college",
+      "website": "https://www.ku.de/en/",
+      "source": "https://www.wikidata.org/wiki/Q315161"
+    },
+    {
+      "id": "Q1110267",
+      "name": "CBS International Business School",
+      "city": "Cologne",
+      "state": "North Rhine-Westphalia",
+      "type": "business school",
+      "website": "http://www.cbs-edu.de/",
+      "source": "https://www.wikidata.org/wiki/Q1110267"
+    },
+    {
+      "id": "Q1622186",
+      "name": "Center for Jewish Studies Heidelberg",
+      "city": "Heidelberg",
+      "state": "Baden-Württemberg",
+      "type": "private university",
+      "website": "http://www.hfjs.eu/",
+      "source": "https://www.wikidata.org/wiki/Q1622186"
+    },
+    {
+      "id": "Q162684",
+      "name": "Charité",
+      "city": "Berlin",
+      "state": "Berlin",
+      "type": "medical school",
+      "website": "https://www.charite.de/",
+      "source": "https://www.wikidata.org/wiki/Q162684"
+    },
+    {
+      "id": "Q110624130",
+      "name": "Charlotte Fresenius University",
+      "city": "Cologne",
+      "state": "Hamburg",
+      "type": "higher education institution",
+      "website": "https://www.charlotte-fresenius-uni.de/",
+      "source": "https://www.wikidata.org/wiki/Q110624130"
+    },
+    {
+      "id": "Q159630",
+      "name": "Chemnitz University of Technology",
+      "city": "Chemnitz",
+      "state": "Saxony",
+      "type": "public university",
+      "website": "https://www.tu-chemnitz.de/",
+      "source": "https://www.wikidata.org/wiki/Q159630"
+    },
+    {
+      "id": "Q447354",
+      "name": "Clausthal University of Technology",
+      "city": "Clausthal-Zellerfeld",
+      "state": "Lower Saxony",
+      "type": "public university",
+      "website": "http://www.tu-clausthal.de/",
+      "source": "https://www.wikidata.org/wiki/Q447354"
+    },
+    {
+      "id": "Q1622234",
+      "name": "Coburg University of Applied Sciences",
+      "city": "Coburg",
+      "state": "Bavaria",
+      "type": "public university",
+      "website": "http://www.hs-coburg.de/",
+      "source": "https://www.wikidata.org/wiki/Q1622234"
+    },
+    {
+      "id": "Q40387612",
+      "name": "CODE University of Applied Sciences",
+      "city": "Berlin",
+      "state": "Berlin",
+      "type": "private university",
+      "website": "https://code.berlin",
+      "source": "https://www.wikidata.org/wiki/Q40387612"
+    },
+    {
+      "id": "Q1622069",
+      "name": "college 21",
+      "city": "Buxtehude",
+      "state": "Lower Saxony",
+      "type": "private university",
+      "website": "http://www.hs21.de/",
+      "source": "https://www.wikidata.org/wiki/Q1622069"
+    },
+    {
+      "id": "Q1380217",
+      "name": "College of Church Music Dresden",
+      "city": "Dresden",
+      "state": "Saxony",
+      "type": "university of applied sciences",
+      "website": "http://www.kirchenmusik-dresden.de/",
+      "source": "https://www.wikidata.org/wiki/Q1380217"
+    },
+    {
+      "id": "Q1622159",
+      "name": "College of Economics for Management",
+      "city": "Mannheim",
+      "state": "Baden-Württemberg",
+      "type": "private university",
+      "website": "http://www.hdwm.de/",
+      "source": "https://www.wikidata.org/wiki/Q1622159"
+    },
+    {
+      "id": "Q1109185",
+      "name": "Collegium Borromaeum",
+      "city": "Freiburg im Breisgau",
+      "state": "Baden-Württemberg",
+      "type": "Catholic seminary",
+      "website": "http://www.cb-freiburg.de/",
+      "source": "https://www.wikidata.org/wiki/Q1109185"
+    },
+    {
+      "id": "Q1109299",
+      "name": "Collegium Willibaldicum",
+      "city": "Eichstätt",
+      "state": "Bavaria",
+      "type": "Catholic seminary",
+      "website": "https://www.priesterseminar-eichstaett.de/startseite/",
+      "source": "https://www.wikidata.org/wiki/Q1109299"
+    },
+    {
+      "id": "Q2088271",
+      "name": "Cologne University of Catholic Theology",
+      "city": "Cologne",
+      "state": "North Rhine-Westphalia",
+      "type": "university of applied sciences",
+      "website": "https://www.khkt.de/",
+      "source": "https://www.wikidata.org/wiki/Q2088271"
+    },
+    {
+      "id": "Q133304514",
+      "name": "Columbia International University Korntal",
+      "city": "",
+      "state": "",
+      "type": "university",
+      "website": "https://www.ciu.edu/ciu-korntal",
+      "source": "https://www.wikidata.org/wiki/Q133304514"
+    },
+    {
+      "id": "Q1622118",
+      "name": "Constance University of Applied Sciences",
+      "city": "Constance",
+      "state": "Baden-Württemberg",
+      "type": "public university",
+      "website": "http://www.htwg-konstanz.de/English.20.0.html",
+      "source": "https://www.wikidata.org/wiki/Q1622118"
+    },
+    {
+      "id": "Q59114",
+      "name": "Constructor University Bremen",
+      "city": "Bremen",
+      "state": "Bremen",
+      "type": "private university",
+      "website": "http://www.jacobs-university.de/",
+      "source": "https://www.wikidata.org/wiki/Q59114"
+    },
+    {
+      "id": "Q284992",
+      "name": "Darmstadt University of Applied Sciences",
+      "city": "Darmstadt",
+      "state": "Hesse",
+      "type": "higher education institution",
+      "website": "http://www.h-da.de/",
+      "source": "https://www.wikidata.org/wiki/Q284992"
+    },
+    {
+      "id": "Q66587451",
+      "name": "DBU Digital Business University of Applied Sciences",
+      "city": "",
+      "state": "",
+      "type": "private Hochschule",
+      "website": "https://dbuas.de/",
+      "source": "https://www.wikidata.org/wiki/Q66587451"
+    },
+    {
+      "id": "Q468553",
+      "name": "Deggendorf Institute of Technology",
+      "city": "Deggendorf",
+      "state": "Bavaria",
+      "type": "Technische Hochschule",
+      "website": "https://www.th-deg.de/",
+      "source": "https://www.wikidata.org/wiki/Q468553"
+    },
+    {
+      "id": "Q1183724",
+      "name": "DEKRA Media University",
+      "city": "Berlin",
+      "state": "Berlin",
+      "type": "film school",
+      "website": "https://www.dekra-hochschule.de/",
+      "source": "https://www.wikidata.org/wiki/Q1183724"
+    },
+    {
+      "id": "Q1200666",
+      "name": "Design akademie berlin, SRH Hochschule für Kommunikation und Design",
+      "city": "Berlin",
+      "state": "Berlin",
+      "type": "private Hochschule",
+      "website": "http://www.design-akademie-berlin.de",
+      "source": "https://www.wikidata.org/wiki/Q1200666"
+    },
+    {
+      "id": "Q877188",
+      "name": "Deutsche Film- und Fernsehakademie Berlin",
+      "city": "Berlin",
+      "state": "Berlin",
+      "type": "film school",
+      "website": "https://www.dffb.de/",
+      "source": "https://www.wikidata.org/wiki/Q877188"
+    },
+    {
+      "id": "Q1622185",
+      "name": "Deutsche Hochschule für Gesundheit und Sport",
+      "city": "",
+      "state": "",
+      "type": "university of applied sciences",
+      "website": "https://www.dhgs-hochschule.de",
+      "source": "https://www.wikidata.org/wiki/Q1622185"
+    },
+    {
+      "id": "Q1203121",
+      "name": "Deutsche Hochschule für Prävention und Gesundheitsmanagement",
+      "city": "Saarbrücken",
+      "state": "Saarland",
+      "type": "private university",
+      "website": "https://www.dhfpg.de/",
+      "source": "https://www.wikidata.org/wiki/Q1203121"
+    },
+    {
+      "id": "Q1262599",
+      "name": "DHBW Karlsruhe",
+      "city": "Karlsruhe",
+      "state": "Baden-Württemberg",
+      "type": "university",
+      "website": "https://www.karlsruhe.dhbw.de/",
+      "source": "https://www.wikidata.org/wiki/Q1262599"
+    },
+    {
+      "id": "Q1262616",
+      "name": "DHBW Mosbach",
+      "city": "Mosbach",
+      "state": "Baden-Württemberg",
+      "type": "Duale Hochschule",
+      "website": "http://www.dhbw-mosbach.de/",
+      "source": "https://www.wikidata.org/wiki/Q1262616"
+    },
+    {
+      "id": "Q1262612",
+      "name": "DHBW Stuttgart",
+      "city": "Stuttgart",
+      "state": "Baden-Württemberg",
+      "type": "public university",
+      "website": "http://dhbw-stuttgart.de/",
+      "source": "https://www.wikidata.org/wiki/Q1262612"
+    },
+    {
+      "id": "Q1153856",
+      "name": "Diploma Hochschule",
+      "city": "Bad Sooden-Allendorf",
+      "state": "Hesse",
+      "type": "private university",
+      "website": "http://diploma.de/",
+      "source": "https://www.wikidata.org/wiki/Q1153856"
+    },
+    {
+      "id": "Q2418934",
+      "name": "Divine Faculty of Fulda",
+      "city": "Fulda",
+      "state": "Hesse",
+      "type": "church college",
+      "website": "http://en.thf-fulda.de/",
+      "source": "https://www.wikidata.org/wiki/Q2418934"
+    },
+    {
+      "id": "Q1324675",
+      "name": "Dortmund University of Applied Sciences and Arts",
+      "city": "Dortmund",
+      "state": "North Rhine-Westphalia",
+      "type": "university of applied sciences",
+      "website": "http://www.fh-dortmund.de/",
+      "source": "https://www.wikidata.org/wiki/Q1324675"
+    },
+    {
+      "id": "Q15804334",
+      "name": "DPFA Hochschule Sachsen",
+      "city": "Leipzig",
+      "state": "Saxony",
+      "type": "university of applied sciences",
+      "website": "http://www.dpfa-hs.de/",
+      "source": "https://www.wikidata.org/wiki/Q15804334"
+    },
+    {
+      "id": "Q464752",
+      "name": "Dresden Academy of Fine Arts",
+      "city": "Dresden",
+      "state": "Saxony",
+      "type": "public university",
+      "website": "http://www.hfbk-dresden.de",
+      "source": "https://www.wikidata.org/wiki/Q464752"
+    },
+    {
+      "id": "Q1258462",
+      "name": "Dresden International University",
+      "city": "Dresden",
+      "state": "Saxony",
+      "type": "private university",
+      "website": "http://www.di-uni.de/",
+      "source": "https://www.wikidata.org/wiki/Q1258462"
+    },
+    {
+      "id": "Q1262602",
+      "name": "Duale Hochschule Baden-Württemberg Heidenheim",
+      "city": "Heidenheim an der Brenz",
+      "state": "Baden-Württemberg",
+      "type": "public university",
+      "website": "http://www.dhbw-heidenheim.de/",
+      "source": "https://www.wikidata.org/wiki/Q1262602"
+    },
+    {
+      "id": "Q18287426",
+      "name": "Duale Hochschule Baden-Württemberg Heilbronn",
+      "city": "Heilbronn",
+      "state": "Baden-Württemberg",
+      "type": "public university",
+      "website": "http://www.heilbronn.dhbw.de/",
+      "source": "https://www.wikidata.org/wiki/Q18287426"
+    },
+    {
+      "id": "Q67192217",
+      "name": "Duale Hochschule Baden-Württemberg Mosbach, Campus Bad Mergentheim",
+      "city": "Bad Mergentheim",
+      "state": "Baden-Württemberg",
+      "type": "Duale Hochschule",
+      "website": "https://www.mosbach.dhbw.de/bad-mergentheim",
+      "source": "https://www.wikidata.org/wiki/Q67192217"
+    },
+    {
+      "id": "Q1262615",
+      "name": "Duale Hochschule Baden-Württemberg Villingen-Schwenningen",
+      "city": "Baden-Württemberg",
+      "state": "Baden-Württemberg",
+      "type": "public university",
+      "website": "https://www.dhbw-vs.de/",
+      "source": "https://www.wikidata.org/wiki/Q1262615"
+    },
+    {
+      "id": "Q27973252",
+      "name": "Duale Hochschule Gera-Eisenach",
+      "city": "Gera",
+      "state": "Thuringia",
+      "type": "public university",
+      "website": "http://www.dhge.de",
+      "source": "https://www.wikidata.org/wiki/Q27973252"
+    },
+    {
+      "id": "Q80805367",
+      "name": "Duale Hochschule Schleswig-Holstein",
+      "city": "Schleswig-Holstein",
+      "state": "Schleswig-Holstein",
+      "type": "private university",
+      "website": "https://www.dhsh.de/",
+      "source": "https://www.wikidata.org/wiki/Q80805367"
+    },
+    {
+      "id": "Q533069",
+      "name": "Ducal Georgianum",
+      "city": "Munich",
+      "state": "Bavaria",
+      "type": "Catholic seminary",
+      "website": "http://www.herzoglichesgeorgianum.de/",
+      "source": "https://www.wikidata.org/wiki/Q533069"
+    },
+    {
+      "id": "Q123488072",
+      "name": "DVV International",
+      "city": "",
+      "state": "",
+      "type": "higher education institution",
+      "website": "https://www.dvv-international.de",
+      "source": "https://www.wikidata.org/wiki/Q123488072"
+    },
+    {
+      "id": "Q1262310",
+      "name": "EBC Hochschule",
+      "city": "Hamburg",
+      "state": "Hamburg",
+      "type": "business school",
+      "website": "http://www.ebc-hochschule.de/",
+      "source": "https://www.wikidata.org/wiki/Q1262310"
+    },
+    {
+      "id": "Q1622244",
+      "name": "Eberswalde University for Sustainable Development",
+      "city": "Eberswalde",
+      "state": "Brandenburg",
+      "type": "public university",
+      "website": "http://www.hnee.de",
+      "source": "https://www.wikidata.org/wiki/Q1622244"
+    },
+    {
+      "id": "Q316272",
+      "name": "EBS Universität",
+      "city": "Rheingau",
+      "state": "Hesse",
+      "type": "private university",
+      "website": "http://www.ebs.edu/",
+      "source": "https://www.wikidata.org/wiki/Q316272"
+    },
+    {
+      "id": "Q1274007",
+      "name": "EBZ Business School",
+      "city": "Bochum",
+      "state": "North Rhine-Westphalia",
+      "type": "university of applied sciences",
+      "website": "http://www.ebz-business-school.de/",
+      "source": "https://www.wikidata.org/wiki/Q1274007"
+    },
+    {
+      "id": "Q1756635",
+      "name": "École pour l'informatique et les nouvelles technologies",
+      "city": "",
+      "state": "",
+      "type": "higher education institution",
+      "website": "http://www.epitech.eu/",
+      "source": "https://www.wikidata.org/wiki/Q1756635"
+    },
+    {
+      "id": "Q2478851",
+      "name": "Environment Campus Birkenfeld",
+      "city": "Hoppstädten-Weiersbach",
+      "state": "Rhineland-Palatinate",
+      "type": "university of applied sciences",
+      "website": "http://www.umwelt-campus.de/ucb/index.php?id=home&L=1",
+      "source": "https://www.wikidata.org/wiki/Q2478851"
+    },
+    {
+      "id": "Q895796",
+      "name": "Ernst Busch Academy of Dramatic Arts",
+      "city": "Berlin",
+      "state": "Berlin",
+      "type": "art academy",
+      "website": "https://www.hfs-berlin.de/",
+      "source": "https://www.wikidata.org/wiki/Q895796"
+    },
+    {
+      "id": "Q870659",
+      "name": "ESB Business School",
+      "city": "Reutlingen",
+      "state": "Baden-Württemberg",
+      "type": "business school",
+      "website": "https://www.esb-business-school.de/",
+      "source": "https://www.wikidata.org/wiki/Q870659"
+    },
+    {
+      "id": "Q29293",
+      "name": "ESCP Business School",
+      "city": "Berlin",
+      "state": "Berlin",
+      "type": "private university",
+      "website": "https://escp.eu/",
+      "source": "https://www.wikidata.org/wiki/Q29293"
+    },
+    {
+      "id": "Q1622101",
+      "name": "Esslingen University of Applied Sciences",
+      "city": "Esslingen am Neckar",
+      "state": "Baden-Württemberg",
+      "type": "public university",
+      "website": "http://www.hs-esslingen.de",
+      "source": "https://www.wikidata.org/wiki/Q1622101"
+    },
+    {
+      "id": "Q5413406",
+      "name": "EU Business School",
+      "city": "Geneva",
+      "state": "Bavaria",
+      "type": "university",
+      "website": "https://www.euruni.edu",
+      "source": "https://www.wikidata.org/wiki/Q5413406"
+    },
+    {
+      "id": "Q118258797",
+      "name": "Europäische Hochschule für Innovation und Perspektive",
+      "city": "Backnang",
+      "state": "Baden-Württemberg",
+      "type": "higher education institution",
+      "website": "https://www.ehip.eu/",
+      "source": "https://www.wikidata.org/wiki/Q118258797"
+    },
+    {
+      "id": "Q48756801",
+      "name": "Europäisches Institut für Humanwissenschaften",
+      "city": "Frankfurt",
+      "state": "Hesse",
+      "type": "Hochschule",
+      "website": "http://eihw.de/",
+      "source": "https://www.wikidata.org/wiki/Q48756801"
+    },
+    {
+      "id": "Q1377302",
+      "name": "European Fernhochschule Hamburg",
+      "city": "Hamburg",
+      "state": "Hamburg",
+      "type": "private Hochschule",
+      "website": "https://www.euro-fh.de/",
+      "source": "https://www.wikidata.org/wiki/Q1377302"
+    },
+    {
+      "id": "Q135930158",
+      "name": "European Open University",
+      "city": "Hambühren",
+      "state": "Lower Saxony",
+      "type": "university",
+      "website": "https://academyeurope.eu/",
+      "source": "https://www.wikidata.org/wiki/Q135930158"
+    },
+    {
+      "id": "Q569528",
+      "name": "European School of Management and Technology",
+      "city": "Berlin",
+      "state": "Berlin",
+      "type": "private university",
+      "website": "https://esmt.berlin/",
+      "source": "https://www.wikidata.org/wiki/Q569528"
+    },
+    {
+      "id": "Q1377296",
+      "name": "European University of Applied Sciences",
+      "city": "Brühl",
+      "state": "North Rhine-Westphalia",
+      "type": "university of applied sciences",
+      "website": "http://www.eufh.de/",
+      "source": "https://www.wikidata.org/wiki/Q1377296"
+    },
+    {
+      "id": "Q149481",
+      "name": "European University Viadrina",
+      "city": "Frankfurt (Oder)",
+      "state": "Brandenburg",
+      "type": "public university",
+      "website": "https://www.europa-uni.de",
+      "source": "https://www.wikidata.org/wiki/Q149481"
+    },
+    {
+      "id": "Q1380223",
+      "name": "Evangelical School of Social Work & Diakonie",
+      "city": "Hamburg",
+      "state": "Hamburg",
+      "type": "higher education institution",
+      "website": "http://www.ev-hochschule-hh.de/",
+      "source": "https://www.wikidata.org/wiki/Q1380223"
+    },
+    {
+      "id": "Q1380207",
+      "name": "Evangelische Hochschule Darmstadt",
+      "city": "Darmstadt",
+      "state": "Hesse",
+      "type": "church college",
+      "website": "http://www.eh-darmstadt.de/",
+      "source": "https://www.wikidata.org/wiki/Q1380207"
+    },
+    {
+      "id": "Q1380220",
+      "name": "Evangelische Hochschule für Kirchenmusik Tübingen",
+      "city": "Tübingen",
+      "state": "Baden-Württemberg",
+      "type": "conservatory",
+      "website": "https://www.kirchenmusikhochschule.de/",
+      "source": "https://www.wikidata.org/wiki/Q1380220"
+    },
+    {
+      "id": "Q61943383",
+      "name": "Fachhochschule Clara Hoffbauer Potsdam",
+      "city": "Potsdam",
+      "state": "Brandenburg",
+      "type": "private university",
+      "website": "https://www.fhchp.de/",
+      "source": "https://www.wikidata.org/wiki/Q61943383"
+    },
+    {
+      "id": "Q1391254",
+      "name": "Fachhochschule der Wirtschaft",
+      "city": "Bergisch Gladbach",
+      "state": "North Rhine-Westphalia",
+      "type": "university of applied sciences",
+      "website": "https://www.fhdw.de/",
+      "source": "https://www.wikidata.org/wiki/Q1391254"
+    },
+    {
+      "id": "Q1391252",
+      "name": "Fachhochschule des Bundes für öffentliche Verwaltung",
+      "city": "Brühl",
+      "state": "North Rhine-Westphalia",
+      "type": "public university",
+      "website": "http://www.hsbund.de/",
+      "source": "https://www.wikidata.org/wiki/Q1391252"
+    },
+    {
+      "id": "Q1391258",
+      "name": "Fachhochschule des Mittelstands",
+      "city": "North Rhine-Westphalia",
+      "state": "North Rhine-Westphalia",
+      "type": "university of applied sciences",
+      "website": "http://www.fh-mittelstand.de/",
+      "source": "https://www.wikidata.org/wiki/Q1391258"
+    },
+    {
+      "id": "Q1391187",
+      "name": "Fachhochschule Dresden",
+      "city": "Dresden",
+      "state": "Saxony",
+      "type": "private university",
+      "website": "http://www.fh-dresden.eu/",
+      "source": "https://www.wikidata.org/wiki/Q1391187"
+    },
+    {
+      "id": "Q1391282",
+      "name": "Fachhochschule für die Wirtschaft",
+      "city": "Hanover",
+      "state": "Lower Saxony",
+      "type": "private university",
+      "website": "http://www.fhdw-hannover.de/",
+      "source": "https://www.wikidata.org/wiki/Q1391282"
+    },
+    {
+      "id": "Q1257534",
+      "name": "Fachhochschule für Finanzen Brandenburg",
+      "city": "Königs Wusterhausen",
+      "state": "Brandenburg",
+      "type": "university of applied sciences",
+      "website": "https://fhf.brandenburg.de/",
+      "source": "https://www.wikidata.org/wiki/Q1257534"
+    },
+    {
+      "id": "Q1391267",
+      "name": "Fachhochschule für Rechtspflege NRW",
+      "city": "Bad Münstereifel",
+      "state": "North Rhine-Westphalia",
+      "type": "university of applied sciences",
+      "website": "http://www.fhr.nrw.de/",
+      "source": "https://www.wikidata.org/wiki/Q1391267"
+    },
+    {
+      "id": "Q17123097",
+      "name": "Fachhochschule für Sport und Management Potsdam",
+      "city": "Potsdam",
+      "state": "Brandenburg",
+      "type": "private university",
+      "website": "https://www.fhsmp.de/",
+      "source": "https://www.wikidata.org/wiki/Q17123097"
+    },
+    {
+      "id": "Q1391274",
+      "name": "Fachhochschule für Verwaltung des Saarlandes",
+      "city": "Quierschied",
+      "state": "Saarland",
+      "type": "Fachhochschule für öffentliche Verwaltung",
+      "website": "https://www.saarland.de/fhsv/DE/home/home_node.html",
+      "source": "https://www.wikidata.org/wiki/Q1391274"
+    },
+    {
+      "id": "Q1391213",
+      "name": "Fachhochschule Ottersberg",
+      "city": "Ottersberg",
+      "state": "Lower Saxony",
+      "type": "private university",
+      "website": "http://www.hks-ottersberg.de//",
+      "source": "https://www.wikidata.org/wiki/Q1391213"
+    },
+    {
+      "id": "Q1391235",
+      "name": "Fachhochschule Westküste",
+      "city": "Schleswig-Holstein",
+      "state": "Schleswig-Holstein",
+      "type": "public university",
+      "website": "http://www.fh-westkueste.de/",
+      "source": "https://www.wikidata.org/wiki/Q1391235"
+    },
+    {
+      "id": "Q466748",
+      "name": "Federal Academy for Security Policy",
+      "city": "Berlin",
+      "state": "Berlin",
+      "type": "military academy",
+      "website": "https://www.baks.bund.de/",
+      "source": "https://www.wikidata.org/wiki/Q466748"
+    },
+    {
+      "id": "Q687017",
+      "name": "FernUniversität in Hagen",
+      "city": "Hagen",
+      "state": "North Rhine-Westphalia",
+      "type": "public university",
+      "website": "https://www.fernuni-hagen.de/",
+      "source": "https://www.wikidata.org/wiki/Q687017"
+    },
+    {
+      "id": "Q1388301",
+      "name": "FH Aachen",
+      "city": "Aachen",
+      "state": "North Rhine-Westphalia",
+      "type": "public university",
+      "website": "https://www.fh-aachen.de/",
+      "source": "https://www.wikidata.org/wiki/Q1388301"
+    },
+    {
+      "id": "Q1391246",
+      "name": "FH Diakonie, Bielefeld",
+      "city": "Bielefeld",
+      "state": "North Rhine-Westphalia",
+      "type": "university of applied sciences",
+      "website": "https://www.fh-diakonie.de/",
+      "source": "https://www.wikidata.org/wiki/Q1391246"
+    },
+    {
+      "id": "Q554425",
+      "name": "FH Münster",
+      "city": "Münster",
+      "state": "North Rhine-Westphalia",
+      "type": "public university",
+      "website": "https://www.fh-muenster.de/",
+      "source": "https://www.wikidata.org/wiki/Q554425"
+    },
+    {
+      "id": "Q880577",
+      "name": "Film Academy Baden-Württemberg",
+      "city": "Ludwigsburg",
+      "state": "Baden-Württemberg",
+      "type": "public university",
+      "website": "http://www.filmakademie.de/",
+      "source": "https://www.wikidata.org/wiki/Q880577"
+    },
+    {
+      "id": "Q1414283",
+      "name": "Filmarche",
+      "city": "Neukölln",
+      "state": "Berlin",
+      "type": "film school",
+      "website": "http://www.filmarche.de/",
+      "source": "https://www.wikidata.org/wiki/Q1414283"
+    },
+    {
+      "id": "Q328274",
+      "name": "Flensburg University of Applied Sciences",
+      "city": "Flensburg",
+      "state": "Schleswig-Holstein",
+      "type": "public university",
+      "website": "https://hs-flensburg.de/",
+      "source": "https://www.wikidata.org/wiki/Q328274"
+    },
+    {
+      "id": "Q521612",
+      "name": "Folkwang University of the Arts",
+      "city": "Dortmund",
+      "state": "North Rhine-Westphalia",
+      "type": "university",
+      "website": "http://www.folkwang-uni.de/",
+      "source": "https://www.wikidata.org/wiki/Q521612"
+    },
+    {
+      "id": "Q55156",
+      "name": "FOM University of Applied Sciences",
+      "city": "Essen",
+      "state": "North Rhine-Westphalia",
+      "type": "private Hochschule",
+      "website": "https://www.fom-international.com/",
+      "source": "https://www.wikidata.org/wiki/Q55156"
+    },
+    {
+      "id": "Q115793497",
+      "name": "Fotoakademie-Koeln",
+      "city": "Cologne",
+      "state": "North Rhine-Westphalia",
+      "type": "art academy",
+      "website": "https://www.fotoakademie-koeln.de/",
+      "source": "https://www.wikidata.org/wiki/Q115793497"
+    },
+    {
+      "id": "Q118884",
+      "name": "Franco-German Legal Centre",
+      "city": "Saarbrücken",
+      "state": "Saarland",
+      "type": "public university",
+      "website": "https://www.cjfa.eu/",
+      "source": "https://www.wikidata.org/wiki/Q118884"
+    },
+    {
+      "id": "Q1444899",
+      "name": "Frankfurt School of Finance & Management",
+      "city": "Frankfurt",
+      "state": "Hesse",
+      "type": "business school",
+      "website": "https://www.frankfurt-school.de/home",
+      "source": "https://www.wikidata.org/wiki/Q1444899"
+    },
+    {
+      "id": "Q812648",
+      "name": "Frankfurt University of Applied Sciences",
+      "city": "Frankfurt",
+      "state": "Hesse",
+      "type": "university of applied sciences",
+      "website": "https://www.frankfurt-university.de/",
+      "source": "https://www.wikidata.org/wiki/Q812648"
+    },
+    {
+      "id": "Q317796",
+      "name": "Frankfurt University of Music and Performing Arts",
+      "city": "Frankfurt",
+      "state": "Hesse",
+      "type": "public university",
+      "website": "http://www.hfmdk-frankfurt.info/",
+      "source": "https://www.wikidata.org/wiki/Q317796"
+    },
+    {
+      "id": "Q67454669",
+      "name": "Free Art Academy Nuertingen",
+      "city": "Nürtingen",
+      "state": "Baden-Württemberg",
+      "type": "art academy",
+      "website": "https://fkn-kunstakademie.de/",
+      "source": "https://www.wikidata.org/wiki/Q67454669"
+    },
+    {
+      "id": "Q689854",
+      "name": "Freiberg University of Mining and Technology",
+      "city": "Freiberg",
+      "state": "Saxony",
+      "type": "public university",
+      "website": "https://tu-freiberg.de/",
+      "source": "https://www.wikidata.org/wiki/Q689854"
+    },
+    {
+      "id": "Q1622192",
+      "name": "Freiburg University of Arts and Applied Sciences",
+      "city": "Freiburg im Breisgau",
+      "state": "Baden-Württemberg",
+      "type": "art academy",
+      "website": "http://hkdm.de/",
+      "source": "https://www.wikidata.org/wiki/Q1622192"
+    },
+    {
+      "id": "Q1453965",
+      "name": "Freie Hochschule für Grafik-Design & Bildende Kunst Freiburg",
+      "city": "Freiburg im Breisgau",
+      "state": "Baden-Württemberg",
+      "type": "university of applied sciences",
+      "website": "http://www.freie-hochschule-freiburg.de",
+      "source": "https://www.wikidata.org/wiki/Q1453965"
+    },
+    {
+      "id": "Q1453964",
+      "name": "Freie Hochschule Stuttgart",
+      "city": "Stuttgart",
+      "state": "Baden-Württemberg",
+      "type": "private university",
+      "website": "http://www.freie-hochschule-stuttgart.de/",
+      "source": "https://www.wikidata.org/wiki/Q1453964"
+    },
+    {
+      "id": "Q153006",
+      "name": "Freie Universität Berlin",
+      "city": "Berlin",
+      "state": "Berlin",
+      "type": "comprehensive university",
+      "website": "https://www.fu-berlin.de/",
+      "source": "https://www.wikidata.org/wiki/Q153006"
+    },
+    {
+      "id": "Q538520",
+      "name": "Friedensau Adventist University",
+      "city": "Möckern",
+      "state": "Saxony-Anhalt",
+      "type": "university of applied sciences",
+      "website": "https://www.thh-friedensau.de/",
+      "source": "https://www.wikidata.org/wiki/Q538520"
+    },
+    {
+      "id": "Q453821",
+      "name": "Fulda University of Applied Sciences",
+      "city": "Fulda",
+      "state": "Hesse",
+      "type": "public university",
+      "website": "http://www.hs-fulda.de/",
+      "source": "https://www.wikidata.org/wiki/Q453821"
+    },
+    {
+      "id": "Q529572",
+      "name": "Furtwangen University",
+      "city": "Furtwangen im Schwarzwald",
+      "state": "Baden-Württemberg",
+      "type": "university of applied sciences",
+      "website": "https://www.hs-furtwangen.de/",
+      "source": "https://www.wikidata.org/wiki/Q529572"
+    },
+    {
+      "id": "Q15811164",
+      "name": "GA Hochschule",
+      "city": "Berlin",
+      "state": "Berlin",
+      "type": "university of applied sciences",
+      "website": "http://www.ga-hochschule.de/",
+      "source": "https://www.wikidata.org/wiki/Q15811164"
+    },
+    {
+      "id": "Q122865100",
+      "name": "German International University",
+      "city": "Berlin",
+      "state": "Berlin",
+      "type": "private university",
+      "website": "https://giu-berlin.de/",
+      "source": "https://www.wikidata.org/wiki/Q122865100"
+    },
+    {
+      "id": "Q1514069",
+      "name": "German open Business School",
+      "city": "Berlin",
+      "state": "Berlin",
+      "type": "university of applied sciences",
+      "website": "http://www.go-bs.de/",
+      "source": "https://www.wikidata.org/wiki/Q1514069"
+    },
+    {
+      "id": "Q1203113",
+      "name": "German Police Academy",
+      "city": "Münster",
+      "state": "North Rhine-Westphalia",
+      "type": "university of applied sciences",
+      "website": "http://www.dhpol.de",
+      "source": "https://www.wikidata.org/wiki/Q1203113"
+    },
+    {
+      "id": "Q315229",
+      "name": "German Sport University Cologne",
+      "city": "",
+      "state": "",
+      "type": "public university",
+      "website": "https://www.dshs-koeln.de/",
+      "source": "https://www.wikidata.org/wiki/Q315229"
+    },
+    {
+      "id": "Q22963",
+      "name": "German University of Administrative Sciences Speyer",
+      "city": "Speyer",
+      "state": "Rhineland-Palatinate",
+      "type": "public university",
+      "website": "https://www.uni-speyer.de/",
+      "source": "https://www.wikidata.org/wiki/Q22963"
+    },
+    {
+      "id": "Q1622148",
+      "name": "German University of Applied Labour Studies",
+      "city": "Schwerin",
+      "state": "Mecklenburg-Vorpommern",
+      "type": "private university",
+      "website": "http://www.hdba.de/",
+      "source": "https://www.wikidata.org/wiki/Q1622148"
+    },
+    {
+      "id": "Q133538136",
+      "name": "German University of Digital Science",
+      "city": "Potsdam",
+      "state": "Brandenburg",
+      "type": "university",
+      "website": "https://german-uds.de/",
+      "source": "https://www.wikidata.org/wiki/Q133538136"
+    },
+    {
+      "id": "Q1454033",
+      "name": "Giessen School of Theology",
+      "city": "Giessen",
+      "state": "Hesse",
+      "type": "private university",
+      "website": "http://www.fthgiessen.de/",
+      "source": "https://www.wikidata.org/wiki/Q1454033"
+    },
+    {
+      "id": "Q1485676",
+      "name": "Gisma University of Applied Sciences",
+      "city": "Potsdam",
+      "state": "Brandenburg",
+      "type": "private university",
+      "website": "https://www.gisma.com/",
+      "source": "https://www.wikidata.org/wiki/Q1485676"
+    },
+    {
+      "id": "Q5577181",
+      "name": "Goethe Business School",
+      "city": "Frankfurt",
+      "state": "Hesse",
+      "type": "business school",
+      "website": "http://www.goethe-business-school.de",
+      "source": "https://www.wikidata.org/wiki/Q5577181"
+    },
+    {
+      "id": "Q50662",
+      "name": "Goethe University Frankfurt",
+      "city": "Frankfurt",
+      "state": "Hesse",
+      "type": "public university",
+      "website": "https://www.goethe-university-frankfurt.de/",
+      "source": "https://www.wikidata.org/wiki/Q50662"
+    },
+    {
+      "id": "Q101262643",
+      "name": "Goethe-Universität Frankfurt am Main Fachbereich 16 Medizin",
+      "city": "",
+      "state": "",
+      "type": "medical school",
+      "website": "https://www.uni-frankfurt.de/54233767",
+      "source": "https://www.wikidata.org/wiki/Q101262643"
+    },
+    {
+      "id": "Q5592027",
+      "name": "Graduate School Lübeck",
+      "city": "Lübeck",
+      "state": "Schleswig-Holstein",
+      "type": "university",
+      "website": "http://www.gradschool.uni-luebeck.de",
+      "source": "https://www.wikidata.org/wiki/Q5592027"
+    },
+    {
+      "id": "Q1541259",
+      "name": "Graduate School Rhein-Neckar",
+      "city": "Ludwigshafen",
+      "state": "Rhineland-Palatinate",
+      "type": "university of applied sciences",
+      "website": "http://www.gsrn.de",
+      "source": "https://www.wikidata.org/wiki/Q1541259"
+    },
+    {
+      "id": "Q119439614",
+      "name": "GU - Deutsche Hochschule für angewandte Wissenschaften",
+      "city": "Potsdam",
+      "state": "Brandenburg",
+      "type": "private Hochschule",
+      "website": "https://gu-hochschule.de/",
+      "source": "https://www.wikidata.org/wiki/Q119439614"
+    },
+    {
+      "id": "Q1567759",
+      "name": "HafenCity University Hamburg",
+      "city": "Hamburg",
+      "state": "Hamburg",
+      "type": "public university",
+      "website": "https://www.hcu-hamburg.de",
+      "source": "https://www.wikidata.org/wiki/Q1567759"
+    },
+    {
+      "id": "Q1572917",
+      "name": "Hamburg Media School",
+      "city": "Hamburg-Nord",
+      "state": "Hamburg",
+      "type": "journalism school",
+      "website": "https://www.hamburgmediaschool.com/",
+      "source": "https://www.wikidata.org/wiki/Q1572917"
+    },
+    {
+      "id": "Q913987",
+      "name": "Hamburg University of Applied Sciences",
+      "city": "Hamburg",
+      "state": "Hamburg",
+      "type": "university of applied sciences",
+      "website": "https://www.haw-hamburg.de/",
+      "source": "https://www.wikidata.org/wiki/Q913987"
+    },
+    {
+      "id": "Q700824",
+      "name": "Hamburg University of Music and Drama",
+      "city": "Hamburg",
+      "state": "Hamburg",
+      "type": "conservatory",
+      "website": "https://www.hfmt-hamburg.de/",
+      "source": "https://www.wikidata.org/wiki/Q700824"
+    },
+    {
+      "id": "Q1060",
+      "name": "Hamburg University of Technology",
+      "city": "Harburg",
+      "state": "Hamburg",
+      "type": "public university",
+      "website": "https://www.tuhh.de/",
+      "source": "https://www.wikidata.org/wiki/Q1060"
+    },
+    {
+      "id": "Q1505130",
+      "name": "Hamm-Lippstadt University of Applied Sciences",
+      "city": "Hamm",
+      "state": "North Rhine-Westphalia",
+      "type": "public university",
+      "website": "http://www.hshl.de/",
+      "source": "https://www.wikidata.org/wiki/Q1505130"
+    },
+    {
+      "id": "Q679945",
+      "name": "Handelshochschule Leipzig",
+      "city": "Leipzig",
+      "state": "Saxony",
+      "type": "private university",
+      "website": "http://www.hhl.de/",
+      "source": "https://www.wikidata.org/wiki/Q679945"
+    },
+    {
+      "id": "Q911561",
+      "name": "Hannover Medical School",
+      "city": "Buchholz-Kleefeld",
+      "state": "Lower Saxony",
+      "type": "public university",
+      "website": "https://www.mhh.de/",
+      "source": "https://www.wikidata.org/wiki/Q911561"
+    },
+    {
+      "id": "Q569460",
+      "name": "Hanns Eisler Music School Berlin",
+      "city": "Berlin",
+      "state": "Berlin",
+      "type": "conservatory",
+      "website": "https://www.hfm-berlin.de/",
+      "source": "https://www.wikidata.org/wiki/Q569460"
+    },
+    {
+      "id": "Q455331",
+      "name": "Hanover University of Music, Drama and Media",
+      "city": "Mitte",
+      "state": "Lower Saxony",
+      "type": "conservatory",
+      "website": "https://www.hmtm-hannover.de/",
+      "source": "https://www.wikidata.org/wiki/Q455331"
+    },
+    {
+      "id": "Q1622105",
+      "name": "Harz University of Applied Sciences",
+      "city": "Wernigerode",
+      "state": "Saxony-Anhalt",
+      "type": "public university",
+      "website": "https://www.hs-harz.de/",
+      "source": "https://www.wikidata.org/wiki/Q1622105"
+    },
+    {
+      "id": "Q1562772",
+      "name": "HAWK University of Applied Sciences and Arts",
+      "city": "Hildesheim",
+      "state": "Lower Saxony",
+      "type": "public university",
+      "website": "https://www.hawk.de/",
+      "source": "https://www.wikidata.org/wiki/Q1562772"
+    },
+    {
+      "id": "Q151510",
+      "name": "Heidelberg University",
+      "city": "Heidelberg",
+      "state": "Baden-Württemberg",
+      "type": "comprehensive university",
+      "website": "https://www.uni-heidelberg.de/",
+      "source": "https://www.wikidata.org/wiki/Q151510"
+    },
+    {
+      "id": "Q5698722",
+      "name": "Heidelberg University Faculty of Medicine in Mannheim",
+      "city": "Mannheim",
+      "state": "Baden-Württemberg",
+      "type": "medical school",
+      "website": "https://www.umm.uni-heidelberg.de/",
+      "source": "https://www.wikidata.org/wiki/Q5698722"
+    },
+    {
+      "id": "Q1429906",
+      "name": "Heidelberg University of Education",
+      "city": "Heidelberg",
+      "state": "Baden-Württemberg",
+      "type": "public university",
+      "website": "http://www.ph-heidelberg.de/",
+      "source": "https://www.wikidata.org/wiki/Q1429906"
+    },
+    {
+      "id": "Q1513916",
+      "name": "Heilbronn Business School",
+      "city": "Heilbronn",
+      "state": "Baden-Württemberg",
+      "type": "university of applied sciences",
+      "website": "http://www.ggs.de/",
+      "source": "https://www.wikidata.org/wiki/Q1513916"
+    },
+    {
+      "id": "Q327693",
+      "name": "Heilbronn University of Applied Sciences",
+      "city": "Heilbronn",
+      "state": "Baden-Württemberg",
+      "type": "public university",
+      "website": "http://www.hs-heilbronn.de/",
+      "source": "https://www.wikidata.org/wiki/Q327693"
+    },
+    {
+      "id": "Q530991",
+      "name": "Helmut Schmidt University",
+      "city": "Hamburg",
+      "state": "Hamburg",
+      "type": "public university",
+      "website": "https://www.hsu-hh.de/",
+      "source": "https://www.wikidata.org/wiki/Q530991"
+    },
+    {
+      "id": "Q1391271",
+      "name": "Hermannsburg Mission Seminary",
+      "city": "Südheide",
+      "state": "Lower Saxony",
+      "type": "private university",
+      "website": "http://www.fh-hermannsburg.de/",
+      "source": "https://www.wikidata.org/wiki/Q1391271"
+    },
+    {
+      "id": "Q317156",
+      "name": "Hertie School",
+      "city": "Berlin",
+      "state": "Berlin",
+      "type": "private university",
+      "website": "http://www.hertie-school.org/",
+      "source": "https://www.wikidata.org/wiki/Q317156"
+    },
+    {
+      "id": "Q1481465",
+      "name": "Hesse State University of Applied Sciences for Police and Public Administration Management",
+      "city": "",
+      "state": "",
+      "type": "public university",
+      "website": "https://hoems.hessen.de",
+      "source": "https://www.wikidata.org/wiki/Q1481465"
+    },
+    {
+      "id": "Q1563580",
+      "name": "HFH · Hamburger Fern-Hochschule",
+      "city": "Hamburg",
+      "state": "Hamburg",
+      "type": "private Hochschule",
+      "website": "https://www.hfh-fernstudium.de",
+      "source": "https://www.wikidata.org/wiki/Q1563580"
+    },
+    {
+      "id": "Q84941339",
+      "name": "HMU Health and Medical University",
+      "city": "Potsdam",
+      "state": "Brandenburg",
+      "type": "private university",
+      "website": "https://www.health-and-medical-university.de/",
+      "source": "https://www.wikidata.org/wiki/Q84941339"
+    },
+    {
+      "id": "Q466029",
+      "name": "Hoch Conservatory",
+      "city": "Frankfurt",
+      "state": "Hesse",
+      "type": "conservatory",
+      "website": "http://www.dr-hochs.de/",
+      "source": "https://www.wikidata.org/wiki/Q466029"
+    },
+    {
+      "id": "Q1622074",
+      "name": "Hochschule Anhalt",
+      "city": "Köthen",
+      "state": "Saxony-Anhalt",
+      "type": "higher education institution",
+      "website": "https://www.hs-anhalt.de",
+      "source": "https://www.wikidata.org/wiki/Q1622074"
+    },
+    {
+      "id": "Q1391181",
+      "name": "Hochschule Bielefeld - University of Applied Sciences and Arts",
+      "city": "Bielefeld",
+      "state": "North Rhine-Westphalia",
+      "type": "public university",
+      "website": "https://www.hsbi.de/",
+      "source": "https://www.wikidata.org/wiki/Q1391181"
+    },
+    {
+      "id": "Q19964930",
+      "name": "Hochschule der bildenden Künste Essen",
+      "city": "Essen",
+      "state": "North Rhine-Westphalia",
+      "type": "private university",
+      "website": "http://www.hbk-essen.de/",
+      "source": "https://www.wikidata.org/wiki/Q19964930"
+    },
+    {
+      "id": "Q1622151",
+      "name": "Hochschule der Deutschen Bundesbank",
+      "city": "Hachenburg",
+      "state": "Rhineland-Palatinate",
+      "type": "private university",
+      "website": "https://www.hochschule-bundesbank.de",
+      "source": "https://www.wikidata.org/wiki/Q1622151"
+    },
+    {
+      "id": "Q1622174",
+      "name": "Hochschule der Deutschen Gesetzlichen Unfallversicherung",
+      "city": "Bad Hersfeld",
+      "state": "Hesse",
+      "type": "private university",
+      "website": "https://www.dguv.de/hochschule/",
+      "source": "https://www.wikidata.org/wiki/Q1622174"
+    },
+    {
+      "id": "Q1391247",
+      "name": "Hochschule der Polizei des Landes Brandenburg",
+      "city": "Oranienburg",
+      "state": "Brandenburg",
+      "type": "university of applied sciences",
+      "website": "https://hpolbb.de/",
+      "source": "https://www.wikidata.org/wiki/Q1391247"
+    },
+    {
+      "id": "Q322886",
+      "name": "Hochschule Düsseldorf",
+      "city": "Düsseldorf",
+      "state": "North Rhine-Westphalia",
+      "type": "public university",
+      "website": "https://www.hs-duesseldorf.de/",
+      "source": "https://www.wikidata.org/wiki/Q322886"
+    },
+    {
+      "id": "Q1622096",
+      "name": "Hochschule Emden / Leer",
+      "city": "Lower Saxony",
+      "state": "Lower Saxony",
+      "type": "public university",
+      "website": "http://www.hs-emden-leer.de/",
+      "source": "https://www.wikidata.org/wiki/Q1622096"
+    },
+    {
+      "id": "Q1622099",
+      "name": "Hochschule Fresenius University of Applied Sciences",
+      "city": "New York City",
+      "state": "Saxony",
+      "type": "private university",
+      "website": "http://www.hs-fresenius.de/en/",
+      "source": "https://www.wikidata.org/wiki/Q1622099"
+    },
+    {
+      "id": "Q64142808",
+      "name": "Hochschule für Allgemeine Innere Verwaltung Hof",
+      "city": "Hof",
+      "state": "Bavaria",
+      "type": "higher education institution",
+      "website": "https://aiv.hfoed.de/de/startseite.html",
+      "source": "https://www.wikidata.org/wiki/Q64142808"
+    },
+    {
+      "id": "Q21040612",
+      "name": "Hochschule für angewandte Pädagogik",
+      "city": "Berlin",
+      "state": "Berlin",
+      "type": "private university",
+      "website": "http://www.hsap.de/",
+      "source": "https://www.wikidata.org/wiki/Q21040612"
+    },
+    {
+      "id": "Q1622237",
+      "name": "Hochschule für bildende Künste Hamburg",
+      "city": "Hamburg-Nord",
+      "state": "Hamburg",
+      "type": "art academy",
+      "website": "http://www.hfbk-hamburg.de/",
+      "source": "https://www.wikidata.org/wiki/Q1622237"
+    },
+    {
+      "id": "Q1622241",
+      "name": "Hochschule für evangelische Kirchenmusik Bayreuth",
+      "city": "Bayreuth",
+      "state": "Bavaria",
+      "type": "art academy",
+      "website": "https://www.hfk-bayreuth.de/",
+      "source": "https://www.wikidata.org/wiki/Q1622241"
+    },
+    {
+      "id": "Q1391265",
+      "name": "Hochschule für Finanzen Rheinland-Pfalz",
+      "city": "Edenkoben",
+      "state": "Rhineland-Palatinate",
+      "type": "public university",
+      "website": "http://www.fachhochschule-edenkoben.de/",
+      "source": "https://www.wikidata.org/wiki/Q1391265"
+    },
+    {
+      "id": "Q20828998",
+      "name": "Hochschule für Gesellschaftsgestaltung",
+      "city": "Koblenz",
+      "state": "Rhineland-Palatinate",
+      "type": "private university",
+      "website": "https://www.hfgg.de",
+      "source": "https://www.wikidata.org/wiki/Q20828998"
+    },
+    {
+      "id": "Q1622179",
+      "name": "Hochschule für Gestaltung Offenbach",
+      "city": "Offenbach am Main",
+      "state": "Hesse",
+      "type": "art academy",
+      "website": "http://www.hfg-offenbach.de/",
+      "source": "https://www.wikidata.org/wiki/Q1622179"
+    },
+    {
+      "id": "Q248702",
+      "name": "Hochschule für Gestaltung Schwäbisch Gmünd",
+      "city": "Schwäbisch Gmünd",
+      "state": "Baden-Württemberg",
+      "type": "public university",
+      "website": "http://www.hfg-gmuend.de",
+      "source": "https://www.wikidata.org/wiki/Q248702"
+    },
+    {
+      "id": "Q123462150",
+      "name": "Hochschule für Gesundheitsfachberufe Eberswalde",
+      "city": "Eberswalde",
+      "state": "Brandenburg",
+      "type": "higher education institution",
+      "website": "https://www.gesundheit-hochschule.de/",
+      "source": "https://www.wikidata.org/wiki/Q123462150"
+    },
+    {
+      "id": "Q1545954",
+      "name": "Hochschule für internationale Wirtschaft und Logistik",
+      "city": "Bremen",
+      "state": "Bremen",
+      "type": "university of applied sciences",
+      "website": "http://www.iubh-dualesstudium.de",
+      "source": "https://www.wikidata.org/wiki/Q1545954"
+    },
+    {
+      "id": "Q1622189",
+      "name": "Hochschule für Katholische Kirchenmusik und Musikpädagogik Regensburg",
+      "city": "Regensburg",
+      "state": "Bavaria",
+      "type": "university of applied sciences",
+      "website": "http://www.hfkm-regensburg.de/",
+      "source": "https://www.wikidata.org/wiki/Q1622189"
+    },
+    {
+      "id": "Q1622191",
+      "name": "Hochschule für Kirchenmusik der Evangelischen Kirche von Westfalen",
+      "city": "Herford",
+      "state": "North Rhine-Westphalia",
+      "type": "university of applied sciences",
+      "website": "http://www.hochschule-herford.de/",
+      "source": "https://www.wikidata.org/wiki/Q1622191"
+    },
+    {
+      "id": "Q946968",
+      "name": "Hochschule für Kirchenmusik Heidelberg",
+      "city": "Heidelberg",
+      "state": "Baden-Württemberg",
+      "type": "church college",
+      "website": "http://www.hfk-heidelberg.de",
+      "source": "https://www.wikidata.org/wiki/Q946968"
+    },
+    {
+      "id": "Q21040608",
+      "name": "Hochschule für Kommunikation und Gestaltung",
+      "city": "Stuttgart",
+      "state": "Baden-Württemberg",
+      "type": "private university",
+      "website": "http://www.hfk-bw.de/",
+      "source": "https://www.wikidata.org/wiki/Q21040608"
+    },
+    {
+      "id": "Q1622194",
+      "name": "Hochschule für Kunsttherapie Nürtingen",
+      "city": "Nürtingen",
+      "state": "Baden-Württemberg",
+      "type": "art academy",
+      "website": "http://www.hkt-nuertingen.de/",
+      "source": "https://www.wikidata.org/wiki/Q1622194"
+    },
+    {
+      "id": "Q468181",
+      "name": "Hochschule für Musik Carl Maria von Weber",
+      "city": "Dresden",
+      "state": "Saxony",
+      "type": "conservatory",
+      "website": "http://www.hfmdd.de",
+      "source": "https://www.wikidata.org/wiki/Q468181"
+    },
+    {
+      "id": "Q317855",
+      "name": "Hochschule für Musik Detmold",
+      "city": "North Rhine-Westphalia",
+      "state": "North Rhine-Westphalia",
+      "type": "public university",
+      "website": "http://www.hfm-detmold.de/",
+      "source": "https://www.wikidata.org/wiki/Q317855"
+    },
+    {
+      "id": "Q536163",
+      "name": "Hochschule für Musik Franz Liszt Weimar",
+      "city": "Weimar",
+      "state": "Thuringia",
+      "type": "conservatory",
+      "website": "http://www.hfm-weimar.de/",
+      "source": "https://www.wikidata.org/wiki/Q536163"
+    },
+    {
+      "id": "Q650345",
+      "name": "Hochschule für Musik Freiburg",
+      "city": "Freiburg im Breisgau",
+      "state": "Baden-Württemberg",
+      "type": "conservatory",
+      "website": "http://www.mh-freiburg.de",
+      "source": "https://www.wikidata.org/wiki/Q650345"
+    },
+    {
+      "id": "Q448324",
+      "name": "Hochschule für Musik Karlsruhe",
+      "city": "Karlsruhe",
+      "state": "Baden-Württemberg",
+      "type": "conservatory",
+      "website": "http://www.hfm-karlsruhe.de",
+      "source": "https://www.wikidata.org/wiki/Q448324"
+    },
+    {
+      "id": "Q1622203",
+      "name": "Hochschule für Musik Mainz",
+      "city": "Mainz",
+      "state": "Rhineland-Palatinate",
+      "type": "public university",
+      "website": "http://www.hfm-mainz.de",
+      "source": "https://www.wikidata.org/wiki/Q1622203"
+    },
+    {
+      "id": "Q1487242",
+      "name": "Hochschule für Musik Saar",
+      "city": "Saarbrücken",
+      "state": "Saarland",
+      "type": "Hochschule",
+      "website": "https://www.hfmsaar.de/",
+      "source": "https://www.wikidata.org/wiki/Q1487242"
+    },
+    {
+      "id": "Q55021",
+      "name": "Hochschule für Musik und Tanz Köln",
+      "city": "Altstadt-Nord",
+      "state": "North Rhine-Westphalia",
+      "type": "conservatory",
+      "website": "http://www.hfmt-koeln.de/",
+      "source": "https://www.wikidata.org/wiki/Q55021"
+    },
+    {
+      "id": "Q260107",
+      "name": "Hochschule für Musik Würzburg",
+      "city": "Würzburg",
+      "state": "Bavaria",
+      "type": "public university",
+      "website": "https://www.hfm-wuerzburg.de",
+      "source": "https://www.wikidata.org/wiki/Q260107"
+    },
+    {
+      "id": "Q1391292",
+      "name": "Hochschule für Öffentliche Verwaltung Rheinland Pfalz",
+      "city": "Mayen",
+      "state": "Rhineland-Palatinate",
+      "type": "public university",
+      "website": "http://www.hoev-rlp.de/",
+      "source": "https://www.wikidata.org/wiki/Q1391292"
+    },
+    {
+      "id": "Q1622215",
+      "name": "Hochschule für Politik München",
+      "city": "",
+      "state": "",
+      "type": "university of applied sciences",
+      "website": "https://www.hfp.tum.de/hfp/",
+      "source": "https://www.wikidata.org/wiki/Q1622215"
+    },
+    {
+      "id": "Q1391293",
+      "name": "Hochschule für Polizei und öffentliche Verwaltung Nordrhein-Westfalen",
+      "city": "North Rhine-Westphalia",
+      "state": "North Rhine-Westphalia",
+      "type": "university of applied sciences",
+      "website": "https://www.hspv.nrw.de/",
+      "source": "https://www.wikidata.org/wiki/Q1391293"
+    },
+    {
+      "id": "Q53869248",
+      "name": "Hochschule für Verwaltung in Niedersachsen",
+      "city": "",
+      "state": "",
+      "type": "university of applied sciences",
+      "website": "https://www.nsi-hsvn.de/",
+      "source": "https://www.wikidata.org/wiki/Q53869248"
+    },
+    {
+      "id": "Q2718928",
+      "name": "Hochschule Geisenheim University",
+      "city": "Geisenheim",
+      "state": "Hesse",
+      "type": "public university",
+      "website": "http://www.hs-geisenheim.de/",
+      "source": "https://www.wikidata.org/wiki/Q2718928"
+    },
+    {
+      "id": "Q224514",
+      "name": "Hochschule Hannover",
+      "city": "Hanover",
+      "state": "Lower Saxony",
+      "type": "public university",
+      "website": "https://hs-hannover.de/",
+      "source": "https://www.wikidata.org/wiki/Q224514"
+    },
+    {
+      "id": "Q1622120",
+      "name": "Hochschule Lausitz",
+      "city": "Cottbus",
+      "state": "Brandenburg",
+      "type": "university of applied sciences",
+      "website": "http://www.hs-lausitz.de",
+      "source": "https://www.wikidata.org/wiki/Q1622120"
+    },
+    {
+      "id": "Q202952",
+      "name": "Hochschule Mittweida",
+      "city": "Mittweida",
+      "state": "Saxony",
+      "type": "public university",
+      "website": "http://www.hs-mittweida.de/",
+      "source": "https://www.wikidata.org/wiki/Q202952"
+    },
+    {
+      "id": "Q1318081",
+      "name": "Hochschule Niederrhein",
+      "city": "North Rhine-Westphalia",
+      "state": "North Rhine-Westphalia",
+      "type": "public university",
+      "website": "https://www.hs-niederrhein.de/",
+      "source": "https://www.wikidata.org/wiki/Q1318081"
+    },
+    {
+      "id": "Q1391231",
+      "name": "Hochschule Stralsund",
+      "city": "Stralsund",
+      "state": "Mecklenburg-Vorpommern",
+      "type": "public university",
+      "website": "https://www.hochschule-stralsund.de/",
+      "source": "https://www.wikidata.org/wiki/Q1391231"
+    },
+    {
+      "id": "Q1400766",
+      "name": "Hochschule Weserbergland",
+      "city": "Hamelin",
+      "state": "Lower Saxony",
+      "type": "private university",
+      "website": "https://www.hsw-hameln.de/",
+      "source": "https://www.wikidata.org/wiki/Q1400766"
+    },
+    {
+      "id": "Q883036",
+      "name": "Hochschule Wismar, University of Applied Sciences: Technology, Business and Design",
+      "city": "Wismar",
+      "state": "Mecklenburg-Vorpommern",
+      "type": "public university",
+      "website": "http://www.hs-wismar.de",
+      "source": "https://www.wikidata.org/wiki/Q883036"
+    },
+    {
+      "id": "Q1997776",
+      "name": "HR Nord",
+      "city": "Hildesheim",
+      "state": "Lower Saxony",
+      "type": "public university",
+      "website": "http://www.fhr-nord.niedersachsen.de/",
+      "source": "https://www.wikidata.org/wiki/Q1997776"
+    },
+    {
+      "id": "Q1572930",
+      "name": "HSBA Hamburg School of Business Administration",
+      "city": "Hamburg",
+      "state": "Hamburg",
+      "type": "private Hochschule",
+      "website": "https://www.hsba.de/en/",
+      "source": "https://www.wikidata.org/wiki/Q1572930"
+    },
+    {
+      "id": "Q15818931",
+      "name": "HSD Hochschule Döpfer",
+      "city": "Cologne",
+      "state": "North Rhine-Westphalia",
+      "type": "private Hochschule",
+      "website": "http://www.hs-doepfer.de/",
+      "source": "https://www.wikidata.org/wiki/Q15818931"
+    },
+    {
+      "id": "Q1565945",
+      "name": "HSG DHfK Leipzig",
+      "city": "",
+      "state": "",
+      "type": "higher education institution",
+      "website": "https://www.hsg-dhfk-leipzig.de/",
+      "source": "https://www.wikidata.org/wiki/Q1565945"
+    },
+    {
+      "id": "Q875138",
+      "name": "HTW Berlin",
+      "city": "Berlin",
+      "state": "Berlin",
+      "type": "Technische Hochschule",
+      "website": "https://www.htw-berlin.de/",
+      "source": "https://www.wikidata.org/wiki/Q875138"
+    },
+    {
+      "id": "Q884111",
+      "name": "htw saar | Saarland University of Applied Sciences",
+      "city": "",
+      "state": "",
+      "type": "public university",
+      "website": "https://www.htwsaar.de/",
+      "source": "https://www.wikidata.org/wiki/Q884111"
+    },
+    {
+      "id": "Q115973023",
+      "name": "Humanistische Hochschule Berlin",
+      "city": "Berlin",
+      "state": "Berlin",
+      "type": "higher education institution",
+      "website": "https://humanistische-hochschule-berlin.de/",
+      "source": "https://www.wikidata.org/wiki/Q115973023"
+    },
+    {
+      "id": "Q101265437",
+      "name": "Humboldt University Berlin Faculty of Economics and Business Administration",
+      "city": "",
+      "state": "",
+      "type": "business school",
+      "website": "https://www.wiwi.hu-berlin.de",
+      "source": "https://www.wikidata.org/wiki/Q101265437"
+    },
+    {
+      "id": "Q152087",
+      "name": "Humboldt-Universität zu Berlin",
+      "city": "Berlin",
+      "state": "Berlin",
+      "type": "comprehensive university",
+      "website": "https://www.hu-berlin.de/",
+      "source": "https://www.wikidata.org/wiki/Q152087"
+    },
+    {
+      "id": "Q1653042",
+      "name": "IB-Hochschule Berlin",
+      "city": "Berlin",
+      "state": "Berlin",
+      "type": "private university",
+      "website": "http://www.ib-hochschule.de",
+      "source": "https://www.wikidata.org/wiki/Q1653042"
+    },
+    {
+      "id": "Q3146547",
+      "name": "ICN Business School",
+      "city": "",
+      "state": "",
+      "type": "business school",
+      "website": "https://www.icn-artem.com",
+      "source": "https://www.wikidata.org/wiki/Q3146547"
+    },
+    {
+      "id": "Q705316",
+      "name": "IESE Business School",
+      "city": "Barcelona",
+      "state": "",
+      "type": "business school",
+      "website": "https://www.iese.edu/",
+      "source": "https://www.wikidata.org/wiki/Q705316"
+    },
+    {
+      "id": "Q23786567",
+      "name": "Institut für Ausbildung in bildender Kunst und Kunsttherapie",
+      "city": "Wattenscheid",
+      "state": "North Rhine-Westphalia",
+      "type": "art academy",
+      "website": "http://www.ibkk-kunstzentrum.de/",
+      "source": "https://www.wikidata.org/wiki/Q23786567"
+    },
+    {
+      "id": "Q1420390",
+      "name": "Institut für deutsche Kultur und Geschichte Südosteuropas an der LMU München",
+      "city": "Munich",
+      "state": "Bavaria",
+      "type": "higher education institution",
+      "website": "https://www.ikgs.de/",
+      "source": "https://www.wikidata.org/wiki/Q1420390"
+    },
+    {
+      "id": "Q95627406",
+      "name": "Institute Burghausen",
+      "city": "Burghausen",
+      "state": "Bavaria",
+      "type": "Hochschule",
+      "website": "https://www.campus-burghausen.de",
+      "source": "https://www.wikidata.org/wiki/Q95627406"
+    },
+    {
+      "id": "Q1665025",
+      "name": "Institute for Waldorf Education",
+      "city": "Witten",
+      "state": "North Rhine-Westphalia",
+      "type": "higher education institution",
+      "website": "https://waldorfinstitut.de/",
+      "source": "https://www.wikidata.org/wiki/Q1665025"
+    },
+    {
+      "id": "Q1456833",
+      "name": "International Business School, Germany",
+      "city": "Nuremberg",
+      "state": "North Rhine-Westphalia",
+      "type": "business school",
+      "website": "http://www.international-business-school.de/",
+      "source": "https://www.wikidata.org/wiki/Q1456833"
+    },
+    {
+      "id": "Q1666832",
+      "name": "International Psychoanalytic University Berlin",
+      "city": "Berlin",
+      "state": "Berlin",
+      "type": "private university",
+      "website": "https://www.ipu-berlin.de/",
+      "source": "https://www.wikidata.org/wiki/Q1666832"
+    },
+    {
+      "id": "Q1665159",
+      "name": "International School of Management",
+      "city": "Dortmund",
+      "state": "North Rhine-Westphalia",
+      "type": "private Hochschule",
+      "website": "http://www.ism.de/",
+      "source": "https://www.wikidata.org/wiki/Q1665159"
+    },
+    {
+      "id": "Q1667074",
+      "name": "International University of Cooperative Education",
+      "city": "Darmstadt",
+      "state": "Hesse",
+      "type": "private university",
+      "website": "http://www.iba-darmstadt.com/",
+      "source": "https://www.wikidata.org/wiki/Q1667074"
+    },
+    {
+      "id": "Q1667163",
+      "name": "Internationale Filmschule Köln",
+      "city": "Cologne",
+      "state": "North Rhine-Westphalia",
+      "type": "film school",
+      "website": "http://www.filmschule.de/",
+      "source": "https://www.wikidata.org/wiki/Q1667163"
+    },
+    {
+      "id": "Q1667283",
+      "name": "Internationale Hochschule Liebenzell",
+      "city": "Bad Liebenzell",
+      "state": "Baden-Württemberg",
+      "type": "private university",
+      "website": "http://www.ihl.eu/",
+      "source": "https://www.wikidata.org/wiki/Q1667283"
+    },
+    {
+      "id": "Q1667803",
+      "name": "Internationales Priesterseminar Herz Jesu",
+      "city": "Zaitzkofen",
+      "state": "Bavaria",
+      "type": "Catholic seminary",
+      "website": "https://zaitzkofen.fsspx.org/",
+      "source": "https://www.wikidata.org/wiki/Q1667803"
+    },
+    {
+      "id": "Q1248686",
+      "name": "IREBS",
+      "city": "Regensburg",
+      "state": "Bavaria",
+      "type": "business school",
+      "website": "http://www.uni-regensburg.de/forschung/immobilien/index.html",
+      "source": "https://www.wikidata.org/wiki/Q1248686"
+    },
+    {
+      "id": "Q15819802",
+      "name": "IST-Hochschule für Management",
+      "city": "Düsseldorf",
+      "state": "North Rhine-Westphalia",
+      "type": "university of applied sciences",
+      "website": "https://www.ist-hochschule.de/",
+      "source": "https://www.wikidata.org/wiki/Q15819802"
+    },
+    {
+      "id": "Q1667281",
+      "name": "IU International University of Applied Sciences",
+      "city": "",
+      "state": "",
+      "type": "private university",
+      "website": "https://www.iu.de/",
+      "source": "https://www.wikidata.org/wiki/Q1667281"
+    },
+    {
+      "id": "Q122871351",
+      "name": "IU International University of Applied Sciences, Campus Hamburg",
+      "city": "Eimsbüttel",
+      "state": "Hamburg",
+      "type": "private Hochschule",
+      "website": "https://www.iu.de/campus/hamburg/",
+      "source": "https://www.wikidata.org/wiki/Q122871351"
+    },
+    {
+      "id": "Q982400",
+      "name": "Jade University of Applied Sciences",
+      "city": "Lower Saxony",
+      "state": "Lower Saxony",
+      "type": "university of applied sciences",
+      "website": "http://www.jade-hs.de",
+      "source": "https://www.wikidata.org/wiki/Q982400"
+    },
+    {
+      "id": "Q161982",
+      "name": "Johannes Gutenberg University Mainz",
+      "city": "Mainz",
+      "state": "Rhineland-Palatinate",
+      "type": "public university",
+      "website": "https://www.uni-mainz.de/",
+      "source": "https://www.wikidata.org/wiki/Q161982"
+    },
+    {
+      "id": "Q1733921",
+      "name": "Karlshochschule International University",
+      "city": "Karlsruhe",
+      "state": "Baden-Württemberg",
+      "type": "private university",
+      "website": "http://www.karlshochschule.de/",
+      "source": "https://www.wikidata.org/wiki/Q1733921"
+    },
+    {
+      "id": "Q309988",
+      "name": "Karlsruhe Institute of Technology",
+      "city": "Karlsruhe",
+      "state": "Baden-Württemberg",
+      "type": "public university",
+      "website": "https://www.kit.edu/",
+      "source": "https://www.wikidata.org/wiki/Q309988"
+    },
+    {
+      "id": "Q761708",
+      "name": "Karlsruhe University of Applied Sciences",
+      "city": "Karlsruhe",
+      "state": "Baden-Württemberg",
+      "type": "public university",
+      "website": "https://www.h-ka.de/",
+      "source": "https://www.wikidata.org/wiki/Q761708"
+    },
+    {
+      "id": "Q896116",
+      "name": "Karlsruhe University of Arts and Design",
+      "city": "Karlsruhe",
+      "state": "Baden-Württemberg",
+      "type": "art academy",
+      "website": "https://hfg-karlsruhe.de/en/",
+      "source": "https://www.wikidata.org/wiki/Q896116"
+    },
+    {
+      "id": "Q1310061",
+      "name": "Karlsruhe University of Education",
+      "city": "Karlsruhe",
+      "state": "Baden-Württemberg",
+      "type": "public university",
+      "website": "https://www.ph-karlsruhe.de/",
+      "source": "https://www.wikidata.org/wiki/Q1310061"
+    },
+    {
+      "id": "Q1736343",
+      "name": "Katholische Hochschule für Kirchenmusik Rottenburg",
+      "city": "Rottenburg am Neckar",
+      "state": "Baden-Württemberg",
+      "type": "university of applied sciences",
+      "website": "http://www.kirchenmusik-hochschule.org/",
+      "source": "https://www.wikidata.org/wiki/Q1736343"
+    },
+    {
+      "id": "Q1736344",
+      "name": "Katholische Hochschule Nordrhein-Westfalen",
+      "city": "Aachen",
+      "state": "North Rhine-Westphalia",
+      "type": "university of applied sciences",
+      "website": "http://www.katho-nrw.de/",
+      "source": "https://www.wikidata.org/wiki/Q1736344"
+    },
+    {
+      "id": "Q1632429",
+      "name": "Katholische Stiftungshochschule München",
+      "city": "Munich",
+      "state": "Bavaria",
+      "type": "university of applied sciences",
+      "website": "https://www.ksh-muenchen.de/",
+      "source": "https://www.wikidata.org/wiki/Q1632429"
+    },
+    {
+      "id": "Q1622115",
+      "name": "Kempten University of Applied Sciences",
+      "city": "Kempten",
+      "state": "Bavaria",
+      "type": "public university",
+      "website": "http://www.hochschule-kempten.de/",
+      "source": "https://www.wikidata.org/wiki/Q1622115"
+    },
+    {
+      "id": "Q156737",
+      "name": "Kiel University",
+      "city": "Kiel",
+      "state": "Schleswig-Holstein",
+      "type": "public university",
+      "website": "https://www.uni-kiel.de/de/",
+      "source": "https://www.wikidata.org/wiki/Q156737"
+    },
+    {
+      "id": "Q1391201",
+      "name": "Kiel University of Applied Science",
+      "city": "Kiel",
+      "state": "Schleswig-Holstein",
+      "type": "public university",
+      "website": "https://www.fh-kiel.de/",
+      "source": "https://www.wikidata.org/wiki/Q1391201"
+    },
+    {
+      "id": "Q1718821",
+      "name": "KMM Hamburg – Institut für Kultur- und Medienmanagement",
+      "city": "Hamburg",
+      "state": "Hamburg",
+      "type": "university of applied sciences",
+      "website": "http://www.kmm-hamburg.de/",
+      "source": "https://www.wikidata.org/wiki/Q1718821"
+    },
+    {
+      "id": "Q1763241",
+      "name": "Kommunale Hochschule für Verwaltung in Niedersachsen",
+      "city": "Mitte",
+      "state": "Lower Saxony",
+      "type": "Hochschule",
+      "website": "https://www.nsi-hsvn.de/",
+      "source": "https://www.wikidata.org/wiki/Q1763241"
+    },
+    {
+      "id": "Q1550192",
+      "name": "Konrad Wolf Film University of Babelsberg",
+      "city": "Potsdam",
+      "state": "Brandenburg",
+      "type": "university",
+      "website": "http://www.filmuniversitaet.de/",
+      "source": "https://www.wikidata.org/wiki/Q1550192"
+    },
+    {
+      "id": "Q875181",
+      "name": "Kronberg Academy",
+      "city": "Kronberg im Taunus",
+      "state": "Hesse",
+      "type": "conservatory",
+      "website": "https://www.kronbergacademy.de/",
+      "source": "https://www.wikidata.org/wiki/Q875181"
+    },
+    {
+      "id": "Q1683524",
+      "name": "Kuehne Logistics University",
+      "city": "Hamburg",
+      "state": "Hamburg",
+      "type": "private university",
+      "website": "http://www.the-klu.org",
+      "source": "https://www.wikidata.org/wiki/Q1683524"
+    },
+    {
+      "id": "Q662355",
+      "name": "Kunstakademie Düsseldorf",
+      "city": "Düsseldorf",
+      "state": "North Rhine-Westphalia",
+      "type": "art academy",
+      "website": "http://www.kunstakademie-duesseldorf.de/",
+      "source": "https://www.wikidata.org/wiki/Q662355"
+    },
+    {
+      "id": "Q61910988",
+      "name": "Landesinstitut für Qualifizierung und Qualitätsentwicklung in Schulen (LI)",
+      "city": "Hamburg",
+      "state": "Hamburg",
+      "type": "higher education institution",
+      "website": "https://li.hamburg.de/",
+      "source": "https://www.wikidata.org/wiki/Q61910988"
+    },
+    {
+      "id": "Q678982",
+      "name": "Leibniz University Hannover",
+      "city": "Hanover",
+      "state": "Lower Saxony",
+      "type": "public university",
+      "website": "https://www.uni-hannover.de/",
+      "source": "https://www.wikidata.org/wiki/Q678982"
+    },
+    {
+      "id": "Q30263706",
+      "name": "Leibniz University of Applied Sciences",
+      "city": "Hanover",
+      "state": "Lower Saxony",
+      "type": "private university",
+      "website": "http://www.leibniz-fh.de/",
+      "source": "https://www.wikidata.org/wiki/Q30263706"
+    },
+    {
+      "id": "Q154804",
+      "name": "Leipzig University",
+      "city": "Leipzig",
+      "state": "Saxony",
+      "type": "public university",
+      "website": "https://www.uni-leipzig.de/",
+      "source": "https://www.wikidata.org/wiki/Q154804"
+    },
+    {
+      "id": "Q1622216",
+      "name": "Leipzig University of Applied Sciences",
+      "city": "",
+      "state": "",
+      "type": "public university",
+      "website": "https://www.htwk-leipzig.de/en/htwk-leipzig/",
+      "source": "https://www.wikidata.org/wiki/Q1622216"
+    },
+    {
+      "id": "Q1821142",
+      "name": "Lette-Verein",
+      "city": "Berlin",
+      "state": "Berlin",
+      "type": "art academy",
+      "website": "http://www.lette-verein.de/",
+      "source": "https://www.wikidata.org/wiki/Q1821142"
+    },
+    {
+      "id": "Q505170",
+      "name": "Leuphana University of Lüneburg",
+      "city": "Lüneburg",
+      "state": "Lower Saxony",
+      "type": "public university",
+      "website": "https://www.leuphana.de/",
+      "source": "https://www.wikidata.org/wiki/Q505170"
+    },
+    {
+      "id": "Q55044",
+      "name": "LMU Munich",
+      "city": "Munich",
+      "state": "Bavaria",
+      "type": "comprehensive university",
+      "website": "https://www.lmu.de/",
+      "source": "https://www.wikidata.org/wiki/Q55044"
+    },
+    {
+      "id": "Q513622",
+      "name": "Lübeck Academy of Music",
+      "city": "Lübeck",
+      "state": "Schleswig-Holstein",
+      "type": "public university",
+      "website": "http://www.mh-luebeck.de/",
+      "source": "https://www.wikidata.org/wiki/Q513622"
+    },
+    {
+      "id": "Q2120211",
+      "name": "Ludwigsburg University of Education",
+      "city": "",
+      "state": "",
+      "type": "public university",
+      "website": "https://www.ph-ludwigsburg.de/",
+      "source": "https://www.wikidata.org/wiki/Q2120211"
+    },
+    {
+      "id": "Q1877909",
+      "name": "Lutheran Academy of Theology Oberursel",
+      "city": "Oberursel",
+      "state": "Hesse",
+      "type": "church college",
+      "website": "http://www.lthh-oberursel.de/",
+      "source": "https://www.wikidata.org/wiki/Q1877909"
+    },
+    {
+      "id": "Q475312",
+      "name": "Lutheran University of Applied Sciences Nuremberg",
+      "city": "Nuremberg",
+      "state": "Bavaria",
+      "type": "university of applied sciences",
+      "website": "https://www.evhn.de/",
+      "source": "https://www.wikidata.org/wiki/Q475312"
+    },
+    {
+      "id": "Q1346417",
+      "name": "Macromedia University for Media and Communication",
+      "city": "Munich",
+      "state": "Bavaria",
+      "type": "higher education institution",
+      "website": "http://hochschule-macromedia.de/",
+      "source": "https://www.wikidata.org/wiki/Q1346417"
+    },
+    {
+      "id": "Q1622123",
+      "name": "Magdeburg-Stendal University of Applied Sciences",
+      "city": "Magdeburg",
+      "state": "Saxony-Anhalt",
+      "type": "public university",
+      "website": "http://www.hs-magdeburg.de/",
+      "source": "https://www.wikidata.org/wiki/Q1622123"
+    },
+    {
+      "id": "Q459724",
+      "name": "Mainz University of Applied Sciences",
+      "city": "Mainz",
+      "state": "Rhineland-Palatinate",
+      "type": "higher education institution",
+      "website": "http://www.hs-mainz.de/",
+      "source": "https://www.wikidata.org/wiki/Q459724"
+    },
+    {
+      "id": "Q835897",
+      "name": "Mannheim Business School",
+      "city": "Mannheim",
+      "state": "Baden-Württemberg",
+      "type": "business school",
+      "website": "https://www.mannheim-business-school.com/",
+      "source": "https://www.wikidata.org/wiki/Q835897"
+    },
+    {
+      "id": "Q321369",
+      "name": "Mannheim Technical University of Applied Sciences",
+      "city": "Mannheim",
+      "state": "Baden-Württemberg",
+      "type": "public university",
+      "website": "https://www.hs-mannheim.de/",
+      "source": "https://www.wikidata.org/wiki/Q321369"
+    },
+    {
+      "id": "Q1413500",
+      "name": "Mannheim University of Music and Performing Arts",
+      "city": "Mannheim",
+      "state": "Baden-Württemberg",
+      "type": "public university",
+      "website": "http://www.muho-mannheim.de/",
+      "source": "https://www.wikidata.org/wiki/Q1413500"
+    },
+    {
+      "id": "Q32120",
+      "name": "Martin Luther University Halle-Wittenberg",
+      "city": "",
+      "state": "",
+      "type": "public university",
+      "website": "https://www.uni-halle.de/",
+      "source": "https://www.wikidata.org/wiki/Q32120"
+    },
+    {
+      "id": "Q1908482",
+      "name": "Mathias Hochschule Rheine",
+      "city": "Rheine",
+      "state": "North Rhine-Westphalia",
+      "type": "university of applied sciences",
+      "website": "http://www.mhrheine.de/",
+      "source": "https://www.wikidata.org/wiki/Q1908482"
+    },
+    {
+      "id": "Q21040685",
+      "name": "Media Akademie – Hochschule Stuttgart",
+      "city": "Stuttgart",
+      "state": "Baden-Württemberg",
+      "type": "private university",
+      "website": "http://www.media-hs.de/",
+      "source": "https://www.wikidata.org/wiki/Q21040685"
+    },
+    {
+      "id": "Q1916178",
+      "name": "Mediadesign Hochschule",
+      "city": "Berlin",
+      "state": "Berlin",
+      "type": "private university",
+      "website": "http://www.mediadesign.de",
+      "source": "https://www.wikidata.org/wiki/Q1916178"
+    },
+    {
+      "id": "Q1881867",
+      "name": "Medical School Hamburg",
+      "city": "Hamburg-Mitte",
+      "state": "Hamburg",
+      "type": "private Hochschule",
+      "website": "http://www.medicalschool-hamburg.de/",
+      "source": "https://www.wikidata.org/wiki/Q1881867"
+    },
+    {
+      "id": "Q140661688",
+      "name": "Medizincampus Wolfsburg (MCW)",
+      "city": "Wolfsburg",
+      "state": "Lower Saxony",
+      "type": "medical school",
+      "website": "https://www.umg.eu/studium-lehre/medizincampus-wolfsburg-mcw/",
+      "source": "https://www.wikidata.org/wiki/Q140661688"
+    },
+    {
+      "id": "Q101379508",
+      "name": "Medizinische Fakultät der Martin-Luther-Universität Halle-Wittenberg",
+      "city": "",
+      "state": "",
+      "type": "medical school",
+      "website": "https://www.medfak.uni-halle.de/",
+      "source": "https://www.wikidata.org/wiki/Q101379508"
+    },
+    {
+      "id": "Q112085380",
+      "name": "Medizinische Fakultät, Ludwig-Maximilians-Universität München",
+      "city": "",
+      "state": "",
+      "type": "medical school",
+      "website": "https://www.med.lmu.de/de/",
+      "source": "https://www.wikidata.org/wiki/Q112085380"
+    },
+    {
+      "id": "Q16320336",
+      "name": "Medizinische Hochschule Brandenburg Theodor Fontane",
+      "city": "Neuruppin",
+      "state": "Brandenburg",
+      "type": "private university",
+      "website": "http://www.mhb-fontane.de/",
+      "source": "https://www.wikidata.org/wiki/Q16320336"
+    },
+    {
+      "id": "Q127256070",
+      "name": "Medizinische Universität Lausitz – Carl Thiem",
+      "city": "Cottbus",
+      "state": "Brandenburg",
+      "type": "public university",
+      "website": "https://www.mul-ct.de/",
+      "source": "https://www.wikidata.org/wiki/Q127256070"
+    },
+    {
+      "id": "Q976030",
+      "name": "Mercator School of Management",
+      "city": "Duisburg",
+      "state": "North Rhine-Westphalia",
+      "type": "business school",
+      "website": "http://www.msm.uni-due.de/index.php?id=226&L=1",
+      "source": "https://www.wikidata.org/wiki/Q976030"
+    },
+    {
+      "id": "Q1622126",
+      "name": "Merseburg University of Applied Sciences",
+      "city": "",
+      "state": "",
+      "type": "higher education institution",
+      "website": "https://www.hs-merseburg.de/",
+      "source": "https://www.wikidata.org/wiki/Q1622126"
+    },
+    {
+      "id": "Q1922219",
+      "name": "Merz Akademie",
+      "city": "Stuttgart",
+      "state": "Baden-Württemberg",
+      "type": "private university",
+      "website": "http://www.merz-akademie.de/",
+      "source": "https://www.wikidata.org/wiki/Q1922219"
+    },
+    {
+      "id": "Q314684",
+      "name": "Mittelhessen University of Applied Sciences",
+      "city": "Giessen",
+      "state": "Hesse",
+      "type": "Technische Hochschule",
+      "website": "http://www.th-mittelhessen.de/site/",
+      "source": "https://www.wikidata.org/wiki/Q314684"
+    },
+    {
+      "id": "Q1380210",
+      "name": "Moritzburg Protestant College",
+      "city": "Moritzburg",
+      "state": "Saxony",
+      "type": "university of applied sciences",
+      "website": "https://tpi-moritzburg.de/",
+      "source": "https://www.wikidata.org/wiki/Q1380210"
+    },
+    {
+      "id": "Q1916267",
+      "name": "MSB Medical School Berlin",
+      "city": "Berlin",
+      "state": "Berlin",
+      "type": "private university",
+      "website": "http://www.medicalschool-berlin.de/",
+      "source": "https://www.wikidata.org/wiki/Q1916267"
+    },
+    {
+      "id": "Q1311824",
+      "name": "Munich Business School",
+      "city": "Laim",
+      "state": "Bavaria",
+      "type": "private university",
+      "website": "https://www.munich-business-school.de/",
+      "source": "https://www.wikidata.org/wiki/Q1311824"
+    },
+    {
+      "id": "Q122762888",
+      "name": "Munich Institute of Media and Musical Arts",
+      "city": "",
+      "state": "",
+      "type": "private university",
+      "website": "https://mima-university.de/",
+      "source": "https://www.wikidata.org/wiki/Q122762888"
+    },
+    {
+      "id": "Q881849",
+      "name": "Munich School of Philosophy",
+      "city": "Maxvorstadt",
+      "state": "Bavaria",
+      "type": "church college",
+      "website": "http://www.hfph.de/",
+      "source": "https://www.wikidata.org/wiki/Q881849"
+    },
+    {
+      "id": "Q833743",
+      "name": "Munich University of Applied Languages",
+      "city": "",
+      "state": "",
+      "type": "higher education institution",
+      "website": "http://www.sdi-muenchen.de/hochschule/",
+      "source": "https://www.wikidata.org/wiki/Q833743"
+    },
+    {
+      "id": "Q314089",
+      "name": "Munich University of Applied Sciences",
+      "city": "Munich",
+      "state": "Bavaria",
+      "type": "public university",
+      "website": "http://hm.edu/",
+      "source": "https://www.wikidata.org/wiki/Q314089"
+    },
+    {
+      "id": "Q1305888",
+      "name": "Muthesius Academy of Art",
+      "city": "Schleswig-Holstein",
+      "state": "Schleswig-Holstein",
+      "type": "art academy",
+      "website": "http://www.muthesius-kunsthochschule.de",
+      "source": "https://www.wikidata.org/wiki/Q1305888"
+    },
+    {
+      "id": "Q569899",
+      "name": "Natural Science and Technical Academy Isny",
+      "city": "Isny im Allgäu",
+      "state": "Baden-Württemberg",
+      "type": "university of applied sciences",
+      "website": "http://www.nta-isny.de",
+      "source": "https://www.wikidata.org/wiki/Q569899"
+    },
+    {
+      "id": "Q881870",
+      "name": "Naval Academy at Mürwik",
+      "city": "Flensburg",
+      "state": "Schleswig-Holstein",
+      "type": "military academy",
+      "website": "https://www.bundeswehr.de/de/organisation/marine/organisation/marineschule-muerwik",
+      "source": "https://www.wikidata.org/wiki/Q881870"
+    },
+    {
+      "id": "Q24175530",
+      "name": "NBS Northern Business School - Hochschule für Management und Sicherheit",
+      "city": "Wandsbek",
+      "state": "Hamburg",
+      "type": "private Hochschule",
+      "website": "http://www.nbs.de/",
+      "source": "https://www.wikidata.org/wiki/Q24175530"
+    },
+    {
+      "id": "Q1622130",
+      "name": "Neubrandenburg University of Applied Sciences",
+      "city": "Neubrandenburg",
+      "state": "Mecklenburg-Vorpommern",
+      "type": "public university",
+      "website": "https://www.hs-nb.de/",
+      "source": "https://www.wikidata.org/wiki/Q1622130"
+    },
+    {
+      "id": "Q1379386",
+      "name": "Nordakademie Hochschule der Wirtschaft",
+      "city": "Elmshorn",
+      "state": "Schleswig-Holstein",
+      "type": "private university",
+      "website": "https://www.nordakademie.de/",
+      "source": "https://www.wikidata.org/wiki/Q1379386"
+    },
+    {
+      "id": "Q1391209",
+      "name": "Nordhausen University of Applied Sciences",
+      "city": "Nordhausen",
+      "state": "Thuringia",
+      "type": "Hochschule",
+      "website": "https://www.hs-nordhausen.de/",
+      "source": "https://www.wikidata.org/wiki/Q1391209"
+    },
+    {
+      "id": "Q2000990",
+      "name": "Northern Institute of Technology Management",
+      "city": "Hamburg",
+      "state": "Hamburg",
+      "type": "business school",
+      "website": "http://www.nithh.de",
+      "source": "https://www.wikidata.org/wiki/Q2000990"
+    },
+    {
+      "id": "Q1622205",
+      "name": "Nuremberg University of Music",
+      "city": "Nuremberg",
+      "state": "Bavaria",
+      "type": "conservatory",
+      "website": "http://www.hfm-nuernberg.de/",
+      "source": "https://www.wikidata.org/wiki/Q1622205"
+    },
+    {
+      "id": "Q1622229",
+      "name": "Nürtingen-Geislingen University of Applied Science",
+      "city": "Nürtingen",
+      "state": "Baden-Württemberg",
+      "type": "public university",
+      "website": "https://www.hfwu.de/",
+      "source": "https://www.wikidata.org/wiki/Q1622229"
+    },
+    {
+      "id": "Q138802246",
+      "name": "Opresnik Business School",
+      "city": "",
+      "state": "",
+      "type": "business school",
+      "website": "https://www.obseducation.org",
+      "source": "https://www.wikidata.org/wiki/Q138802246"
+    },
+    {
+      "id": "Q1109275",
+      "name": "Oriental College of Eichstätt",
+      "city": "",
+      "state": "",
+      "type": "Catholic seminary",
+      "website": "http://www.collegium-orientale.de",
+      "source": "https://www.wikidata.org/wiki/Q1109275"
+    },
+    {
+      "id": "Q702499",
+      "name": "Osnabrück University",
+      "city": "Osnabrück",
+      "state": "Lower Saxony",
+      "type": "public university",
+      "website": "http://www.uni-osnabrueck.de",
+      "source": "https://www.wikidata.org/wiki/Q702499"
+    },
+    {
+      "id": "Q1622135",
+      "name": "Osnabrück University of Applied Sciences",
+      "city": "Osnabrück",
+      "state": "Lower Saxony",
+      "type": "public university",
+      "website": "https://www.hs-osnabrueck.de/",
+      "source": "https://www.wikidata.org/wiki/Q1622135"
+    },
+    {
+      "id": "Q1622072",
+      "name": "Ostbayerische Technische Hochschule Amberg-Weiden",
+      "city": "Amberg",
+      "state": "Bavaria",
+      "type": "public university",
+      "website": "http://www.oth-aw.de/",
+      "source": "https://www.wikidata.org/wiki/Q1622072"
+    },
+    {
+      "id": "Q2035460",
+      "name": "Ostfalia University of Applied Sciences",
+      "city": "Lower Saxony",
+      "state": "Lower Saxony",
+      "type": "public university",
+      "website": "http://www.ostfalia.de",
+      "source": "https://www.wikidata.org/wiki/Q2035460"
+    },
+    {
+      "id": "Q2035743",
+      "name": "Ostkreuzschule",
+      "city": "Berlin",
+      "state": "Berlin",
+      "type": "private Hochschule",
+      "website": "https://www.ostkreuzschule.de/",
+      "source": "https://www.wikidata.org/wiki/Q2035743"
+    },
+    {
+      "id": "Q7109839",
+      "name": "Otto Stern School for Integrated Doctoral Education",
+      "city": "",
+      "state": "",
+      "type": "university",
+      "website": "http://www.oss.uni-frankfurt.de/",
+      "source": "https://www.wikidata.org/wiki/Q7109839"
+    },
+    {
+      "id": "Q2048456",
+      "name": "Palucca School of Dance, Dresden",
+      "city": "Dresden",
+      "state": "Saxony",
+      "type": "art academy",
+      "website": "http://www.palucca.eu/",
+      "source": "https://www.wikidata.org/wiki/Q2048456"
+    },
+    {
+      "id": "Q884358",
+      "name": "Pforzheim Academy",
+      "city": "Pforzheim",
+      "state": "Baden-Württemberg",
+      "type": "art academy",
+      "website": "http://www.hs-pforzheim.de",
+      "source": "https://www.wikidata.org/wiki/Q884358"
+    },
+    {
+      "id": "Q2088266",
+      "name": "Philosophisch-Theologische Hochschule der Salesianer Don Boscos Benediktbeuern",
+      "city": "Benediktbeuern",
+      "state": "Bavaria",
+      "type": "university of applied sciences",
+      "website": "http://www.pth-bb.de/",
+      "source": "https://www.wikidata.org/wiki/Q2088266"
+    },
+    {
+      "id": "Q2088268",
+      "name": "Philosophisch-Theologische Hochschule Münster",
+      "city": "Münster",
+      "state": "North Rhine-Westphalia",
+      "type": "university of applied sciences",
+      "website": "http://www.pth-muenster.de",
+      "source": "https://www.wikidata.org/wiki/Q2088268"
+    },
+    {
+      "id": "Q2101676",
+      "name": "Polizeiakademie Niedersachsen",
+      "city": "Lower Saxony",
+      "state": "Lower Saxony",
+      "type": "police academy",
+      "website": "http://www.polizeiakademie.niedersachsen.de/",
+      "source": "https://www.wikidata.org/wiki/Q2101676"
+    },
+    {
+      "id": "Q1492202",
+      "name": "Popakademie Baden-Württemberg",
+      "city": "Mannheim",
+      "state": "Baden-Württemberg",
+      "type": "public university",
+      "website": "http://www.popakademie.de",
+      "source": "https://www.wikidata.org/wiki/Q1492202"
+    },
+    {
+      "id": "Q16855778",
+      "name": "Praxis Hochschule University of Applied Sciences",
+      "city": "Cologne",
+      "state": "North Rhine-Westphalia",
+      "type": "university of applied sciences",
+      "website": "http://www.praxishochschule.de",
+      "source": "https://www.wikidata.org/wiki/Q16855778"
+    },
+    {
+      "id": "Q2109616",
+      "name": "Priesterseminar Regensburg",
+      "city": "Regensburg",
+      "state": "Bavaria",
+      "type": "Catholic seminary",
+      "website": "https://www.priesterseminar-regensburg.de/",
+      "source": "https://www.wikidata.org/wiki/Q2109616"
+    },
+    {
+      "id": "Q2109625",
+      "name": "Priesterseminar Würzburg",
+      "city": "Würzburg",
+      "state": "Bavaria",
+      "type": "Catholic seminary",
+      "website": "https://priesterseminar-wuerzburg.de/",
+      "source": "https://www.wikidata.org/wiki/Q2109625"
+    },
+    {
+      "id": "Q1391278",
+      "name": "Private Hochschule für Wirtschaft und Technik",
+      "city": "Vechta",
+      "state": "Lower Saxony",
+      "type": "private university",
+      "website": "http://www.fhwt.de/home.html",
+      "source": "https://www.wikidata.org/wiki/Q1391278"
+    },
+    {
+      "id": "Q2044046",
+      "name": "Private University of Applied Sciences",
+      "city": "Göttingen",
+      "state": "Lower Saxony",
+      "type": "private university",
+      "website": "https://www.pfh-university.com/",
+      "source": "https://www.wikidata.org/wiki/Q2044046"
+    },
+    {
+      "id": "Q1380222",
+      "name": "Protestant College for Church Music in Halle",
+      "city": "Halle (Saale)",
+      "state": "Saxony-Anhalt",
+      "type": "university of applied sciences",
+      "website": "https://www.ehk-halle.de/",
+      "source": "https://www.wikidata.org/wiki/Q1380222"
+    },
+    {
+      "id": "Q1380226",
+      "name": "Protestant College for Social service Dresden",
+      "city": "Dresden",
+      "state": "Saxony",
+      "type": "university of applied sciences",
+      "website": "http://www.ehs-dresden.de/",
+      "source": "https://www.wikidata.org/wiki/Q1380226"
+    },
+    {
+      "id": "Q1380215",
+      "name": "Protestant College of Tabor",
+      "city": "Marburg",
+      "state": "Hesse",
+      "type": "private university",
+      "website": "http://www.eh-tabor.de/",
+      "source": "https://www.wikidata.org/wiki/Q1380215"
+    },
+    {
+      "id": "Q880440",
+      "name": "Protestant University for Applied Sciences Freiburg",
+      "city": "Freiburg im Breisgau",
+      "state": "Baden-Württemberg",
+      "type": "university of applied sciences",
+      "website": "http://www.eh-freiburg.de",
+      "source": "https://www.wikidata.org/wiki/Q880440"
+    },
+    {
+      "id": "Q1338536",
+      "name": "Protestant University Ludwigsburg",
+      "city": "Ludwigsburg",
+      "state": "Baden-Württemberg",
+      "type": "university of applied sciences",
+      "website": "https://www.eh-ludwigsburg.de/en/",
+      "source": "https://www.wikidata.org/wiki/Q1338536"
+    },
+    {
+      "id": "Q1380205",
+      "name": "Protestant University of Applied Sciences Berlin",
+      "city": "Berlin",
+      "state": "Berlin",
+      "type": "university of applied sciences",
+      "website": "https://www.eh-berlin.de",
+      "source": "https://www.wikidata.org/wiki/Q1380205"
+    },
+    {
+      "id": "Q2113846",
+      "name": "Provadis School of International Management and Technology",
+      "city": "Frankfurt",
+      "state": "Hesse",
+      "type": "private university",
+      "website": "https://www.provadis-hochschule.de/",
+      "source": "https://www.wikidata.org/wiki/Q2113846"
+    },
+    {
+      "id": "Q2115997",
+      "name": "Psychologische Hochschule Berlin",
+      "city": "Berlin",
+      "state": "Berlin",
+      "type": "private university",
+      "website": "http://www.psychologische-hochschule.de/",
+      "source": "https://www.wikidata.org/wiki/Q2115997"
+    },
+    {
+      "id": "Q2121899",
+      "name": "Quadriga Hochschule Berlin",
+      "city": "Berlin",
+      "state": "Berlin",
+      "type": "private university",
+      "website": "http://www.quadriga-hochschule.com/",
+      "source": "https://www.wikidata.org/wiki/Q2121899"
+    },
+    {
+      "id": "Q1262617",
+      "name": "Ravensburg University of Cooperative Education",
+      "city": "Ravensburg",
+      "state": "Baden-Württemberg",
+      "type": "public university",
+      "website": "http://www.dhbw-ravensburg.de",
+      "source": "https://www.wikidata.org/wiki/Q1262617"
+    },
+    {
+      "id": "Q2718933",
+      "name": "Ravensburg-Weingarten University of Applied Sciences",
+      "city": "Weingarten",
+      "state": "Baden-Württemberg",
+      "type": "public university",
+      "website": "https://www.rwu.de/",
+      "source": "https://www.wikidata.org/wiki/Q2718933"
+    },
+    {
+      "id": "Q982435",
+      "name": "Regensburg University of Applied Sciences",
+      "city": "Regensburg",
+      "state": "Bavaria",
+      "type": "public university",
+      "website": "http://www.oth-regensburg.de/",
+      "source": "https://www.wikidata.org/wiki/Q982435"
+    },
+    {
+      "id": "Q2418970",
+      "name": "Reutlingen School of Theology",
+      "city": "Reutlingen",
+      "state": "Baden-Württemberg",
+      "type": "university of applied sciences",
+      "website": "http://www.th-reutlingen.de/",
+      "source": "https://www.wikidata.org/wiki/Q2418970"
+    },
+    {
+      "id": "Q317125",
+      "name": "Reutlingen University",
+      "city": "",
+      "state": "",
+      "type": "higher education institution",
+      "website": "https://www.reutlingen-university.de/",
+      "source": "https://www.wikidata.org/wiki/Q317125"
+    },
+    {
+      "id": "Q1447117",
+      "name": "Rheinische Fachhochschule Neuss",
+      "city": "Neuss",
+      "state": "North Rhine-Westphalia",
+      "type": "university of applied sciences",
+      "website": "http://www.rfh-neuss.eu/",
+      "source": "https://www.wikidata.org/wiki/Q1447117"
+    },
+    {
+      "id": "Q1245583",
+      "name": "Rheinische Hochschule Köln",
+      "city": "Cologne",
+      "state": "North Rhine-Westphalia",
+      "type": "university of applied sciences",
+      "website": "https://rh-koeln.de/",
+      "source": "https://www.wikidata.org/wiki/Q1245583"
+    },
+    {
+      "id": "Q1380172",
+      "name": "Rheinland-Westfalen-Lippe University of Applied Sciences",
+      "city": "Bochum",
+      "state": "North Rhine-Westphalia",
+      "type": "university of applied sciences",
+      "website": "http://www.efh-bochum.de/",
+      "source": "https://www.wikidata.org/wiki/Q1380172"
+    },
+    {
+      "id": "Q542415",
+      "name": "RheinMain University of Applied Sciences",
+      "city": "Darmstadt Government Region",
+      "state": "Hesse",
+      "type": "public university",
+      "website": "https://www.hs-rm.de/",
+      "source": "https://www.wikidata.org/wiki/Q542415"
+    },
+    {
+      "id": "Q1622138",
+      "name": "Rhine-Waal University of Applied Sciences",
+      "city": "North Rhine-Westphalia",
+      "state": "North Rhine-Westphalia",
+      "type": "public university",
+      "website": "http://www.hochschule-rhein-waal.de/",
+      "source": "https://www.wikidata.org/wiki/Q1622138"
+    },
+    {
+      "id": "Q21040613",
+      "name": "Rhineland-Palatinate Police University of Applied Sciences",
+      "city": "Rhineland-Palatinate",
+      "state": "Rhineland-Palatinate",
+      "type": "public university",
+      "website": "https://www.polizei.rlp.de/die-polizei/dienststellen/hochschule-der-polizei-rheinland-pfalz",
+      "source": "https://www.wikidata.org/wiki/Q21040613"
+    },
+    {
+      "id": "Q2148900",
+      "name": "Richard-Strauss-Konservatorium München",
+      "city": "Au-Haidhausen",
+      "state": "Bavaria",
+      "type": "conservatory",
+      "website": "http://www.rsk.musin.de/",
+      "source": "https://www.wikidata.org/wiki/Q2148900"
+    },
+    {
+      "id": "Q315238",
+      "name": "Robert Schumann Hochschule",
+      "city": "Düsseldorf",
+      "state": "North Rhine-Westphalia",
+      "type": "conservatory",
+      "website": "https://www.rsh-duesseldorf.de/",
+      "source": "https://www.wikidata.org/wiki/Q315238"
+    },
+    {
+      "id": "Q2156264",
+      "name": "Robert-Schumann-Konservatorium Zwickau",
+      "city": "Zwickau",
+      "state": "Saxony",
+      "type": "conservatory",
+      "website": "http://musikschulezwickau.de/",
+      "source": "https://www.wikidata.org/wiki/Q2156264"
+    },
+    {
+      "id": "Q1524967",
+      "name": "Rostock Medical Faculty",
+      "city": "",
+      "state": "",
+      "type": "medical school",
+      "website": "https://www.med.uni-rostock.de/",
+      "source": "https://www.wikidata.org/wiki/Q1524967"
+    },
+    {
+      "id": "Q881130",
+      "name": "Rostock University of Music and Drama",
+      "city": "Stadtmitte",
+      "state": "Mecklenburg-Vorpommern",
+      "type": "higher education institution",
+      "website": "https://www.hmt-rostock.de/",
+      "source": "https://www.wikidata.org/wiki/Q881130"
+    },
+    {
+      "id": "Q1622175",
+      "name": "Rottenburg University of Applied Forest Sciences",
+      "city": "Rottenburg am Neckar",
+      "state": "Baden-Württemberg",
+      "type": "public university",
+      "website": "http://www.hs-rottenburg.net",
+      "source": "https://www.wikidata.org/wiki/Q1622175"
+    },
+    {
+      "id": "Q309948",
+      "name": "Ruhr University Bochum",
+      "city": "North Rhine-Westphalia",
+      "state": "North Rhine-Westphalia",
+      "type": "public university",
+      "website": "https://www.ruhr-uni-bochum.de/de",
+      "source": "https://www.wikidata.org/wiki/Q309948"
+    },
+    {
+      "id": "Q1622141",
+      "name": "Ruhr West University of Applied Sciences",
+      "city": "Mülheim an der Ruhr",
+      "state": "North Rhine-Westphalia",
+      "type": "public university",
+      "website": "http://en.hochschule-ruhr-west.de/",
+      "source": "https://www.wikidata.org/wiki/Q1622141"
+    },
+    {
+      "id": "Q273263",
+      "name": "RWTH Aachen University",
+      "city": "Aachen",
+      "state": "North Rhine-Westphalia",
+      "type": "public university",
+      "website": "https://www.rwth-aachen.de/",
+      "source": "https://www.wikidata.org/wiki/Q273263"
+    },
+    {
+      "id": "Q1622149",
+      "name": "Saar College of Fine Arts",
+      "city": "Saarbrücken",
+      "state": "Saarland",
+      "type": "art academy",
+      "website": "http://www.hbksaar.de",
+      "source": "https://www.wikidata.org/wiki/Q1622149"
+    },
+    {
+      "id": "Q700758",
+      "name": "Saarland University",
+      "city": "Saarbrücken",
+      "state": "Saarland",
+      "type": "public university",
+      "website": "https://www.uni-saarland.de/",
+      "source": "https://www.wikidata.org/wiki/Q700758"
+    },
+    {
+      "id": "Q895645",
+      "name": "Sankt Georgen Graduate School of Philosophy and Theology",
+      "city": "",
+      "state": "",
+      "type": "university",
+      "website": "http://www.sankt-georgen.de/",
+      "source": "https://www.wikidata.org/wiki/Q895645"
+    },
+    {
+      "id": "Q1509323",
+      "name": "Saxon Police Force School",
+      "city": "Rothenburg",
+      "state": "Saxony",
+      "type": "public university",
+      "website": "http://www.polizei.sachsen.de/de/polfh.htm",
+      "source": "https://www.wikidata.org/wiki/Q1509323"
+    },
+    {
+      "id": "Q1391222",
+      "name": "Schmalkalden University of Applied Sciences",
+      "city": "",
+      "state": "",
+      "type": "university of applied sciences",
+      "website": "http://www.hs-schmalkalden.de",
+      "source": "https://www.wikidata.org/wiki/Q1391222"
+    },
+    {
+      "id": "Q1391225",
+      "name": "Schwetzingen Technical Institute & Graduate Court Registrars' College",
+      "city": "Schwetzingen",
+      "state": "Baden-Württemberg",
+      "type": "public university",
+      "website": "http://www.fh-schwetzingen.de/",
+      "source": "https://www.wikidata.org/wiki/Q1391225"
+    },
+    {
+      "id": "Q48756211",
+      "name": "Sigmund Freud Privatuniversität - Standort Berlin",
+      "city": "Berlin",
+      "state": "Berlin",
+      "type": "university",
+      "website": "http://www.sfu-berlin.de",
+      "source": "https://www.wikidata.org/wiki/Q48756211"
+    },
+    {
+      "id": "Q1259168",
+      "name": "South Westphalia University of Applied Sciences",
+      "city": "Iserlohn",
+      "state": "North Rhine-Westphalia",
+      "type": "public university",
+      "website": "https://www.fh-swf.de/",
+      "source": "https://www.wikidata.org/wiki/Q1259168"
+    },
+    {
+      "id": "Q7392824",
+      "name": "SRH Berlin University of Applied Sciences",
+      "city": "Berlin",
+      "state": "Berlin",
+      "type": "university",
+      "website": "http://www.srh-hochschule-berlin.de/",
+      "source": "https://www.wikidata.org/wiki/Q7392824"
+    },
+    {
+      "id": "Q2207700",
+      "name": "SRH Fernhochschule",
+      "city": "Riedlingen",
+      "state": "Baden-Württemberg",
+      "type": "private university",
+      "website": "https://www.mobile-university.de/de/startseite/",
+      "source": "https://www.wikidata.org/wiki/Q2207700"
+    },
+    {
+      "id": "Q1622160",
+      "name": "SRH Hochschule der populären Künste",
+      "city": "Berlin",
+      "state": "Berlin",
+      "type": "private Hochschule",
+      "website": "https://www.hdpk.de/",
+      "source": "https://www.wikidata.org/wiki/Q1622160"
+    },
+    {
+      "id": "Q2207696",
+      "name": "SRH Hochschule for Health Gera",
+      "city": "Gera",
+      "state": "Thuringia",
+      "type": "private university",
+      "website": "https://www.srh-university.de/de/unsere-standorte/gera/",
+      "source": "https://www.wikidata.org/wiki/Q2207696"
+    },
+    {
+      "id": "Q2207713",
+      "name": "SRH Hochschule für Wirtschaft und Medien Calw",
+      "city": "Calw",
+      "state": "Baden-Württemberg",
+      "type": "private Hochschule",
+      "website": "http://www.hochschule-calw.de",
+      "source": "https://www.wikidata.org/wiki/Q2207713"
+    },
+    {
+      "id": "Q1757937",
+      "name": "SRH Hochschule Hamm",
+      "city": "Hamm",
+      "state": "North Rhine-Westphalia",
+      "type": "private Hochschule",
+      "website": "http://www.fh-hamm.de",
+      "source": "https://www.wikidata.org/wiki/Q1757937"
+    },
+    {
+      "id": "Q110665671",
+      "name": "SRH University Campus Fürth",
+      "city": "Fürth",
+      "state": "Bavaria",
+      "type": "private university",
+      "website": "https://www.srh-university.de/de/",
+      "source": "https://www.wikidata.org/wiki/Q110665671"
+    },
+    {
+      "id": "Q136490501",
+      "name": "SRH University of Applied Sciences Heidelberg",
+      "city": "Heidelberg",
+      "state": "Baden-Württemberg",
+      "type": "university of applied sciences",
+      "website": "https://www.srh-university.de",
+      "source": "https://www.wikidata.org/wiki/Q136490501"
+    },
+    {
+      "id": "Q828763",
+      "name": "Staatliche Studienakademie Bautzen",
+      "city": "Bautzen",
+      "state": "Saxony",
+      "type": "Hochschule",
+      "website": "http://www.ba-bautzen.de",
+      "source": "https://www.wikidata.org/wiki/Q828763"
+    },
+    {
+      "id": "Q23782301",
+      "name": "Staatliche Studienakademie Breitenbrunn",
+      "city": "Breitenbrunn/Erzgebirge",
+      "state": "Saxony",
+      "type": "public university",
+      "website": "http://www.ba-breitenbrunn.de/",
+      "source": "https://www.wikidata.org/wiki/Q23782301"
+    },
+    {
+      "id": "Q828762",
+      "name": "Staatliche Studienakademie Dresden",
+      "city": "Dresden",
+      "state": "Saxony",
+      "type": "public university",
+      "website": "https://www.dhsn.de/dresden",
+      "source": "https://www.wikidata.org/wiki/Q828762"
+    },
+    {
+      "id": "Q65952781",
+      "name": "Staatliche Studienakademie Leipzig",
+      "city": "Leipzig",
+      "state": "Saxony",
+      "type": "public university",
+      "website": "https://www.ba-leipzig.de",
+      "source": "https://www.wikidata.org/wiki/Q65952781"
+    },
+    {
+      "id": "Q828771",
+      "name": "Staatliche Studienakademie Plauen",
+      "city": "Plauen",
+      "state": "Saxony",
+      "type": "public university",
+      "website": "https://www.ba-plauen.de/",
+      "source": "https://www.wikidata.org/wiki/Q828771"
+    },
+    {
+      "id": "Q96623670",
+      "name": "Staatliche Studienakademie Riesa",
+      "city": "Riesa",
+      "state": "Saxony",
+      "type": "public university",
+      "website": "https://www.ba-riesa.de/",
+      "source": "https://www.wikidata.org/wiki/Q96623670"
+    },
+    {
+      "id": "Q875722",
+      "name": "Städelschule",
+      "city": "Frankfurt",
+      "state": "Hesse",
+      "type": "art academy",
+      "website": "http://www.staedelschule.de/",
+      "source": "https://www.wikidata.org/wiki/Q875722"
+    },
+    {
+      "id": "Q2324294",
+      "name": "State Academy of Fine Arts Stuttgart",
+      "city": "",
+      "state": "",
+      "type": "art academy",
+      "website": "https://www.abk-stuttgart.de/",
+      "source": "https://www.wikidata.org/wiki/Q2324294"
+    },
+    {
+      "id": "Q2324306",
+      "name": "State Ballet School and School of Artistry",
+      "city": "Berlin",
+      "state": "Berlin",
+      "type": "art academy",
+      "website": "http://www.ballettschule-berlin.de",
+      "source": "https://www.wikidata.org/wiki/Q2324306"
+    },
+    {
+      "id": "Q568692",
+      "name": "State University of Music and Performing Arts Stuttgart",
+      "city": "Stuttgart",
+      "state": "Baden-Württemberg",
+      "type": "conservatory",
+      "website": "http://www.mh-stuttgart.de",
+      "source": "https://www.wikidata.org/wiki/Q568692"
+    },
+    {
+      "id": "Q883471",
+      "name": "Steinbeis-Hochschule Berlin",
+      "city": "Berlin",
+      "state": "Berlin",
+      "type": "private university",
+      "website": "http://www.steinbeis-hochschule.de/",
+      "source": "https://www.wikidata.org/wiki/Q883471"
+    },
+    {
+      "id": "Q1238833",
+      "name": "Steuerakademie Niedersachsen",
+      "city": "Bad Eilsen",
+      "state": "Lower Saxony",
+      "type": "university of applied sciences",
+      "website": "http://www.steuerakademie.niedersachsen.de/",
+      "source": "https://www.wikidata.org/wiki/Q1238833"
+    },
+    {
+      "id": "Q1233544",
+      "name": "Stuttgart Media University",
+      "city": "Stuttgart",
+      "state": "Baden-Württemberg",
+      "type": "public university",
+      "website": "https://www.hdm-stuttgart.de",
+      "source": "https://www.wikidata.org/wiki/Q1233544"
+    },
+    {
+      "id": "Q686171",
+      "name": "Technical University of Applied Sciences Wildau",
+      "city": "Brandenburg",
+      "state": "Brandenburg",
+      "type": "Technische Hochschule",
+      "website": "http://www.th-wildau.de/",
+      "source": "https://www.wikidata.org/wiki/Q686171"
+    },
+    {
+      "id": "Q1622239",
+      "name": "Technical University of Applied Sciences Würzburg-Schweinfurt",
+      "city": "Würzburg",
+      "state": "Bavaria",
+      "type": "public university",
+      "website": "http://www.thws.de/",
+      "source": "https://www.wikidata.org/wiki/Q1622239"
+    },
+    {
+      "id": "Q310695",
+      "name": "Technical University of Darmstadt",
+      "city": "Darmstadt",
+      "state": "Hesse",
+      "type": "public university",
+      "website": "https://www.tu-darmstadt.de/index.en.jsp",
+      "source": "https://www.wikidata.org/wiki/Q310695"
+    },
+    {
+      "id": "Q685557",
+      "name": "Technical University of Dortmund",
+      "city": "Dortmund",
+      "state": "North Rhine-Westphalia",
+      "type": "public university",
+      "website": "https://www.tu-dortmund.de/",
+      "source": "https://www.wikidata.org/wiki/Q685557"
+    },
+    {
+      "id": "Q157808",
+      "name": "Technical University of Munich",
+      "city": "Munich",
+      "state": "Bavaria",
+      "type": "university of technology",
+      "website": "https://www.tum.de/",
+      "source": "https://www.wikidata.org/wiki/Q157808"
+    },
+    {
+      "id": "Q2399066",
+      "name": "Technische Hochschule Georg Agricola",
+      "city": "Bochum",
+      "state": "North Rhine-Westphalia",
+      "type": "university of applied sciences",
+      "website": "https://www.tfh-bochum.de/en/",
+      "source": "https://www.wikidata.org/wiki/Q2399066"
+    },
+    {
+      "id": "Q1391202",
+      "name": "Technische Hochschule Lübeck",
+      "city": "Lübeck",
+      "state": "Schleswig-Holstein",
+      "type": "public university",
+      "website": "https://www.th-luebeck.de/",
+      "source": "https://www.wikidata.org/wiki/Q1391202"
+    },
+    {
+      "id": "Q1503440",
+      "name": "Technische Hochschule Nuremberg Georg Simon Ohm",
+      "city": "Nuremberg",
+      "state": "Bavaria",
+      "type": "public university",
+      "website": "https://www.th-nuernberg.de/",
+      "source": "https://www.wikidata.org/wiki/Q1503440"
+    },
+    {
+      "id": "Q895634",
+      "name": "Technische Hochschule OWL",
+      "city": "North Rhine-Westphalia",
+      "state": "North Rhine-Westphalia",
+      "type": "public university",
+      "website": "http://www.th-owl.de/",
+      "source": "https://www.wikidata.org/wiki/Q895634"
+    },
+    {
+      "id": "Q51985",
+      "name": "Technische Universität Berlin",
+      "city": "Berlin",
+      "state": "Berlin",
+      "type": "university of technology",
+      "website": "https://www.tu.berlin/",
+      "source": "https://www.wikidata.org/wiki/Q51985"
+    },
+    {
+      "id": "Q129195",
+      "name": "Technische Universität Ilmenau",
+      "city": "Ilmenau",
+      "state": "Thuringia",
+      "type": "public university",
+      "website": "https://www.tu-ilmenau.de",
+      "source": "https://www.wikidata.org/wiki/Q129195"
+    },
+    {
+      "id": "Q54166",
+      "name": "TH Köln – University of Applied Sciences",
+      "city": "Cologne",
+      "state": "North Rhine-Westphalia",
+      "type": "Technische Hochschule",
+      "website": "https://www.th-koeln.de/",
+      "source": "https://www.wikidata.org/wiki/Q54166"
+    },
+    {
+      "id": "Q885105",
+      "name": "Theological College Wuppertal/Bethel",
+      "city": "Wuppertal",
+      "state": "North Rhine-Westphalia",
+      "type": "university of applied sciences",
+      "website": "http://www.kiho-wuppertal-bethel.de",
+      "source": "https://www.wikidata.org/wiki/Q885105"
+    },
+    {
+      "id": "Q883284",
+      "name": "Theological Faculty of Paderborn",
+      "city": "Paderborn",
+      "state": "North Rhine-Westphalia",
+      "type": "church college",
+      "website": "http://www.thf-paderborn.de/",
+      "source": "https://www.wikidata.org/wiki/Q883284"
+    },
+    {
+      "id": "Q2418963",
+      "name": "Theologische Hochschule Ewersbach",
+      "city": "",
+      "state": "",
+      "type": "university of applied sciences",
+      "website": "http://th-ewersbach.de/",
+      "source": "https://www.wikidata.org/wiki/Q2418963"
+    },
+    {
+      "id": "Q1623675",
+      "name": "Theologisches Seminar Elstal",
+      "city": "Wustermark",
+      "state": "Brandenburg",
+      "type": "university of applied sciences",
+      "website": "https://www.th-elstal.de/",
+      "source": "https://www.wikidata.org/wiki/Q1623675"
+    },
+    {
+      "id": "Q1622111",
+      "name": "THI - Technical University of Applied Sciences in Ingolstadt",
+      "city": "Ingolstadt",
+      "state": "Bavaria",
+      "type": "public university",
+      "website": "https://www.thi.de/",
+      "source": "https://www.wikidata.org/wiki/Q1622111"
+    },
+    {
+      "id": "Q122911598",
+      "name": "Tomorrow University of Applied Sciences",
+      "city": "Hesse",
+      "state": "Hesse",
+      "type": "private university",
+      "website": "https://www.tomorrow.university/",
+      "source": "https://www.wikidata.org/wiki/Q122911598"
+    },
+    {
+      "id": "Q2446761",
+      "name": "Touro College Berlin",
+      "city": "Berlin",
+      "state": "Berlin",
+      "type": "private university",
+      "website": "http://www.touroberlin.com/",
+      "source": "https://www.wikidata.org/wiki/Q2446761"
+    },
+    {
+      "id": "Q1460171",
+      "name": "Transform Schauspielschule",
+      "city": "Berlin",
+      "state": "Berlin",
+      "type": "higher education institution",
+      "website": "http://www.transform-schauspielschule.de",
+      "source": "https://www.wikidata.org/wiki/Q1460171"
+    },
+    {
+      "id": "Q702486",
+      "name": "Trier University",
+      "city": "Trier",
+      "state": "Rhineland-Palatinate",
+      "type": "public university",
+      "website": "https://www.uni-trier.de/",
+      "source": "https://www.wikidata.org/wiki/Q702486"
+    },
+    {
+      "id": "Q1622206",
+      "name": "Trossingen University of Music",
+      "city": "Trossingen",
+      "state": "Baden-Württemberg",
+      "type": "Hochschule",
+      "website": "http://www.mh-trossingen.de//",
+      "source": "https://www.wikidata.org/wiki/Q1622206"
+    },
+    {
+      "id": "Q734324",
+      "name": "TU Braunschweig",
+      "city": "Brunswick",
+      "state": "Lower Saxony",
+      "type": "public university",
+      "website": "https://www.tu-braunschweig.de/",
+      "source": "https://www.wikidata.org/wiki/Q734324"
+    },
+    {
+      "id": "Q158158",
+      "name": "TU Dresden",
+      "city": "Dresden",
+      "state": "Saxony",
+      "type": "university of technology",
+      "website": "https://tu-dresden.de/",
+      "source": "https://www.wikidata.org/wiki/Q158158"
+    },
+    {
+      "id": "Q646136",
+      "name": "Ukrainian Free University",
+      "city": "Neuhausen-Nymphenburg",
+      "state": "Bavaria",
+      "type": "private university",
+      "website": "https://www.ufu-muenchen.de/",
+      "source": "https://www.wikidata.org/wiki/Q646136"
+    },
+    {
+      "id": "Q591905",
+      "name": "Ulm School of Design",
+      "city": "Ulm",
+      "state": "Baden-Württemberg",
+      "type": "university",
+      "website": "http://www.hfg-archiv.ulm.de",
+      "source": "https://www.wikidata.org/wiki/Q591905"
+    },
+    {
+      "id": "Q835662",
+      "name": "Ulm University",
+      "city": "Ulm",
+      "state": "Baden-Württemberg",
+      "type": "public university",
+      "website": "https://www.uni-ulm.de/",
+      "source": "https://www.wikidata.org/wiki/Q835662"
+    },
+    {
+      "id": "Q1622143",
+      "name": "Ulm University of Applied Sciences",
+      "city": "Ulm",
+      "state": "Baden-Württemberg",
+      "type": "public university",
+      "website": "http://hs-ulm.de",
+      "source": "https://www.wikidata.org/wiki/Q1622143"
+    },
+    {
+      "id": "Q28971028",
+      "name": "United Nations University Vice-Rectorate in Europe",
+      "city": "Bonn",
+      "state": "North Rhine-Westphalia",
+      "type": "international university",
+      "website": "https://unu.edu/vie",
+      "source": "https://www.wikidata.org/wiki/Q28971028"
+    },
+    {
+      "id": "Q101834620",
+      "name": "Universität Kassel Fachbereich 07 Wirtschaftswissenschaften",
+      "city": "",
+      "state": "",
+      "type": "business school",
+      "website": "https://www.uni-kassel.de/fb07/",
+      "source": "https://www.wikidata.org/wiki/Q101834620"
+    },
+    {
+      "id": "Q2496408",
+      "name": "Universitätsmedizin Göttingen",
+      "city": "Göttingen",
+      "state": "Lower Saxony",
+      "type": "medical school",
+      "website": "https://www.umg.eu/",
+      "source": "https://www.wikidata.org/wiki/Q2496408"
+    },
+    {
+      "id": "Q126689603",
+      "name": "University College Freiburg",
+      "city": "Baden-Württemberg",
+      "state": "Baden-Württemberg",
+      "type": "university college",
+      "website": "https://www.ucf.uni-freiburg.de/",
+      "source": "https://www.wikidata.org/wiki/Q126689603"
+    },
+    {
+      "id": "Q2496421",
+      "name": "University Medicine Greifswald",
+      "city": "Greifswald",
+      "state": "Mecklenburg-Vorpommern",
+      "type": "medical school",
+      "website": "https://www.unimedizin-greifswald.de",
+      "source": "https://www.wikidata.org/wiki/Q2496421"
+    },
+    {
+      "id": "Q1280712",
+      "name": "University of Applied Management",
+      "city": "",
+      "state": "",
+      "type": "higher education institution",
+      "website": "https://www.fham.de/",
+      "source": "https://www.wikidata.org/wiki/Q1280712"
+    },
+    {
+      "id": "Q1391214",
+      "name": "University of Applied Police Sciences Saxony Anhalt",
+      "city": "",
+      "state": "",
+      "type": "public university",
+      "website": "https://fh-polizei.sachsen-anhalt.de/",
+      "source": "https://www.wikidata.org/wiki/Q1391214"
+    },
+    {
+      "id": "Q1622188",
+      "name": "University of applied science for international management",
+      "city": "Heidelberg",
+      "state": "Baden-Württemberg",
+      "type": "private university",
+      "website": "http://www.himh.de",
+      "source": "https://www.wikidata.org/wiki/Q1622188"
+    },
+    {
+      "id": "Q1365807",
+      "name": "University of applied science in Finance Nordrhein-Westfalen",
+      "city": "Nordkirchen",
+      "state": "North Rhine-Westphalia",
+      "type": "university of applied sciences",
+      "website": "http://www.fhf-nordkirchen.de/",
+      "source": "https://www.wikidata.org/wiki/Q1365807"
+    },
+    {
+      "id": "Q619201",
+      "name": "University of Applied Sciences Appollon",
+      "city": "Bremen",
+      "state": "Bremen",
+      "type": "university of applied sciences",
+      "website": "http://www.apollon-hochschule.de/",
+      "source": "https://www.wikidata.org/wiki/Q619201"
+    },
+    {
+      "id": "Q851413",
+      "name": "University of Applied Sciences Berlin",
+      "city": "Bezirk Mitte",
+      "state": "Berlin",
+      "type": "public university",
+      "website": "https://www.bht-berlin.de/",
+      "source": "https://www.wikidata.org/wiki/Q851413"
+    },
+    {
+      "id": "Q1622079",
+      "name": "University of Applied Sciences Biberach",
+      "city": "Biberach an der Riß",
+      "state": "Baden-Württemberg",
+      "type": "public university",
+      "website": "http://www.hochschule-biberach.de/",
+      "source": "https://www.wikidata.org/wiki/Q1622079"
+    },
+    {
+      "id": "Q878170",
+      "name": "University of Applied Sciences Bingen",
+      "city": "Bingen am Rhein",
+      "state": "Rhineland-Palatinate",
+      "type": "public university",
+      "website": "https://www.th-bingen.de",
+      "source": "https://www.wikidata.org/wiki/Q878170"
+    },
+    {
+      "id": "Q1622093",
+      "name": "University of Applied Sciences Bremerhaven",
+      "city": "Bremerhaven",
+      "state": "Bremen",
+      "type": "public university",
+      "website": "https://www.hs-bremerhaven.de",
+      "source": "https://www.wikidata.org/wiki/Q1622093"
+    },
+    {
+      "id": "Q1622222",
+      "name": "University of Applied Sciences Dresden",
+      "city": "Dresden",
+      "state": "Saxony",
+      "type": "public university",
+      "website": "http://www.htw-dresden.de/",
+      "source": "https://www.wikidata.org/wiki/Q1622222"
+    },
+    {
+      "id": "Q1391189",
+      "name": "University of Applied Sciences Erfurt",
+      "city": "Erfurt",
+      "state": "Thuringia",
+      "type": "public university",
+      "website": "http://www.fh-erfurt.de/",
+      "source": "https://www.wikidata.org/wiki/Q1391189"
+    },
+    {
+      "id": "Q53546459",
+      "name": "University of Applied Sciences Europe",
+      "city": "Berlin",
+      "state": "Berlin",
+      "type": "private Hochschule",
+      "website": "https://www.ue-germany.com/de/",
+      "source": "https://www.wikidata.org/wiki/Q53546459"
+    },
+    {
+      "id": "Q1428381",
+      "name": "University of Applied Sciences Fliedner Fachhochschule",
+      "city": "Düsseldorf",
+      "state": "North Rhine-Westphalia",
+      "type": "university of applied sciences",
+      "website": "http://www.fliedner-fachhochschule.de",
+      "source": "https://www.wikidata.org/wiki/Q1428381"
+    },
+    {
+      "id": "Q1391272",
+      "name": "University of Applied Sciences for Administration and Services",
+      "city": "Altenholz",
+      "state": "Schleswig-Holstein",
+      "type": "public university",
+      "website": "http://www.fhvd.de/",
+      "source": "https://www.wikidata.org/wiki/Q1391272"
+    },
+    {
+      "id": "Q1622198",
+      "name": "University of Applied Sciences for Media Communication and Business",
+      "city": "Berlin",
+      "state": "Berlin",
+      "type": "private university",
+      "website": "https://www.hmkw.de/",
+      "source": "https://www.wikidata.org/wiki/Q1622198"
+    },
+    {
+      "id": "Q1622214",
+      "name": "University of Applied Sciences for Police Baden-Württemberg",
+      "city": "Baden-Württemberg",
+      "state": "Baden-Württemberg",
+      "type": "public university",
+      "website": "https://www.hfpol-bw.de/",
+      "source": "https://www.wikidata.org/wiki/Q1622214"
+    },
+    {
+      "id": "Q1391288",
+      "name": "University of Applied Sciences for Public Administration, Police and Justice",
+      "city": "Güstrow",
+      "state": "Mecklenburg-Vorpommern",
+      "type": "university of applied sciences",
+      "website": "http://www.fh-guestrow.de/",
+      "source": "https://www.wikidata.org/wiki/Q1391288"
+    },
+    {
+      "id": "Q1622109",
+      "name": "University of Applied Sciences Hof",
+      "city": "Hof",
+      "state": "Bavaria",
+      "type": "public university",
+      "website": "https://www.hof-university.de/",
+      "source": "https://www.wikidata.org/wiki/Q1622109"
+    },
+    {
+      "id": "Q1391182",
+      "name": "University of Applied Sciences in Brandenburg",
+      "city": "Brandenburg an der Havel",
+      "state": "Brandenburg",
+      "type": "university of applied sciences",
+      "website": "http://www.th-brandenburg.de/",
+      "source": "https://www.wikidata.org/wiki/Q1391182"
+    },
+    {
+      "id": "Q1356982",
+      "name": "University of Applied Sciences Jena",
+      "city": "Jena",
+      "state": "Thuringia",
+      "type": "public university",
+      "website": "https://www.eah-jena.de/",
+      "source": "https://www.wikidata.org/wiki/Q1356982"
+    },
+    {
+      "id": "Q1391198",
+      "name": "University of Applied Sciences Kaiserslautern",
+      "city": "Kaiserslautern",
+      "state": "Rhineland-Palatinate",
+      "type": "public university",
+      "website": "https://www.hs-kl.de/",
+      "source": "https://www.wikidata.org/wiki/Q1391198"
+    },
+    {
+      "id": "Q1622113",
+      "name": "University of Applied Sciences Kehl",
+      "city": "Kehl",
+      "state": "Baden-Württemberg",
+      "type": "public university",
+      "website": "https://www.hs-kehl.de/",
+      "source": "https://www.wikidata.org/wiki/Q1622113"
+    },
+    {
+      "id": "Q1622117",
+      "name": "University of Applied Sciences Koblenz",
+      "city": "Koblenz",
+      "state": "Rhineland-Palatinate",
+      "type": "public university",
+      "website": "http://www.hs-koblenz.de/",
+      "source": "https://www.wikidata.org/wiki/Q1622117"
+    },
+    {
+      "id": "Q1622121",
+      "name": "University of Applied Sciences Landshut",
+      "city": "Landshut",
+      "state": "Bavaria",
+      "type": "public university",
+      "website": "http://www.haw-landshut.de/",
+      "source": "https://www.wikidata.org/wiki/Q1622121"
+    },
+    {
+      "id": "Q1604537",
+      "name": "University of Applied Sciences Ludwigsburg",
+      "city": "Ludwigsburg",
+      "state": "Baden-Württemberg",
+      "type": "public university",
+      "website": "http://www.hs-ludwigsburg.de/",
+      "source": "https://www.wikidata.org/wiki/Q1604537"
+    },
+    {
+      "id": "Q1622125",
+      "name": "University of Applied Sciences Ludwigshafen",
+      "city": "Ludwigshafen",
+      "state": "Rhineland-Palatinate",
+      "type": "public university",
+      "website": "https://www.hwg-lu.de/",
+      "source": "https://www.wikidata.org/wiki/Q1622125"
+    },
+    {
+      "id": "Q1391248",
+      "name": "University of Applied Sciences Meissen",
+      "city": "Meissen",
+      "state": "Saxony",
+      "type": "public university",
+      "website": "https://www.fhsv.sachsen.de/",
+      "source": "https://www.wikidata.org/wiki/Q1391248"
+    },
+    {
+      "id": "Q1622129",
+      "name": "University of Applied Sciences Neu-Ulm",
+      "city": "Neu-Ulm",
+      "state": "Bavaria",
+      "type": "public university",
+      "website": "https://www.hnu.de/",
+      "source": "https://www.wikidata.org/wiki/Q1622129"
+    },
+    {
+      "id": "Q1622133",
+      "name": "University of Applied Sciences Offenburg",
+      "city": "Offenburg",
+      "state": "Baden-Württemberg",
+      "type": "public university",
+      "website": "https://www.hs-offenburg.de/",
+      "source": "https://www.wikidata.org/wiki/Q1622133"
+    },
+    {
+      "id": "Q896706",
+      "name": "University of Applied Sciences Potsdam",
+      "city": "Potsdam",
+      "state": "Brandenburg",
+      "type": "university of applied sciences",
+      "website": "http://www.fh-potsdam.de/",
+      "source": "https://www.wikidata.org/wiki/Q896706"
+    },
+    {
+      "id": "Q263537",
+      "name": "University of Applied Sciences Rosenheim",
+      "city": "Rosenheim",
+      "state": "Rhineland-Palatinate",
+      "type": "public university",
+      "website": "https://www.th-rosenheim.de/",
+      "source": "https://www.wikidata.org/wiki/Q263537"
+    },
+    {
+      "id": "Q1622157",
+      "name": "University of Applied Sciences Sparkasse",
+      "city": "Bonn",
+      "state": "North Rhine-Westphalia",
+      "type": "university of applied sciences",
+      "website": "http://www.s-hochschule.de/",
+      "source": "https://www.wikidata.org/wiki/Q1622157"
+    },
+    {
+      "id": "Q1540704",
+      "name": "University of Applied Sciences Stuttgart",
+      "city": "Stuttgart",
+      "state": "Baden-Württemberg",
+      "type": "public university",
+      "website": "https://www.hft-stuttgart.de/",
+      "source": "https://www.wikidata.org/wiki/Q1540704"
+    },
+    {
+      "id": "Q896546",
+      "name": "University of Applied Sciences Trier",
+      "city": "Trier",
+      "state": "Rhineland-Palatinate",
+      "type": "public university",
+      "website": "https://www.hochschule-trier.de/",
+      "source": "https://www.wikidata.org/wiki/Q896546"
+    },
+    {
+      "id": "Q976984",
+      "name": "University of Applied Sciences Wedel",
+      "city": "Wedel",
+      "state": "Schleswig-Holstein",
+      "type": "private university",
+      "website": "http://www.fh-wedel.de",
+      "source": "https://www.wikidata.org/wiki/Q976984"
+    },
+    {
+      "id": "Q1391239",
+      "name": "University of Applied Sciences Worms",
+      "city": "Worms",
+      "state": "Rhineland-Palatinate",
+      "type": "public university",
+      "website": "https://www.hs-worms.de/",
+      "source": "https://www.wikidata.org/wiki/Q1391239"
+    },
+    {
+      "id": "Q616905",
+      "name": "University of Augsburg",
+      "city": "Augsburg",
+      "state": "Bavaria",
+      "type": "public university",
+      "website": "http://www.uni-augsburg.de/",
+      "source": "https://www.wikidata.org/wiki/Q616905"
+    },
+    {
+      "id": "Q707272",
+      "name": "University of Bamberg",
+      "city": "Bamberg",
+      "state": "Bavaria",
+      "type": "public university",
+      "website": "https://www.uni-bamberg.de/",
+      "source": "https://www.wikidata.org/wiki/Q707272"
+    },
+    {
+      "id": "Q702482",
+      "name": "University of Bayreuth",
+      "city": "Bayreuth",
+      "state": "Bavaria",
+      "type": "public university",
+      "website": "https://www.uni-bayreuth.de/",
+      "source": "https://www.wikidata.org/wiki/Q702482"
+    },
+    {
+      "id": "Q152171",
+      "name": "University of Bonn",
+      "city": "Bonn",
+      "state": "North Rhine-Westphalia",
+      "type": "public university",
+      "website": "https://www.uni-bonn.de",
+      "source": "https://www.wikidata.org/wiki/Q152171"
+    },
+    {
+      "id": "Q500692",
+      "name": "University of Bremen",
+      "city": "Bremen",
+      "state": "Bremen",
+      "type": "public university",
+      "website": "https://www.uni-bremen.de/",
+      "source": "https://www.wikidata.org/wiki/Q500692"
+    },
+    {
+      "id": "Q54096",
+      "name": "University of Cologne",
+      "city": "Cologne",
+      "state": "North Rhine-Westphalia",
+      "type": "public university",
+      "website": "https://uni-koeln.de",
+      "source": "https://www.wikidata.org/wiki/Q54096"
+    },
+    {
+      "id": "Q122575751",
+      "name": "University of Cooperative Education for Banking",
+      "city": "Hanover",
+      "state": "Lower Saxony",
+      "type": "private university",
+      "website": "https://www.ba-bankwirtschaft.de/",
+      "source": "https://www.wikidata.org/wiki/Q122575751"
+    },
+    {
+      "id": "Q123010841",
+      "name": "University of Cooperative Education Fulda",
+      "city": "",
+      "state": "",
+      "type": "private university",
+      "website": "https://www.ba-fulda.de/",
+      "source": "https://www.wikidata.org/wiki/Q123010841"
+    },
+    {
+      "id": "Q122577611",
+      "name": "University of Cooperative Education Melle",
+      "city": "Melle",
+      "state": "Lower Saxony",
+      "type": "private university",
+      "website": "https://www.ba-melle.de/",
+      "source": "https://www.wikidata.org/wiki/Q122577611"
+    },
+    {
+      "id": "Q696757",
+      "name": "University of Duisburg-Essen",
+      "city": "North Rhine-Westphalia",
+      "state": "North Rhine-Westphalia",
+      "type": "public university",
+      "website": "https://www.uni-due.de/",
+      "source": "https://www.wikidata.org/wiki/Q696757"
+    },
+    {
+      "id": "Q317032",
+      "name": "University of Düsseldorf",
+      "city": "North Rhine-Westphalia",
+      "state": "North Rhine-Westphalia",
+      "type": "public university",
+      "website": "https://www.hhu.de/",
+      "source": "https://www.wikidata.org/wiki/Q317032"
+    },
+    {
+      "id": "Q1441203",
+      "name": "University of Education Freiburg",
+      "city": "Freiburg im Breisgau",
+      "state": "Baden-Württemberg",
+      "type": "public university",
+      "website": "https://www.ph-freiburg.de/",
+      "source": "https://www.wikidata.org/wiki/Q1441203"
+    },
+    {
+      "id": "Q2120205",
+      "name": "University of Education Schwaebisch Gmuend",
+      "city": "Schwäbisch Gmünd",
+      "state": "Baden-Württemberg",
+      "type": "public university",
+      "website": "http://www.ph-gmuend.de",
+      "source": "https://www.wikidata.org/wiki/Q2120205"
+    },
+    {
+      "id": "Q702524",
+      "name": "University of Erfurt",
+      "city": "",
+      "state": "",
+      "type": "university",
+      "website": "https://www.uni-erfurt.de/",
+      "source": "https://www.wikidata.org/wiki/Q702524"
+    },
+    {
+      "id": "Q40025",
+      "name": "University of Erlangen–Nuremberg",
+      "city": "Bavaria",
+      "state": "Bavaria",
+      "type": "public university",
+      "website": "https://www.fau.de/",
+      "source": "https://www.wikidata.org/wiki/Q40025"
+    },
+    {
+      "id": "Q1017616",
+      "name": "University of Europe for Applied Sciences",
+      "city": "Iserlohn",
+      "state": "North Rhine-Westphalia",
+      "type": "higher education institution",
+      "website": "http://www.bits-hochschule.de/",
+      "source": "https://www.wikidata.org/wiki/Q1017616"
+    },
+    {
+      "id": "Q506436",
+      "name": "University of Flensburg",
+      "city": "Schleswig-Holstein",
+      "state": "Schleswig-Holstein",
+      "type": "public university",
+      "website": "https://www.uni-flensburg.de/",
+      "source": "https://www.wikidata.org/wiki/Q506436"
+    },
+    {
+      "id": "Q153987",
+      "name": "University of Freiburg",
+      "city": "Freiburg im Breisgau",
+      "state": "Baden-Württemberg",
+      "type": "public university",
+      "website": "https://uni-freiburg.de/",
+      "source": "https://www.wikidata.org/wiki/Q153987"
+    },
+    {
+      "id": "Q317053",
+      "name": "University of Giessen",
+      "city": "Giessen",
+      "state": "Hesse",
+      "type": "public university",
+      "website": "https://www.uni-giessen.de/",
+      "source": "https://www.wikidata.org/wiki/Q317053"
+    },
+    {
+      "id": "Q152838",
+      "name": "University of Göttingen",
+      "city": "Göttingen",
+      "state": "Lower Saxony",
+      "type": "public university",
+      "website": "https://www.uni-goettingen.de/",
+      "source": "https://www.wikidata.org/wiki/Q152838"
+    },
+    {
+      "id": "Q165528",
+      "name": "University of Greifswald",
+      "city": "Mecklenburg-Vorpommern",
+      "state": "Mecklenburg-Vorpommern",
+      "type": "public university",
+      "website": "https://www.uni-greifswald.de/",
+      "source": "https://www.wikidata.org/wiki/Q165528"
+    },
+    {
+      "id": "Q156725",
+      "name": "University of Hamburg",
+      "city": "Hamburg",
+      "state": "Hamburg",
+      "type": "public university",
+      "website": "https://uni-hamburg.de",
+      "source": "https://www.wikidata.org/wiki/Q156725"
+    },
+    {
+      "id": "Q319333",
+      "name": "University of Hildesheim",
+      "city": "Hildesheim",
+      "state": "Lower Saxony",
+      "type": "public university",
+      "website": "https://www.uni-hildesheim.de/",
+      "source": "https://www.wikidata.org/wiki/Q319333"
+    },
+    {
+      "id": "Q690912",
+      "name": "University of Hohenheim",
+      "city": "Stuttgart",
+      "state": "Baden-Württemberg",
+      "type": "public university",
+      "website": "https://www.uni-hohenheim.de/",
+      "source": "https://www.wikidata.org/wiki/Q690912"
+    },
+    {
+      "id": "Q154561",
+      "name": "University of Jena",
+      "city": "Jena",
+      "state": "Thuringia",
+      "type": "public university",
+      "website": "https://www.uni-jena.de/",
+      "source": "https://www.wikidata.org/wiki/Q154561"
+    },
+    {
+      "id": "Q111020102",
+      "name": "University of Kaiserslautern-Landau",
+      "city": "",
+      "state": "",
+      "type": "public university",
+      "website": "https://rptu.de/",
+      "source": "https://www.wikidata.org/wiki/Q111020102"
+    },
+    {
+      "id": "Q833822",
+      "name": "University of Kassel",
+      "city": "Kassel",
+      "state": "Hesse",
+      "type": "public university",
+      "website": "https://www.uni-kassel.de",
+      "source": "https://www.wikidata.org/wiki/Q833822"
+    },
+    {
+      "id": "Q113633597",
+      "name": "University of Koblenz",
+      "city": "Koblenz",
+      "state": "Rhineland-Palatinate",
+      "type": "university",
+      "website": "https://www.uni-koblenz.de/de",
+      "source": "https://www.wikidata.org/wiki/Q113633597"
+    },
+    {
+      "id": "Q835440",
+      "name": "University of Konstanz",
+      "city": "Constance",
+      "state": "Baden-Württemberg",
+      "type": "public university",
+      "website": "https://www.uni-konstanz.de/",
+      "source": "https://www.wikidata.org/wiki/Q835440"
+    },
+    {
+      "id": "Q110489587",
+      "name": "University of Labour",
+      "city": "Frankfurt",
+      "state": "Hesse",
+      "type": "private university",
+      "website": "https://www.university-of-labour.de/",
+      "source": "https://www.wikidata.org/wiki/Q110489587"
+    },
+    {
+      "id": "Q317087",
+      "name": "University of Lübeck",
+      "city": "Schleswig-Holstein",
+      "state": "Schleswig-Holstein",
+      "type": "public university",
+      "website": "https://www.uni-luebeck.de/",
+      "source": "https://www.wikidata.org/wiki/Q317087"
+    },
+    {
+      "id": "Q655866",
+      "name": "University of Magdeburg",
+      "city": "Saxony-Anhalt",
+      "state": "Saxony-Anhalt",
+      "type": "public university",
+      "website": "http://www.ovgu.de/",
+      "source": "https://www.wikidata.org/wiki/Q655866"
+    },
+    {
+      "id": "Q317070",
+      "name": "University of Mannheim",
+      "city": "Mannheim",
+      "state": "Baden-Württemberg",
+      "type": "public university",
+      "website": "https://www.uni-mannheim.de/",
+      "source": "https://www.wikidata.org/wiki/Q317070"
+    },
+    {
+      "id": "Q155354",
+      "name": "University of Marburg",
+      "city": "Marburg",
+      "state": "Hesse",
+      "type": "public university",
+      "website": "https://www.uni-marburg.de/",
+      "source": "https://www.wikidata.org/wiki/Q155354"
+    },
+    {
+      "id": "Q168426",
+      "name": "University of Münster",
+      "city": "Münster",
+      "state": "North Rhine-Westphalia",
+      "type": "public university",
+      "website": "https://www.uni-muenster.de/",
+      "source": "https://www.wikidata.org/wiki/Q168426"
+    },
+    {
+      "id": "Q312578",
+      "name": "University of Music and Theatre Leipzig",
+      "city": "Leipzig",
+      "state": "Saxony",
+      "type": "conservatory",
+      "website": "https://www.hmt-leipzig.de/",
+      "source": "https://www.wikidata.org/wiki/Q312578"
+    },
+    {
+      "id": "Q657167",
+      "name": "University of Music and Theatre Munich",
+      "city": "Munich",
+      "state": "Bavaria",
+      "type": "conservatory",
+      "website": "https://hmtm.de/",
+      "source": "https://www.wikidata.org/wiki/Q657167"
+    },
+    {
+      "id": "Q597758",
+      "name": "University of Oldenburg",
+      "city": "Oldenburg",
+      "state": "Lower Saxony",
+      "type": "public university",
+      "website": "https://uol.de/",
+      "source": "https://www.wikidata.org/wiki/Q597758"
+    },
+    {
+      "id": "Q679134",
+      "name": "University of Paderborn",
+      "city": "North Rhine-Westphalia",
+      "state": "North Rhine-Westphalia",
+      "type": "public university",
+      "website": "https://www.uni-paderborn.de",
+      "source": "https://www.wikidata.org/wiki/Q679134"
+    },
+    {
+      "id": "Q704468",
+      "name": "University of Passau",
+      "city": "Passau",
+      "state": "Bavaria",
+      "type": "public university",
+      "website": "https://www.uni-passau.de/",
+      "source": "https://www.wikidata.org/wiki/Q704468"
+    },
+    {
+      "id": "Q153012",
+      "name": "University of Potsdam",
+      "city": "Potsdam",
+      "state": "Brandenburg",
+      "type": "public university",
+      "website": "https://www.uni-potsdam.de/",
+      "source": "https://www.wikidata.org/wiki/Q153012"
+    },
+    {
+      "id": "Q1391290",
+      "name": "University of Public Administration in Bavaria",
+      "city": "",
+      "state": "",
+      "type": "Fachhochschule für öffentliche Verwaltung",
+      "website": "http://www.hfoed.bayern.de/",
+      "source": "https://www.wikidata.org/wiki/Q1391290"
+    },
+    {
+      "id": "Q574571",
+      "name": "University of Regensburg",
+      "city": "Regensburg",
+      "state": "Bavaria",
+      "type": "public university",
+      "website": "https://www.uni-regensburg.de/",
+      "source": "https://www.wikidata.org/wiki/Q574571"
+    },
+    {
+      "id": "Q159895",
+      "name": "University of Rostock",
+      "city": "Rostock",
+      "state": "Mecklenburg-Vorpommern",
+      "type": "public university",
+      "website": "https://www.uni-rostock.de/",
+      "source": "https://www.wikidata.org/wiki/Q159895"
+    },
+    {
+      "id": "Q504723",
+      "name": "University of Siegen",
+      "city": "Siegen",
+      "state": "North Rhine-Westphalia",
+      "type": "public university",
+      "website": "https://www.uni-siegen.de/",
+      "source": "https://www.wikidata.org/wiki/Q504723"
+    },
+    {
+      "id": "Q122453",
+      "name": "University of Stuttgart",
+      "city": "Stuttgart",
+      "state": "Baden-Württemberg",
+      "type": "public university",
+      "website": "https://www.uni-stuttgart.de",
+      "source": "https://www.wikidata.org/wiki/Q122453"
+    },
+    {
+      "id": "Q56187114",
+      "name": "University of Technology Nuremberg",
+      "city": "Nuremberg",
+      "state": "Bavaria",
+      "type": "public university",
+      "website": "https://www.utn.de/",
+      "source": "https://www.wikidata.org/wiki/Q56187114"
+    },
+    {
+      "id": "Q569350",
+      "name": "University of Television and Film Munich",
+      "city": "Maxvorstadt",
+      "state": "Bavaria",
+      "type": "film school",
+      "website": "http://www.hff-muc.de",
+      "source": "https://www.wikidata.org/wiki/Q569350"
+    },
+    {
+      "id": "Q466664",
+      "name": "University of the Arts Bremen",
+      "city": "Bremen",
+      "state": "Bremen",
+      "type": "public university",
+      "website": "https://www.hfk-bremen.de/",
+      "source": "https://www.wikidata.org/wiki/Q466664"
+    },
+    {
+      "id": "Q283099",
+      "name": "University of the Bundeswehr Munich",
+      "city": "Neubiberg",
+      "state": "Bavaria",
+      "type": "public university",
+      "website": "https://www.unibw.de/",
+      "source": "https://www.wikidata.org/wiki/Q283099"
+    },
+    {
+      "id": "Q153978",
+      "name": "University of Tübingen",
+      "city": "Tübingen",
+      "state": "Baden-Württemberg",
+      "type": "public university",
+      "website": "https://uni-tuebingen.de/",
+      "source": "https://www.wikidata.org/wiki/Q153978"
+    },
+    {
+      "id": "Q2496174",
+      "name": "University of Vechta",
+      "city": "Vechta",
+      "state": "Lower Saxony",
+      "type": "public university",
+      "website": "http://www.uni-vechta.de/",
+      "source": "https://www.wikidata.org/wiki/Q2496174"
+    },
+    {
+      "id": "Q1607255",
+      "name": "University of Veterinary Medicine Hannover",
+      "city": "",
+      "state": "",
+      "type": "public university",
+      "website": "https://www.tiho-hannover.de/",
+      "source": "https://www.wikidata.org/wiki/Q1607255"
+    },
+    {
+      "id": "Q447953",
+      "name": "University of Wuppertal",
+      "city": "Wuppertal",
+      "state": "North Rhine-Westphalia",
+      "type": "public university",
+      "website": "https://www.uni-wuppertal.de",
+      "source": "https://www.wikidata.org/wiki/Q447953"
+    },
+    {
+      "id": "Q161976",
+      "name": "University of Würzburg",
+      "city": "Würzburg",
+      "state": "Bavaria",
+      "type": "public university",
+      "website": "http://www.uni-wuerzburg.de/",
+      "source": "https://www.wikidata.org/wiki/Q161976"
+    },
+    {
+      "id": "Q1615884",
+      "name": "Verwaltungsfachhochschule Rotenburg an der Fulda",
+      "city": "Rotenburg an der Fulda",
+      "state": "Hesse",
+      "type": "public university",
+      "website": "http://www.studienzentrum-rotenburg.de/",
+      "source": "https://www.wikidata.org/wiki/Q1615884"
+    },
+    {
+      "id": "Q17123645",
+      "name": "VICTORIA | International University of Applied Sciences",
+      "city": "Berlin",
+      "state": "Berlin",
+      "type": "private university",
+      "website": "http://www.hwtk.de/",
+      "source": "https://www.wikidata.org/wiki/Q17123645"
+    },
+    {
+      "id": "Q1619104",
+      "name": "Vinzenz Pallotti University",
+      "city": "Vallendar",
+      "state": "Rhineland-Palatinate",
+      "type": "philosophical-theological university",
+      "website": "http://www.pthv.de",
+      "source": "https://www.wikidata.org/wiki/Q1619104"
+    },
+    {
+      "id": "Q15852343",
+      "name": "VWA Hochschule",
+      "city": "Stuttgart",
+      "state": "Baden-Württemberg",
+      "type": "private university",
+      "website": "https://w-vwa.de/",
+      "source": "https://www.wikidata.org/wiki/Q15852343"
+    },
+    {
+      "id": "Q2519262",
+      "name": "VWA und Berufsakademie Göttingen",
+      "city": "Göttingen",
+      "state": "Lower Saxony",
+      "type": "private university",
+      "website": "http://www.vwa-goettingen.de/",
+      "source": "https://www.wikidata.org/wiki/Q2519262"
+    },
+    {
+      "id": "Q1622145",
+      "name": "Weihenstephan-Triesdorf University of Applied Science",
+      "city": "Freising",
+      "state": "Bavaria",
+      "type": "higher education institution",
+      "website": "http://www.hswt.de/",
+      "source": "https://www.wikidata.org/wiki/Q1622145"
+    },
+    {
+      "id": "Q2120222",
+      "name": "Weingarten University of Education",
+      "city": "Ravensburg District",
+      "state": "Baden-Württemberg",
+      "type": "public university",
+      "website": "https://www.ph-weingarten.de/",
+      "source": "https://www.wikidata.org/wiki/Q2120222"
+    },
+    {
+      "id": "Q1773894",
+      "name": "Weißensee Academy of Art Berlin",
+      "city": "Pankow",
+      "state": "Berlin",
+      "type": "art academy",
+      "website": "https://www.kh-berlin.de/",
+      "source": "https://www.wikidata.org/wiki/Q1773894"
+    },
+    {
+      "id": "Q2557506",
+      "name": "Welfenakademie Braunschweig",
+      "city": "Hanover",
+      "state": "Lower Saxony",
+      "type": "private university",
+      "website": "http://www.welfenakademie.de",
+      "source": "https://www.wikidata.org/wiki/Q2557506"
+    },
+    {
+      "id": "Q2565230",
+      "name": "Westphalian University of Applied Sciences Gelsenkirchen Bocholt Recklinghausen",
+      "city": "North Rhine-Westphalia",
+      "state": "North Rhine-Westphalia",
+      "type": "public university",
+      "website": "http://www.w-hs.de/",
+      "source": "https://www.wikidata.org/wiki/Q2565230"
+    },
+    {
+      "id": "Q884503",
+      "name": "Westsächsische Hochschule Zwickau - University of Applied Sciences",
+      "city": "Zwickau",
+      "state": "Saxony",
+      "type": "public university",
+      "website": "https://www.fh-zwickau.de/",
+      "source": "https://www.wikidata.org/wiki/Q884503"
+    },
+    {
+      "id": "Q7949330",
+      "name": "WFI – Ingolstadt School of Management",
+      "city": "Ingolstadt",
+      "state": "Bavaria",
+      "type": "business school",
+      "website": "http://www.wfi.edu",
+      "source": "https://www.wikidata.org/wiki/Q7949330"
+    },
+    {
+      "id": "Q21040611",
+      "name": "Whitecliffe University of Applied Sciences",
+      "city": "",
+      "state": "",
+      "type": "private university",
+      "website": "https://www.berlin-international.de",
+      "source": "https://www.wikidata.org/wiki/Q21040611"
+    },
+    {
+      "id": "Q316595",
+      "name": "WHU – Otto Beisheim School of Management",
+      "city": "Vallendar",
+      "state": "Rhineland-Palatinate",
+      "type": "private university",
+      "website": "http://www.whu.edu",
+      "source": "https://www.wikidata.org/wiki/Q316595"
+    },
+    {
+      "id": "Q2570367",
+      "name": "Wildau Institute of Technology",
+      "city": "Wildau",
+      "state": "Brandenburg",
+      "type": "university of applied sciences",
+      "website": "http://www.wit-wildau.de/",
+      "source": "https://www.wikidata.org/wiki/Q2570367"
+    },
+    {
+      "id": "Q2572209",
+      "name": "Wilhelm Büchner Hochschule",
+      "city": "Darmstadt",
+      "state": "Hesse",
+      "type": "private university",
+      "website": "http://www.wb-fernstudium.de/",
+      "source": "https://www.wikidata.org/wiki/Q2572209"
+    },
+    {
+      "id": "Q1532259",
+      "name": "Wilhelm Löhe Hochschule für angewandte Wissenschaften",
+      "city": "Fürth",
+      "state": "Bavaria",
+      "type": "university of applied sciences",
+      "website": "http://www.wlh-fuerth.de/",
+      "source": "https://www.wikidata.org/wiki/Q1532259"
+    },
+    {
+      "id": "Q2576313",
+      "name": "Wilhelmsstift",
+      "city": "Tübingen",
+      "state": "Baden-Württemberg",
+      "type": "Catholic seminary",
+      "website": "https://www.wilhelmsstift.de",
+      "source": "https://www.wikidata.org/wiki/Q2576313"
+    },
+    {
+      "id": "Q314305",
+      "name": "Witten/Herdecke University",
+      "city": "Witten",
+      "state": "North Rhine-Westphalia",
+      "type": "private university",
+      "website": "https://www.uni-wh.de/",
+      "source": "https://www.wikidata.org/wiki/Q314305"
+    },
+    {
+      "id": "Q60867576",
+      "name": "XU Exponential University",
+      "city": "Potsdam",
+      "state": "Brandenburg",
+      "type": "private university",
+      "website": "https://xu-university.com",
+      "source": "https://www.wikidata.org/wiki/Q60867576"
+    },
+    {
+      "id": "Q1024571",
+      "name": "YMCA University of Applied Sciences",
+      "city": "Kassel",
+      "state": "Hesse",
+      "type": "private university",
+      "website": "http://www.cvjm-hochschule.de/",
+      "source": "https://www.wikidata.org/wiki/Q1024571"
+    },
+    {
+      "id": "Q191426",
+      "name": "Zeppelin University",
+      "city": "Friedrichshafen",
+      "state": "Baden-Württemberg",
+      "type": "private university",
+      "website": "https://www.zu.de/",
+      "source": "https://www.wikidata.org/wiki/Q191426"
+    },
+    {
+      "id": "Q1622147",
+      "name": "Zittau/Görlitz University of Applied Sciences",
+      "city": "Görlitz",
+      "state": "Saxony",
+      "type": "public university",
+      "website": "https://www.hszg.de/",
+      "source": "https://www.wikidata.org/wiki/Q1622147"
+    }
+  ]
+}
