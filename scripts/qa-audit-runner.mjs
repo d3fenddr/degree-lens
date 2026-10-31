@@ -1,7 +1,6 @@
 import { chromium } from '@playwright/test';
 import { jsPDF } from 'jspdf';
 import { readFile, writeFile } from 'node:fs/promises';
-import { join } from 'node:path';
 
 const BASE_URL = 'http://localhost:3000';
 
@@ -163,7 +162,6 @@ async function main() {
   // Add 2nd course to verify top insertion order
   await page.getByRole('button', { name: 'Add course', exact: true }).click();
   await page.waitForTimeout(400);
-  const coursesCount2 = await page.locator('.course-card').count();
   const newFirstInput = page.locator('.course-card').first().locator('input[placeholder*="Linear Algebra"]');
   await newFirstInput.fill('Introduction to Programming');
 
@@ -404,7 +402,7 @@ async function main() {
   console.log(`[JOURNEY E] Results page: Tabs=${tabsCount}, Metrics=${metricCards}, CoverageRows=${coverageRows}`);
 
   // Test PDF download
-  const downloadPromise = page.waitForEvent('download', { timeout: 15000 }).catch(e => null);
+  const downloadPromise = page.waitForEvent('download', { timeout: 15000 }).catch(() => null);
   const pdfBtn = page.getByRole('button', { name: /Download PDF report/i });
   await pdfBtn.click();
   const download = await downloadPromise;
