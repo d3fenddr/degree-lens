@@ -29,7 +29,8 @@ export function verifiedCredits(course: Course): number | null {
 }
 
 export function analyze(courses: Course[], program: Program): Analysis {
-  const parents = program.rules.filter(rule => !rule.parentId);
+  const rules = program.rules || [];
+  const parents = rules.filter(rule => !rule.parentId);
   const allocated = new Map<string, number>();
   const matches: Match[] = [];
   const candidates = courses.flatMap(course => {
@@ -51,7 +52,7 @@ export function analyze(courses: Course[], program: Program): Analysis {
     matches.push({ courseId: course.id, ruleId: rule.id, ects: amount, topic, confidence: 'confirmed', reason: `${course.title} was assigned to ${rule.label} by the user.` });
     allocated.set(course.id, (allocated.get(course.id) ?? 0) + amount);
   }
-  const coverage = program.rules.map(rule => {
+  const coverage = rules.map(rule => {
     const ruleMatches = rule.parentId
       ? matches.filter(match => match.ruleId === rule.parentId && rule.topics.includes(match.topic))
       : matches.filter(match => match.ruleId === rule.id);
@@ -68,5 +69,8 @@ export function analyze(courses: Course[], program: Program): Analysis {
     ...courses.filter(course => !course.confirmed || verifiedCredits(course) === null).map(course => `${course.title || 'Untitled course'}: ECTS equivalence needs confirmation.`),
     ...courses.filter(course => verifiedCredits(course) !== null && !course.selectedTopic).map(course => `${course.title}: review the suggested topic and confirm a mapping.`),
   ];
+  if (!rules.length) {
+    warnings.push('Official admission and subject requirements are evaluated directly by the university. Detailed DegreeLens ECTS arithmetic is available for verified analysis programs.');
+  }
   return { program, coverage, unmatched, warnings, relevantEcts: [...allocated.values()].reduce((sum, ects) => sum + ects, 0) };
 }

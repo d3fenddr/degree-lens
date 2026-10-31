@@ -19,6 +19,6 @@ describe('allocation',()=>{
   it('recalculates when a confirmed course changes',()=>{const c=course('Programming',6,'programming');expect(analyze([c],program('reg-ds')).coverage.find(x=>x.rule.id==='rds-prog')?.ects).toBe(6);expect(analyze([{...c,credits:3}],program('reg-ds')).coverage.find(x=>x.rule.id==='rds-prog')?.ects).toBe(3)});
   it('does not count unconfirmed local credits',()=>{const a=analyze([{...course('Linear Algebra',6,'math'),creditSystem:'local',verifiedEcts:null}],program('hamburg-dsai'));expect(a.relevantEcts).toBe(0)});
   it('marks an unresolved matching course for review',()=>{const a=analyze([{...course('Linear Algebra',6,'math'),confirmed:false}],program('hamburg-dsai'));expect(a.coverage.find(x=>x.rule.id==='hh-math')?.status).toBe('Needs review')});
-  it('keeps human conditions separate',()=>{const a=analyze(demoCourses('Mixed Data Science'),program('bonn-ai'));expect(a.program.conditions.some(x=>x.includes('scientific bachelor thesis'))).toBe(true)});
+  it('keeps human conditions separate',()=>{const a=analyze(demoCourses('Mixed Data Science'),program('bonn-ai'));expect(a.program.conditions?.some(x=>x.includes('scientific bachelor thesis'))).toBe(true)});
   it('gives deterministic, distinct demo outcomes',()=>{const totals=demoNames.map(name=>analyze(demoCourses(name),program('reg-cs')).coverage.map(c=>c.ects));expect(new Set(totals.map(x=>x.join(','))).size).toBe(3)});
 });

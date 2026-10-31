@@ -12,11 +12,14 @@ export async function downloadReport(analyses: Analysis[], courses: Course[]) {
   line('Preliminary evidence comparison. This is not an admissions decision.',10,true,10);
   for(const analysis of analyses){
     line(`${analysis.program.university} — ${analysis.program.name}`,13,true,8);
-    line(`Source verified ${analysis.program.verified}: ${analysis.program.sourceUrl}`,8,false,7);
+    line(`Source verified ${analysis.program.verified || 'Catalog'}: ${analysis.program.sourceUrl || analysis.program.officialProgramUrl || ''}`,8,false,7);
     for(const coverage of analysis.coverage){line(`${coverage.rule.label}: ${coverage.ects} / ${coverage.rule.minimum} ECTS — ${coverage.status}`,10,true,6);for(const match of coverage.matches)line(`  ${courses.find(c=>c.id===match.courseId)?.title||'Course'}: ${match.ects} ECTS`,9,false,5)}
-    line('Conditions needing separate review',10,true,7);for(const condition of analysis.program.conditions)line(`• ${condition}`,9,false,5);
+    if (analysis.program.conditions && analysis.program.conditions.length) {
+      line('Conditions needing separate review',10,true,7);
+      for(const condition of analysis.program.conditions) line(`• ${condition}`,9,false,5);
+    }
     if(analysis.warnings.length){line('Unresolved evidence',10,true,7);for(const warning of analysis.warnings)line(`• ${warning}`,9,false,5)}
-    line(analysis.program.note,9,false,8);
+    if (analysis.program.note) line(analysis.program.note,9,false,8);
   }
   line('Credits count only after user confirmation. Local credits require an explicit verified ECTS equivalent. Subject mapping is selected by the user; university staff may evaluate coursework differently.',9,false,6);
   line('DegreeLens is independent of the universities and does not guarantee admission.',9,true,6);

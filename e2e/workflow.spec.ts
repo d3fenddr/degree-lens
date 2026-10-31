@@ -71,3 +71,34 @@ test('static routes render at desktop, tablet and mobile widths', async ({page},
   }
   expect(errors).toEqual([]);
 });
+
+test('European programs discovery filters by country, discipline and level', async ({ page }) => {
+  await page.goto('/programs/', { waitUntil: 'networkidle' });
+  await expect(page.getByRole('heading', { name: 'Compare documented requirements.' })).toBeVisible();
+  
+  // Filter by country
+  await page.getByLabel('Filter by country').selectOption('Netherlands');
+  await expect(page.locator('.program-card').first()).toBeVisible();
+  await expect(page.locator('.program-card').first()).toContainText('Netherlands');
+
+  // Filter by discipline
+  await page.getByLabel('Filter by discipline').selectOption('Computer Science');
+  await expect(page.locator('.program-card').first()).toBeVisible();
+
+  // Reset filters
+  await page.getByRole('button', { name: 'Reset' }).click();
+  await expect(page.getByText('4,650 results', { exact: false })).toBeVisible();
+});
+
+test('3-stage transcript review flags potential grade warning', async ({ page }) => {
+  const doc = new jsPDF();
+  doc.text('Advanced Database Systems 2.3 ECTS', 10, 10);
+  await page.goto('/analyze', { waitUntil: 'networkidle' });
+  await page.getByLabel('Upload transcript PDF').setInputFiles({
+    name: 'audit-test.pdf',
+    mimeType: 'application/pdf',
+    buffer: Buffer.from(doc.output('arraybuffer'))
+  });
+  await expect(page.locator('.course-card')).toHaveCount(1);
+  await expect(page.getByText(/Review value: 2.3 resembles a grade/)).toBeVisible();
+});
