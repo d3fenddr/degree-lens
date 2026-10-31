@@ -108,8 +108,19 @@ async function run() {
   console.log('Testing Programs Directory...');
   await page.goto(`${BASE_URL}/programs/`, { waitUntil: 'networkidle' });
   const programCards = await page.locator('.program-card').count();
-  console.log(`Verified program cards count: ${programCards}`);
-  if (programCards === 5) {
+  console.log(`Program cards on page 1: ${programCards}`);
+  
+  // Test verified ECTS filter toggle
+  await page.getByRole('button', { name: /Verified ECTS analysis/i }).click();
+  await page.waitForTimeout(500);
+  const verifiedCount = await page.locator('.program-card').count();
+  console.log(`Verified ECTS programs count: ${verifiedCount}`);
+  
+  // Reset
+  await page.getByRole('button', { name: /Reset/i }).click();
+  await page.waitForTimeout(500);
+
+  if (programCards >= 5 && verifiedCount === 5) {
     results.programs = true;
   }
 
